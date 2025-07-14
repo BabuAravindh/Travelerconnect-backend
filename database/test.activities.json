@@ -1,0 +1,126 @@
+[{
+  "_id": {
+    "$oid": "67d8fd7d4e8d7922ca40fa35"
+  },
+  "activityName": "Wildlife Safari",
+  "order": 4,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-03-18T04:58:37.744Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-18T04:58:37.744Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d8fd7d4e8d7922ca40fa38"
+  },
+  "activityName": "Scuba Diving",
+  "order": 7,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-03-18T04:58:37.745Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-18T04:58:37.745Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d8fd7d4e8d7922ca40fa37"
+  },
+  "activityName": "Rock Climbing",
+  "order": 6,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-03-18T04:58:37.745Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-18T04:58:37.745Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d8fd7d4e8d7922ca40fa33"
+  },
+  "activityName": "Snorkeling",
+  "order": 2,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-03-18T04:58:37.744Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-18T04:58:37.744Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d8fd7d4e8d7922ca40fa32"
+  },
+  "activityName": "Hiking",
+  "order": 1,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-03-18T04:58:37.741Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-18T04:58:37.741Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d8fd7d4e8d7922ca40fa34"
+  },
+  "activityName": "City Tour",
+  "order": 3,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-03-18T04:58:37.744Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-18T04:58:37.744Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d8fd7d4e8d7922ca40fa39"
+  },
+  "activityName": "Cultural Exploration",
+  "order": 8,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-03-18T04:58:37.745Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-18T04:58:37.745Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d8fd7d4e8d7922ca40fa36"
+  },
+  "activityName": "Mountain Biking",
+  "order": 5,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-03-18T04:58:37.745Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-18T04:58:37.745Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "685caaf0e1f0bc5b2a91a793"
+  },
+  "activityName": "paragliding",
+  "order": 9,
+  "createdAt": {
+    "$date": "2025-06-26T02:05:36.993Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-26T02:05:50.254Z"
+  },
+  "__v": 0
+}]

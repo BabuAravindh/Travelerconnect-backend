@@ -1,0 +1,1862 @@
+[{
+  "_id": {
+    "$oid": "67e7da71689b7c92bf1c8614"
+  },
+  "from": "Chennai",
+  "to": "Pune",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "3 hours",
+      "details": "every details regrading in the chat only",
+      "_id": {
+        "$oid": "67e7da71689b7c92bf1c8615"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "createdAt": {
+    "$date": "2025-03-29T11:33:05.671Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-02T05:50:01.109Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67e7db03689b7c92bf1c8622"
+  },
+  "from": "Coimbatore",
+  "to": "Chennai",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "3 hours",
+      "details": "every details regrading in the chat only",
+      "_id": {
+        "$oid": "67e7db03689b7c92bf1c8623"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "createdAt": {
+    "$date": "2025-03-29T11:35:31.767Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-29T11:35:31.767Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67e82ac00c4f1acda99572da"
+  },
+  "from": "Panchetti",
+  "to": "Coimbatore",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "3 hours",
+      "details": "every details regrading in the chat only",
+      "_id": {
+        "$oid": "67e831170c4f1acda99578eb"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "createdAt": {
+    "$date": "2025-03-29T17:15:44.651Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-29T17:42:47.929Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ea758da549d2d31c7e27f1"
+  },
+  "from": "Madurai",
+  "to": "Pune",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "3 hours",
+      "details": "every details regrading in the chat only",
+      "_id": {
+        "$oid": "67eead875217468d6167383f"
+      }
+    },
+    {
+      "mode": "Train",
+      "duration": "3 hours",
+      "details": "every details regrading in the chat only",
+      "_id": {
+        "$oid": "67eead875217468d61673840"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "createdAt": {
+    "$date": "2025-03-31T10:59:25.079Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-03T15:47:19.537Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ee42958bd0a8d2350d2ac5"
+  },
+  "from": "Chennai",
+  "to": "Madurai",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "3 hours",
+      "details": "every details regrading in the chat only",
+      "_id": {
+        "$oid": "67ee42958bd0a8d2350d2ac6"
+      }
+    },
+    {
+      "mode": "Train",
+      "duration": "3 hours",
+      "details": "every details regrading in the chat only",
+      "_id": {
+        "$oid": "67ee42958bd0a8d2350d2ac7"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "createdAt": {
+    "$date": "2025-04-03T08:11:01.394Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-03T08:11:01.394Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68020daa9cbcffb9b75d7742"
+  },
+  "from": "Chennai",
+  "to": "Madurai",
+  "transports": [
+    {
+      "mode": "Flight",
+      "duration": "3 hours",
+      "details": "every details regrading in the chat only",
+      "_id": {
+        "$oid": "68020daa9cbcffb9b75d7743"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67ea2dbfc5847e1984b9d80a"
+  },
+  "createdAt": {
+    "$date": "2025-04-18T08:30:34.667Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T08:49:59.136Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c38837abbf9a45d39becd"
+  },
+  "from": "Chennai",
+  "to": "Madurai",
+  "transports": [
+    {
+      "mode": "Flight",
+      "duration": "1 hour",
+      "details": "This flight route involves a quick and comfortable journey from Chennai, a major city and a significant aviation hub in southern India, to Madurai. The flight offers picturesque views of Tamil Nadu state.",
+      "_id": {
+        "$oid": "682c38837abbf9a45d39bece"
+      }
+    },
+    {
+      "mode": "Train",
+      "duration": "8 hours",
+      "details": "This route offers a scenic train ride through the state of Tamil Nadu, highlighting its diverse landscapes. Trains from Chennai to Madurai are frequent, comfortable, and convenient.",
+      "_id": {
+        "$oid": "682c38837abbf9a45d39becf"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:08:35.520Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:08:35.520Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c38837abbf9a45d39bed1"
+  },
+  "from": "Coimbatore",
+  "to": "Madurai",
+  "transports": [
+    {
+      "mode": "Private Vehicle",
+      "duration": "4 hours",
+      "details": "Driving from Coimbatore to Madurai, you would travel through national highways with occasional sights of beautiful Tamil Nadu countryside. The route offers convenience, and flexibility to stop at attractions along the way.",
+      "_id": {
+        "$oid": "682c38837abbf9a45d39bed2"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:08:35.591Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:08:35.591Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c38837abbf9a45d39bed4"
+  },
+  "from": "Rameshwaram",
+  "to": "Madurai",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "4 hours",
+      "details": "The route from Rameshwaram to Madurai passes through scenic rural areas. Buses are budget-friendly and offer a unique opportunity to experience local life. They run frequently and are a popular mode of transport in this region.",
+      "_id": {
+        "$oid": "682c38837abbf9a45d39bed5"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:08:35.683Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:08:35.683Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c38847abbf9a45d39bedd"
+  },
+  "from": "Madurai",
+  "to": "Meenakshi Amman Temple",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "20 minutes",
+      "details": "Travelling within Madurai, buses offer this short route from the city center to the iconic Meenakshi Amman Temple. This temple represents the architectural grandeur of the city and is a must-visit for any tourist.",
+      "_id": {
+        "$oid": "682c38847abbf9a45d39bede"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:08:36.019Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:08:36.019Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c38837abbf9a45d39bed7"
+  },
+  "from": "Kodaikanal",
+  "to": "Madurai",
+  "transports": [
+    {
+      "mode": "Private Vehicle",
+      "duration": "3 hours",
+      "details": "From the hill city of Kodaikanal, this route descends into the plains of Madurai revealing stunning views of the landscapes below. The drive, though somewhat winding, is a popular way to move between the two spots and provides a stark contrast in the natural scenery.",
+      "_id": {
+        "$oid": "682c38837abbf9a45d39bed8"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:08:35.813Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:08:35.813Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c38837abbf9a45d39beda"
+  },
+  "from": "Madurai",
+  "to": "Tirumalai Nayak Palace",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "30 minutes",
+      "details": "Local buses in Madurai offer an economical way of moving within the city. A trip to the Tirumalai Nayak Palace, a landmark attraction in Madurai, should not take more than 30 minutes.",
+      "_id": {
+        "$oid": "682c38837abbf9a45d39bedb"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:08:35.916Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:08:35.916Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c3c9647d6057d7a047783"
+  },
+  "from": "Madurai",
+  "to": "Gandhi Museum",
+  "transports": [
+    {
+      "mode": "Private Vehicle",
+      "duration": "20-30 minutes",
+      "details": "One can reach Gandhi Museum from anywhere in Madurai within minutes. The museum houses a rich collection detailing India's struggle for Independence and Gandhi's life.",
+      "_id": {
+        "$oid": "682c3c9647d6057d7a047784"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:25:58.281Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:25:58.281Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c3c9547d6057d7a047775"
+  },
+  "from": "Bangalore",
+  "to": "Madurai",
+  "transports": [
+    {
+      "mode": "Flight",
+      "duration": "1 hour 10 minutes",
+      "details": "Flying from Bangalore to Madurai is the fastest but slightly pricier option. There are several daily flights from Bangalore International Airport to Madurai International Airport.",
+      "_id": {
+        "$oid": "682c3c9547d6057d7a047776"
+      }
+    },
+    {
+      "mode": "Private Vehicle",
+      "duration": "7-8 hours",
+      "details": "If you prefer driving, the route from Bangalore to Madurai via National Highway 44 offers beautiful landscapes and roadside eateries, making it an enjoyable road trip.",
+      "_id": {
+        "$oid": "682c3c9547d6057d7a047777"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:25:57.945Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:25:57.945Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c3c9647d6057d7a047779"
+  },
+  "from": "Coimbatore",
+  "to": "Madurai",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "4-5 hours",
+      "details": "Bus services from Coimbatore to Madurai are quite frequent. The journey offers views of the rural and urban landscapes of Tamil Nadu along the way.",
+      "_id": {
+        "$oid": "682c3c9647d6057d7a04777a"
+      }
+    },
+    {
+      "mode": "Train",
+      "duration": "3.5-4.5 hours",
+      "details": "Direct train services are available from Coimbatore to Madurai. This journey cuts through the heartland of Tamil Nadu and offers glimpses of the region's rural life.",
+      "_id": {
+        "$oid": "682c3c9647d6057d7a04777b"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:25:58.050Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:25:58.050Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c3c9547d6057d7a047771"
+  },
+  "from": "Chennai",
+  "to": "Madurai",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "7-8 hours",
+      "details": "This route typically involves taking a direct train service from Chennai to Madurai. This journey provides a great opportunity to sit back and enjoy the beautiful landscapes of Tamil Nadu along the way.",
+      "_id": {
+        "$oid": "682c3c9547d6057d7a047772"
+      }
+    },
+    {
+      "mode": "Bus",
+      "duration": "8-9 hours",
+      "details": "There are regular bus services from Chennai to Madurai. This overland journey gives the travelers a chance to witness the local culture up close.",
+      "_id": {
+        "$oid": "682c3c9547d6057d7a047773"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:25:57.892Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:25:57.892Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c3c9647d6057d7a04777d"
+  },
+  "from": "Madurai",
+  "to": "Meenakshi Amman Temple",
+  "transports": [
+    {
+      "mode": "Private Vehicle",
+      "duration": "20-30 minutes",
+      "details": "Travel within the city of Madurai is best done with a private vehicle. Meenakshi Amman Temple, located in the heart of the city, is easily accessible from all parts of town.",
+      "_id": {
+        "$oid": "682c3c9647d6057d7a04777e"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:25:58.151Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:25:58.151Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c3c9647d6057d7a047780"
+  },
+  "from": "Madurai",
+  "to": "Thirumalai Nayakkar Palace",
+  "transports": [
+    {
+      "mode": "Private Vehicle",
+      "duration": "20-30 minutes",
+      "details": "Thirumalai Nayakkar Palace, a remarkable example of Indo-Saracenic architecture, is a must-see site in Madurai. It is just a short drive from anywhere in the city.",
+      "_id": {
+        "$oid": "682c3c9647d6057d7a047781"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:25:58.218Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:25:58.218Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca7aa2c647ba5da20c93f"
+  },
+  "from": "Kolkata, West Bengal",
+  "to": "Sundarbans, West Bengal",
+  "transports": [
+    {
+      "mode": "Ferry",
+      "duration": "2 hours",
+      "details": "Ferry service from Kolkata to Sundarbans, the world's largest mangrove forest, is a popular choice for tourists. The journey provides an opportunity to enjoy the scenic beauty of the Ganges Delta.",
+      "_id": {
+        "$oid": "682ca7aa2c647ba5da20c940"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:02:50.153Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:02:50.153Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca7aa2c647ba5da20c942"
+  },
+  "from": "NJP Railway Station, West Bengal",
+  "to": "Gangtok, Sikkim",
+  "transports": [
+    {
+      "mode": "Private Vehicle",
+      "duration": "4 hours",
+      "details": "The best way to reach Gangtok, the capital of Sikkim, from New Jalpaiguri (NJP) Railway Station is by hiring a private car or taxi. The journey offers amazing views of the Teesta river and mountains.",
+      "_id": {
+        "$oid": "682ca7aa2c647ba5da20c943"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:02:50.218Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:02:50.218Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca7a92c647ba5da20c936"
+  },
+  "from": "Chennai",
+  "to": "Howrah, West Bengal",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "28 hours",
+      "details": "The Coromandel Express operated by the Indian Railways, runs from Chennai to Howrah, covering a distance of about 1666 kilometers. The journey offers views of the Indian countryside and passes through several states.",
+      "_id": {
+        "$oid": "682ca7a92c647ba5da20c937"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:02:49.959Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:02:49.959Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca7aa2c647ba5da20c939"
+  },
+  "from": "Siliguri, West Bengal",
+  "to": "Darjeeling, West Bengal",
+  "transports": [
+    {
+      "mode": "Private Vehicle",
+      "duration": "3 hours",
+      "details": "Tourists typically hire a jeep or taxi from Siliguri to travel directly to Darjeeling, a hill station famous for tea gardens. The road trip passes through beautiful landscapes of tea gardens and Himalayan views.",
+      "_id": {
+        "$oid": "682ca7aa2c647ba5da20c93a"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:02:50.024Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:02:50.024Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca7aa2c647ba5da20c93c"
+  },
+  "from": "Guwahati",
+  "to": "Cooch Behar, West Bengal",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "8 hours",
+      "details": "State transport buses operate from Guwahati to Cooch Behar, which is located in the extreme east of West Bengal. The journey provides a glimpse of the tea gardens of Assam and the diverse culture of the region.",
+      "_id": {
+        "$oid": "682ca7aa2c647ba5da20c93d"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:02:50.088Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:02:50.088Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca7a92c647ba5da20c933"
+  },
+  "from": "Delhi",
+  "to": "Kolkata, West Bengal",
+  "transports": [
+    {
+      "mode": "Flight",
+      "duration": "2 hours 30 minutes",
+      "details": "Direct flights to Kolkata from Delhi are operated by several airlines, including IndiGo and Air India. The distance between Delhi and Kolkata is approximately 1500 kilometers. Depending on the airline, the flight generally takes 2.5 hours.",
+      "_id": {
+        "$oid": "682ca7a92c647ba5da20c934"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:02:49.864Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:02:49.864Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca8522c647ba5da20ca61"
+  },
+  "from": "Goa",
+  "to": "Mumbai",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "12 hours",
+      "details": "There are many daily buses running from Goa to Mumbai. The scenic Konkan route is a great experience, though it's a long journey. The buses are comfortable and economical.",
+      "_id": {
+        "$oid": "682ca8522c647ba5da20ca62"
+      }
+    },
+    {
+      "mode": "Ferry",
+      "duration": "7 hours",
+      "details": "Starting from Mormugao Port Trust in Goa, ferries offer a unique travel experience. Stops can include popular coastal locations. The service is particularly popular among tourists for its scenic views of the Arabian Sea.",
+      "_id": {
+        "$oid": "682ca8522c647ba5da20ca63"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:05:38.778Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:05:38.778Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca8522c647ba5da20ca5e"
+  },
+  "from": "Delhi",
+  "to": "Mumbai",
+  "transports": [
+    {
+      "mode": "Flight",
+      "duration": "2 hours",
+      "details": "A direct and quickest way from Delhi to Mumbai under a duration of 2 hours by flight, which saves a lot of time. The two metro cities are well connected with multiple daily flights from various airlines.",
+      "_id": {
+        "$oid": "682ca8522c647ba5da20ca5f"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:05:38.722Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:05:38.722Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca8522c647ba5da20ca6b"
+  },
+  "from": "Ahmedabad",
+  "to": "Mumbai",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "7 hours",
+      "details": "There are several daily trains between Ahmedabad and Mumbai. The route is quite scenic, passing through Vapi, Surat, and Valsad. Indian Railways offers a variety of train categories to choose from.",
+      "_id": {
+        "$oid": "682ca8522c647ba5da20ca6c"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:05:38.935Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:05:38.935Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca8522c647ba5da20ca6e"
+  },
+  "from": "Ajanta and Ellora Caves, Aurangabad",
+  "to": "Mumbai",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "10 hours",
+      "details": "Many bus services run between Aurangabad and Mumbai. It's a long journey but the bus provides an opportunity to see Maharashtra state's countryside and small towns.",
+      "_id": {
+        "$oid": "682ca8522c647ba5da20ca6f"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:05:38.987Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:05:38.987Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca8522c647ba5da20ca65"
+  },
+  "from": "Pune",
+  "to": "Mumbai",
+  "transports": [
+    {
+      "mode": "Private Vehicle",
+      "duration": "3 hours",
+      "details": "The Mumbai-Pune Expressway makes for a comfortable drive from Pune to Mumbai. This route offers beautiful views of the Western Ghats. The expressway has multiple food courts and rest stops.",
+      "_id": {
+        "$oid": "682ca8522c647ba5da20ca66"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:05:38.832Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:05:38.832Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca8522c647ba5da20ca68"
+  },
+  "from": "Mumbai International Airport",
+  "to": "Gateway of India, Mumbai",
+  "transports": [
+    {
+      "mode": "Taxi",
+      "duration": "1 hour",
+      "details": "Upon arriving at the Mumbai International Airport, visitors can take a taxi directly to the Gateway of India. The route passes through Bandra, Dadar, and South Mumbai, giving passengers a glimpse of the city life.",
+      "_id": {
+        "$oid": "682ca8522c647ba5da20ca69"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:05:38.883Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:05:38.883Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca97e2c647ba5da20cb9b"
+  },
+  "from": "Delhi",
+  "to": "Mumbai",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "16 hours",
+      "details": "Get aboard the Rajdhani Express from New Delhi Railway Station to Mumbai Central. It’s a daily service which offers a comfortable travel with meals provided on board.",
+      "_id": {
+        "$oid": "682ca97e2c647ba5da20cb9c"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:10:38.941Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:10:38.941Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca97f2c647ba5da20cba1"
+  },
+  "from": "Bangalore",
+  "to": "Mumbai",
+  "transports": [
+    {
+      "mode": "Flight",
+      "duration": "1.5 hours",
+      "details": "Catch a direct flight from Kempegowda International Airport, Bangalore to Chhatrapati Shivaji Maharaj International Airport, Mumbai. Many airlines operate on this route frequently.",
+      "_id": {
+        "$oid": "682ca97f2c647ba5da20cba2"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:10:39.067Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:10:39.067Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca97e2c647ba5da20cb98"
+  },
+  "from": "Goa",
+  "to": "Mumbai",
+  "transports": [
+    {
+      "mode": "Flight",
+      "duration": "1 hour",
+      "details": "Take a direct flight from Dabolim Airport, Goa to Chhatrapati Shivaji Maharaj International Airport, Mumbai. This service is offered by various airlines and is a quick and efficient way to reach Mumbai from Goa.",
+      "_id": {
+        "$oid": "682ca97e2c647ba5da20cb99"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:10:38.882Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:10:38.882Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca97f2c647ba5da20cb9e"
+  },
+  "from": "Pune",
+  "to": "Mumbai",
+  "transports": [
+    {
+      "mode": "Private Vehicle",
+      "duration": "3 hours",
+      "details": "Drive down the Mumbai-Pune expressway, one of the busiest and best maintained highways in India. The drive offers scenic views of the Western Ghats, especially during the monsoon season.",
+      "_id": {
+        "$oid": "682ca97f2c647ba5da20cb9f"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:10:39.005Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:10:39.005Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca97f2c647ba5da20cba4"
+  },
+  "from": "Mumbai Airport",
+  "to": "Gateway of India, Mumbai",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "1 hour 30 minutes",
+      "details": "From the Mumbai Airport, take the BEST bus service to reach the Gateway of India. The bus service is affordable and efficient, however, it might get crowded during peak hours.",
+      "_id": {
+        "$oid": "682ca97f2c647ba5da20cba5"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:10:39.137Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:10:39.137Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ca97f2c647ba5da20cba7"
+  },
+  "from": "Mumbai Central Railway Station",
+  "to": "Bandra",
+  "transports": [
+    {
+      "mode": "Ferry",
+      "duration": "20 minutes",
+      "details": "Take a ferry from the jetty near Mumbai Central to Bandra. This service is dependent on the tide and weather. It's a unique way to skip the traffic and enjoy the city's coastline.",
+      "_id": {
+        "$oid": "682ca97f2c647ba5da20cba8"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T16:10:39.201Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T16:10:39.201Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d4b1c94a0fe1a580e574d"
+  },
+  "from": "Delhi",
+  "to": "Mumbai",
+  "transports": [
+    {
+      "mode": "Flight",
+      "duration": "2 hours",
+      "details": "A convenient 2 hour non-stop flight from Indira Gandhi International Airport, Delhi to Chhatrapati Shivaji Maharaj International Airport, Mumbai. This is the quickest way to reach Mumbai from Delhi.",
+      "_id": {
+        "$oid": "682d4b1c94a0fe1a580e574e"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-21T03:40:12.254Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T03:40:12.254Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d4b1c94a0fe1a580e5750"
+  },
+  "from": "Goa",
+  "to": "Mumbai",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "12 hours",
+      "details": "Goa to Mumbai is a scenic route via NH48. Buses leave from Panjim bus station in Goa and reach the Mumbai Central Bus Station. It is an overnight journey, ensuring less traffic.",
+      "_id": {
+        "$oid": "682d4b1c94a0fe1a580e5751"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-21T03:40:12.311Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T03:40:12.311Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d4b1c94a0fe1a580e5753"
+  },
+  "from": "Pune",
+  "to": "Mumbai",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "3 hours",
+      "details": "Pune to Mumbai by train is a 3-hour journey via the Deccan Queen Passenger train. This route takes you through the lush Western Ghats providing a beautiful view along with a comfortable journey.",
+      "_id": {
+        "$oid": "682d4b1c94a0fe1a580e5754"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-21T03:40:12.363Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T03:40:12.363Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d4b1c94a0fe1a580e5756"
+  },
+  "from": "Surat",
+  "to": "Mumbai",
+  "transports": [
+    {
+      "mode": "Private Vehicle",
+      "duration": "5 hours",
+      "details": "Driving from Surat to Mumbai via NH48 is not only the fastest but also a beautiful journey. Numerous food joints and petrol pumps on the NH48 make this a comfortable route for a road trip.",
+      "_id": {
+        "$oid": "682d4b1c94a0fe1a580e5757"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-21T03:40:12.414Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T03:40:12.414Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d4b1c94a0fe1a580e5759"
+  },
+  "from": "Mumbai",
+  "to": "Gateway of India, Mumbai",
+  "transports": [
+    {
+      "mode": "Ferry",
+      "duration": "30 minutes",
+      "details": "From Mumbai's prominent ferry quay Bhaucha Dhakka you can board a ferry to reach Gateway of India, an iconic landmark in Mumbai. It is a fun and picturesque journey.",
+      "_id": {
+        "$oid": "682d4b1c94a0fe1a580e575a"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-21T03:40:12.466Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T03:40:12.466Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d4b1c94a0fe1a580e575c"
+  },
+  "from": "Navi Mumbai",
+  "to": "Mumbai",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "1 hour",
+      "details": "This journey from Navi Mumbai to Mumbai takes about an hour via the Mumbai Pune Expressway. Comfortable AC buses provide service regularly through this route.",
+      "_id": {
+        "$oid": "682d4b1c94a0fe1a580e575d"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-21T03:40:12.522Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T03:40:12.522Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682efdf973e484c4fb644bee"
+  },
+  "from": "Delhi",
+  "to": "Darjeeling",
+  "transports": [
+    {
+      "mode": "Flight",
+      "duration": "2h",
+      "details": "Fly from Delhi to Bagdogra Airport, then take a 3-hour drive to Darjeeling.",
+      "_id": {
+        "$oid": "682efdf973e484c4fb644bef"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-22T10:35:37.175Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-22T10:35:37.175Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682efdf973e484c4fb644bf1"
+  },
+  "from": "Kolkata",
+  "to": "Sundarbans",
+  "transports": [
+    {
+      "mode": "Private Vehicle",
+      "duration": "3h",
+      "details": "Drive from Kolkata to Godkhali Jetty, then take a ferry to the Sundarbans.",
+      "_id": {
+        "$oid": "682efdf973e484c4fb644bf2"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-22T10:35:37.252Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-22T10:35:37.252Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682efdf973e484c4fb644bf4"
+  },
+  "from": "Mumbai",
+  "to": "Kolkata",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "26h",
+      "details": "Take a direct train from Mumbai to Kolkata, a vibrant city known for its culture and cuisine.",
+      "_id": {
+        "$oid": "682efdf973e484c4fb644bf5"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-22T10:35:37.311Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-22T10:35:37.311Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68315e7444d7242242683dfe"
+  },
+  "from": "Chennai",
+  "to": "Coimbatore",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "8h",
+      "details": "Scenic train journey through Tamil Nadu countryside.",
+      "_id": {
+        "$oid": "68315e7444d7242242683dff"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-24T05:51:48.020Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-24T05:51:48.020Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68315e7444d7242242683e01"
+  },
+  "from": "Bengaluru",
+  "to": "Coimbatore",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "7h",
+      "details": "Comfortable bus ride passing through picturesque landscapes.",
+      "_id": {
+        "$oid": "68315e7444d7242242683e02"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-24T05:51:48.108Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-24T05:51:48.108Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68315e7444d7242242683e04"
+  },
+  "from": "Kochi",
+  "to": "Coimbatore",
+  "transports": [
+    {
+      "mode": "Private Vehicle",
+      "duration": "4h",
+      "details": "Drive through lush greenery of Western Ghats with beautiful pit stops.",
+      "_id": {
+        "$oid": "68315e7444d7242242683e05"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-24T05:51:48.185Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-24T05:51:48.185Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683567679756ef76efe73a29"
+  },
+  "from": "Bengaluru",
+  "to": "Mysuru",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "2.5 hours",
+      "details": "Enjoy a scenic train journey from Bengaluru to Mysuru, passing through lush landscapes and historic towns. The train offers comfortable seating and picturesque views along the way.",
+      "_id": {
+        "$oid": "683567679756ef76efe73a2a"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-27T07:19:03.911Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T07:19:03.911Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683567679756ef76efe73a2c"
+  },
+  "from": "Bengaluru",
+  "to": "Coorg",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "5 hours",
+      "details": "Embark on a train journey from Bengaluru to Coorg, known for its coffee plantations and misty hills. The route offers glimpses of the Western Ghats and serene countryside.",
+      "_id": {
+        "$oid": "683567679756ef76efe73a2d"
+      }
+    }
+  ],
+  "guideId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "createdAt": {
+    "$date": "2025-05-27T07:19:03.974Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T07:19:03.974Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684190a6b016a4bf356da0c6"
+  },
+  "from": "Coimbatore",
+  "to": "Ooty",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "3 hours",
+      "details": "Scenic Nilgiri Mountain Railway",
+      "_id": {
+        "$oid": "684190a6b016a4bf356da0c7"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-05T12:42:14.420Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-05T12:42:14.420Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68419758b016a4bf356da345"
+  },
+  "from": "Chennai",
+  "to": "Bangalore",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "5 hours",
+      "details": "Multiple daily trains available.",
+      "_id": {
+        "$oid": "68419758b016a4bf356da346"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-05T13:10:48.567Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-05T13:10:48.567Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68427f578cba6b22291c844f"
+  },
+  "from": "Chennai",
+  "to": "Madurai",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "6-8 hours",
+      "details": "Multiple daily trains available.",
+      "_id": {
+        "$oid": "68427f578cba6b22291c8450"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-06T05:40:39.746Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T05:40:39.746Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684280cd825c29dea65f0bbc"
+  },
+  "from": "Srinagar",
+  "to": "Gulmarg",
+  "transports": [
+    {
+      "mode": "Car",
+      "duration": "2 hours",
+      "details": "Scenic drive through the mountains",
+      "_id": {
+        "$oid": "684280cd825c29dea65f0bbd"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-06T05:46:53.031Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T05:46:53.031Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684280cd825c29dea65f0bbf"
+  },
+  "from": "Srinagar",
+  "to": "Sonamarg",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "3 hours",
+      "details": "Journey through picturesque valleys",
+      "_id": {
+        "$oid": "684280cd825c29dea65f0bc0"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-06T05:46:53.070Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T05:46:53.070Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684296519dbb3b4bd909d779"
+  },
+  "from": "Bangalore",
+  "to": "Mysore",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "2.5 hours",
+      "details": "Comfortable journey with scenic views along the route.",
+      "_id": {
+        "$oid": "684296519dbb3b4bd909d77a"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-06T07:18:41.466Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T07:18:41.466Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684296519dbb3b4bd909d77c"
+  },
+  "from": "Bangalore",
+  "to": "Coorg",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "5 hours",
+      "details": "Affordable and picturesque bus ride through the Western Ghats.",
+      "_id": {
+        "$oid": "684296519dbb3b4bd909d77d"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-06T07:18:41.518Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T07:18:41.518Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68429771a67d1064b2490146"
+  },
+  "from": "Chennai",
+  "to": "Madurai",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "6 hours",
+      "details": "Various trains available with good connectivity",
+      "_id": {
+        "$oid": "68429771a67d1064b2490147"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-06T07:23:29.646Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T07:23:29.646Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a5f2abf40e05aceda4eac"
+  },
+  "from": "Chennai",
+  "to": "Theni",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "8 hours",
+      "details": "Multiple trains available daily",
+      "_id": {
+        "$oid": "684a5f2abf40e05aceda4ead"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-12T05:01:30.187Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:01:30.187Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a5f2abf40e05aceda4eaf"
+  },
+  "from": "Madurai",
+  "to": "Theni",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "2 hours",
+      "details": "Frequent bus services connecting the two cities",
+      "_id": {
+        "$oid": "684a5f2abf40e05aceda4eb0"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-12T05:01:30.234Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:01:30.234Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a61e3bf40e05aceda502a"
+  },
+  "from": "Chennai",
+  "to": "Bengaluru",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "6 hours",
+      "details": "Multiple daily trains available",
+      "_id": {
+        "$oid": "684a61e3bf40e05aceda502b"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-12T05:13:07.317Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:13:07.317Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a61e3bf40e05aceda502d"
+  },
+  "from": "Mumbai",
+  "to": "Bengaluru",
+  "transports": [
+    {
+      "mode": "Flight",
+      "duration": "2 hours",
+      "details": "Frequent flights operated by various airlines",
+      "_id": {
+        "$oid": "684a61e3bf40e05aceda502e"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-12T05:13:07.357Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:13:07.357Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a61e3bf40e05aceda5030"
+  },
+  "from": "Hyderabad",
+  "to": "Bengaluru",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "8 hours",
+      "details": "Comfortable bus services with regular departures",
+      "_id": {
+        "$oid": "684a61e3bf40e05aceda5031"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-12T05:13:07.416Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:13:07.416Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a61e3bf40e05aceda5033"
+  },
+  "from": "Pune",
+  "to": "Bengaluru",
+  "transports": [
+    {
+      "mode": "Car",
+      "duration": "9 hours",
+      "details": "Scenic drive via NH48",
+      "_id": {
+        "$oid": "684a61e3bf40e05aceda5034"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-12T05:13:07.457Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:13:07.457Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a61e3bf40e05aceda5036"
+  },
+  "from": "Goa",
+  "to": "Bengaluru",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "12 hours",
+      "details": "Picturesque train journey through Western Ghats",
+      "_id": {
+        "$oid": "684a61e3bf40e05aceda5037"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-12T05:13:07.497Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:13:07.497Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a623dbf40e05aceda5064"
+  },
+  "from": "Bengaluru",
+  "to": "Mysuru",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "2.5 hours",
+      "details": "Comfortable journey with scenic views",
+      "_id": {
+        "$oid": "684a623dbf40e05aceda5065"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-12T05:14:37.533Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:14:37.533Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a623dbf40e05aceda5067"
+  },
+  "from": "Bengaluru",
+  "to": "Coorg",
+  "transports": [
+    {
+      "mode": "Bus",
+      "duration": "5 hours",
+      "details": "Picturesque route through coffee plantations",
+      "_id": {
+        "$oid": "684a623dbf40e05aceda5068"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-12T05:14:37.590Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:14:37.590Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b603d53456dbceabb7335"
+  },
+  "from": "Delhi",
+  "to": "Lucknow",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "6 hours",
+      "details": "Several daily trains available",
+      "_id": {
+        "$oid": "685b603d53456dbceabb7336"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-25T02:34:37.819Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T02:34:37.819Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685caa2ee1f0bc5b2a91a77d"
+  },
+  "from": "Palakkad",
+  "to": "Coimbatore",
+  "transports": [
+    {
+      "mode": "Train",
+      "duration": "2 hours",
+      "details": "Regular train services available",
+      "_id": {
+        "$oid": "685caa2ee1f0bc5b2a91a77e"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-26T02:02:22.389Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-26T02:02:22.389Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,3162 @@
+{
+	"info": {
+		"_postman_id": "34411c38-93e6-4364-97b5-bde1cd456e81",
+		"name": "TravelerConnect",
+		"description": "Travelerconnect is the project regarding about the booking a local guide and track the planning with integrated with chat system , payment system, AI assistant for the regional insights for the more",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37354767"
+	},
+	"item": [
+		{
+			"name": "Authentication Module",
+			"item": [
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "login user",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"babuaravindh2@gmail.com\",\r\n    \"password\":\"babu\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/auth/login",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "signup the user",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"sakthi\",\r\n  \"email\": \"babuaravindh2@example.com\",\r\n  \"password\": \"SecurePassword123\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/auth/signup",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"auth",
+										"signup"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "guide",
+					"item": [
+						{
+							"name": "guide signup in the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"jacky\",\r\n    \"email\":\"jacky@mailinator.com\",\r\n    \"password\":\"$Tn58bj1027\",\r\n    \"confirmPassword\":\"$Tn58bj1027\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/auth/guide/signup",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"auth",
+										"guide",
+										"signup"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "submitting proof for the guide",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "userId",
+											"value": "6829ad68bf89c452327f73cf",
+											"type": "text"
+										},
+										{
+											"key": "governmentIdFile",
+											"type": "file",
+											"src": [
+												"/C:/Users/babua/OneDrive/Pictures/Screenshots/WhatsApp Image 2025-01-27 at 11.01.37_a33f09e3.jpg",
+												"/C:/Users/babua/OneDrive/Pictures/Screenshots/2.png"
+											]
+										}
+									]
+								},
+								"url": {
+									"raw": "{{URL}}/auth/verifyId",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"auth",
+										"verifyId"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "guide login in the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"email\":\"jacky@mailinator.com\",\r\n    \"password\":\"$Tn58bj1027\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/auth/guide/login",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"auth",
+										"guide",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "reset password",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"newPassword\":\"babuaravindh67890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/auth/reset-password",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify reset code",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"babuaravindh2@gmail.com\",\r\n    \"code\":\"895928\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/auth/verify-reset-code",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"verify-reset-code"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgot password",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"babuaravindh2@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/auth/forgot-password",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resend verifications email",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"babuaravindh0@mailinator.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/auth/resendverification",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"resendverification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "email verification for the user",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/auth/verify-email/73fc939348dfc96eff01c30eb3249ce68f9211461e388b7558e4ec2e3367b60b",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"verify-email",
+								"73fc939348dfc96eff01c30eb3249ce68f9211461e388b7558e4ec2e3367b60b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile Section Module",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "creating a user profile information",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userId\": \"6602e6b1c7e0a5b5a8a7b7c5\",\r\n  \"firstName\": \"John\",\r\n  \"lastName\": \"Doe\",\r\n  \"gender\": \"male\",\r\n  \"phoneNumber\": \"9876543210121\",\r\n  \"dateOfBirth\": \"1995-06-15\",\r\n  \"profilePic\": \"https://example.com/profile.jpg\",\r\n  \"countryName\": \"India\",\r\n  \"stateName\": \"Tamil Nadu\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/profile",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getting user profile information",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{URL}}/api/profile/6602e6b1c7e0a5b5a8a7b7c5",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"profile",
+										"6602e6b1c7e0a5b5a8a7b7c5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Updating the user profile information",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\"countryName\": \"India\",\r\n  \"stateName\": \"Maharashtra\"\r\n } ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/profile/6602e6b1c7e0a5b5a8a7b7c5",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"profile",
+										"6602e6b1c7e0a5b5a8a7b7c5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "get all profile for the admin",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/profile/users",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"profile",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get all guide profile for the admin",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/profile/guides",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"profile",
+										"guides"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updating the active or inactive for the guides by the admin",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/profile/guides/67c945e7298a73d4f38254c7/toggleStatus",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"profile",
+										"guides",
+										"67c945e7298a73d4f38254c7",
+										"toggleStatus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "fetch all guides for the admin",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/guide/profile",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"guide",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleting the profile by the admin",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/profile/6829ad68bf89c452327f73cf",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"profile",
+										"6829ad68bf89c452327f73cf"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Guide",
+					"item": [
+						{
+							"name": "update the guide profile",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"bio\": \"Experienced guide specializing in adventure tours.\",\r\n  \"activities\": [\"City Tour\"], \r\n  \"languages\": [\"Hindi\"],\r\n  \"bankAccountNumber\": \"1234567890\",\r\n  \"aadharCardPhoto\": \"aadhar_card_url\",\r\n  \"countryName\": \"India\",\r\n  \"stateName\": \"Maharashtra\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/guide/profile/67c945e7298a73d4f38254c7",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"guide",
+										"profile",
+										"67c945e7298a73d4f38254c7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getting guide profile",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/guide/profile/67c945e7298a73d4f38254c7",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"guide",
+										"profile",
+										"67c945e7298a73d4f38254c7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "creating the guide profile in the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "userId",
+											"value": "6829ec887bcfa5ea0528c398",
+											"type": "text"
+										},
+										{
+											"key": "activities",
+											"value": "[\"Hiking\", \"City Tour\"]",
+											"type": "text"
+										},
+										{
+											"key": "bankAccountNumber",
+											"value": "\t123456789012",
+											"type": "text"
+										},
+										{
+											"key": "ifscCode",
+											"value": "SBIN0001234",
+											"type": "text"
+										},
+										{
+											"key": "bankName",
+											"value": "State Bank of India",
+											"type": "text"
+										},
+										{
+											"key": "bio\t",
+											"value": "Experienced guide with 5 years in adventure tours.",
+											"type": "text"
+										},
+										{
+											"key": "languages",
+											"value": "[\"Hindi\"]",
+											"type": "text"
+										},
+										{
+											"key": "serviceLocations\t",
+											"value": "[\"Madurai\"]",
+											"type": "text"
+										},
+										{
+											"key": "profilePic",
+											"type": "file",
+											"src": "/C:/Users/babua/OneDrive/Pictures/Screenshots/WhatsApp Image 2025-01-27 at 11.01.37_a33f09e3.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{URL}}/api/guide/profile/",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"guide",
+										"profile",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Chat System Module",
+			"item": [
+				{
+					"name": "admin",
+					"item": [
+						{
+							"name": "deleteing the conversation by admin",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/chats/admin/conversations/68021d1dbf3403a71216a6df",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"chats",
+										"admin",
+										"conversations",
+										"68021d1dbf3403a71216a6df"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "fetching the conversation for the admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/chats/admin/conversations",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"chats",
+										"admin",
+										"conversations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "fetching messages based on conversations for the admin",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/chats/admin/conversations/68021d1dbf3403a71216a6df",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"chats",
+										"admin",
+										"conversations",
+										"68021d1dbf3403a71216a6df"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getting the user ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/chats/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"chats",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sending message in the chat",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"message\":\"hi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/chats/send/67c945e7298a73d4f38254c7",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"chats",
+								"send",
+								"67c945e7298a73d4f38254c7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user conversations for the admin using conversationId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/chats/67f8e681ebcef425d2c900d8",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"chats",
+								"67f8e681ebcef425d2c900d8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get conversation using by userId for the admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/chats/conversation/67eeb2625217468d61673c36/67c945e7298a73d4f38254c7",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"chats",
+								"conversation",
+								"67eeb2625217468d61673c36",
+								"67c945e7298a73d4f38254c7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "starting coversation between two user ",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"senderId\":\"67c945e7298a73d4f38254c7\",\r\n    \"receiverId\":\"67eeb2625217468d61673c36\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/chats/startConversation",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"chats",
+								"startConversation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetching last budget message for the booking the guide",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/chats/conversations/67eebfa241d5c90dfa386f29/lastBudget",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"chats",
+								"conversations",
+								"67eebfa241d5c90dfa386f29",
+								"lastBudget"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getting or creating the conversation between the users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/chats/conversation/67eeb2625217468d61673c36/67c945e7298a73d4f38254c7",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"chats",
+								"conversation",
+								"67eeb2625217468d61673c36",
+								"67c945e7298a73d4f38254c7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user online or not in the website",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"67c945e7298a73d4f38254c7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/chats/online/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"chats",
+								"online",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "typing indicator for the user in the chat system",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"conversationId\":\"67f766598ad45591b8954401\",\r\n    \"senderId\":\"67f8e631ebcef425d2c8ffb7\",\r\n    \"isTyping\":\"tes\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/chats/typing",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"chats",
+								"typing"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Predefine",
+			"item": [
+				{
+					"name": "Activities",
+					"item": [
+						{
+							"name": "Admin",
+							"item": [
+								{
+									"name": "Create new acitivity by the admin",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"activityName\":\"West Bengal\",\r\n    \"order\":11\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/activities/",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"activities",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "fetching the activities for the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/activities",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"activities"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "languages",
+					"item": [
+						{
+							"name": "Admin",
+							"item": [
+								{
+									"name": "Creating new language in the website by the admin",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\r\n{\r\n    \"languageName\":\"English\",\r\n    \"order\":11,\r\n    \"languageStatus\":\"active\"\r\n    \r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/predefine/languages",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"languages"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updating the languages in the website by the admin",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"languageStatus\":\"inactive\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/predefine/languages/6829f09bb611dde71cb55d16",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"languages",
+												"6829f09bb611dde71cb55d16"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Deleting the language in the website",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"languageStatus\":\"inactive\"\r\n}"
+										},
+										"url": {
+											"raw": "{{URL}}/api/predefine/languages/6829f09bb611dde71cb55d16",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"languages",
+												"6829f09bb611dde71cb55d16"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Fetching the languages for the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/predefine/languages",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"predefine",
+										"languages"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "States",
+					"item": [
+						{
+							"name": "Admin",
+							"item": [
+								{
+									"name": "creating new state in the website",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"stateName\":\"Bihar\",\r\n    \"order\":11\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/predefine/states/",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"states",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updating the state in the website",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"order\":10\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/predefine/states/6829f1ebb611dde71cb55d1b",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"states",
+												"6829f1ebb611dde71cb55d1b"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Deleting the state in the website",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{URL}}/api/predefine/states/6829f1ebb611dde71cb55d1b",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"states",
+												"6829f1ebb611dde71cb55d1b"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Fetching the states for the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/predefine/states/",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"predefine",
+										"states",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Questions",
+					"item": [
+						{
+							"name": "Admin",
+							"item": [
+								{
+									"name": "Creating new question by the admin",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"questionText\": \"What is the best way to travel locally?\",\r\n  \"cityId\": \"681f3d3e5066ddec64edb3dc\",\r\n  \"type\": \"common\",\r\n  \"status\": \"active\",\r\n  \"order\": 1,\r\n  \"options\": [\"Public Transport\", \"Taxi\", \"Walking\", \"Cycling\"]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/predefine/questions",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"questions"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Updating the changes in the question by the admin",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"status\":\"inactive\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/predefine/questions/682abd7a4bf9a58cfb18ae72",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"questions",
+												"682abd7a4bf9a58cfb18ae72"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Deleting the question by the admin",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{URL}}/api/predefine/questions/682abd7a4bf9a58cfb18ae72",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"questions",
+												"682abd7a4bf9a58cfb18ae72"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Adding question for specific type with no options",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"questionText\": \"What is the best tourist spot in New York?\",\r\n  \"cityId\": \"681f3d3e5066ddec64edb3dc\",\r\n  \"type\": \"specific\",\r\n  \"status\": \"active\",\r\n  \"order\": 2\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/predefine/questions",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"questions"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "fetching the cities for the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/predefine/questions",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"predefine",
+										"questions"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cities",
+					"item": [
+						{
+							"name": "Admin",
+							"item": [
+								{
+									"name": "Creating cities in the website by the admin",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"cityName\":\"Bangalore\",\r\n    \"order\":\"12\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/predefine/cities",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"cities"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Updating the city information in the website by the admin",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"cityName\":\"Kerala\",\r\n    \"order\":\"12\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/predefine/cities/682abf634bf9a58cfb18ae7b",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"cities",
+												"682abf634bf9a58cfb18ae7b"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Deleting the city information in the website by the admin",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"cityName\":\"Kerala\",\r\n    \"order\":\"12\"\r\n}"
+										},
+										"url": {
+											"raw": "{{URL}}/api/predefine/cities/682abf634bf9a58cfb18ae7b",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"cities",
+												"682abf634bf9a58cfb18ae7b"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Fetching the cities for the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/predefine/cities",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"predefine",
+										"cities"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Countries",
+					"item": [
+						{
+							"name": "Admin",
+							"item": [
+								{
+									"name": "Creating countries in the website by the admin",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"countryName\":\"Kerala\",\r\n    \"order\":\"11\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/predefine/countries",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"countries"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Updating the country information by the admin",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"countryName\":\"UAE\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/predefine/countries/682ac08f4bf9a58cfb18ae80",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"countries",
+												"682ac08f4bf9a58cfb18ae80"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Deleting the country by the admin in the website",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{URL}}/api/predefine/countries/682ac08f4bf9a58cfb18ae80",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"predefine",
+												"countries",
+												"682ac08f4bf9a58cfb18ae80"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Fetching the countries for the website",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cityName\":\"Kerala\",\r\n    \"order\":\"12\"\r\n}"
+								},
+								"url": {
+									"raw": "{{URL}}/api/predefine/countries",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"predefine",
+										"countries"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "AI integration",
+			"item": [
+				{
+					"name": "Chat Bot Routes",
+					"item": [
+						{
+							"name": "User",
+							"item": [
+								{
+									"name": "Fetching ai response for the user",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{URL}}/api/ai/67c945e7298a73d4f38254c7",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"ai",
+												"67c945e7298a73d4f38254c7"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Generating city insights from ai",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"userId\":\"67c9c75da010734af6b872ab\",\r\n    \"city\":\"Mumbai\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/ai/city-insights/",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"ai",
+												"city-insights",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Chatgpt without any city insights",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"userId\":\"67c945e7298a73d4f38254c7\",\r\n    \"query\":\"what is 1 + 1 and why\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/ai",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"ai"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "creating request for credits",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"userId\":\"67c945e7298a73d4f38254c7\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/credit/request",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"credit",
+												"request"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Admin",
+							"item": [
+								{
+									"name": "Fetching credit History for user",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{URL}}/api/credit/67c945e7298a73d4f38254c7",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"credit",
+												"67c945e7298a73d4f38254c7"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Fetching the user request for admin",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{URL}}/api/credit/requests",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"credit",
+												"requests"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Approving or rejecting request for credits",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"status\":\"approved\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{URL}}/api/credit/approve/680cd81e1bb3abbbc5e76d8b",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"credit",
+												"approve",
+												"680cd81e1bb3abbbc5e76d8b"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Fetching interaction between the user and AI in the website ",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{URL}}/api/admin/ai-interactions",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"admin",
+												"ai-interactions"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Generating Attractions",
+					"item": [
+						{
+							"name": "Generating attractions based on the cityname and category",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cityName\": \"Jaipur\",\r\n  \"category\":\"cultural\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/attractions",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"attractions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetching attraction that are created using AI",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/attractions",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"attractions"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Generating Destination Routes",
+					"item": [
+						{
+							"name": "Generating travel routes for the users in the website",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/routes/generate/Madurai",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"routes",
+										"generate",
+										"Madurai"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Travel planner module",
+					"item": [
+						{
+							"name": "get the itineray by id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cityName\": \"Madurai\",\r\n  \"questions\": [\r\n    {\r\n      \"_id\": \"681f453c962179b0c14f9343\",\r\n      \"questionText\": \"What is your travel start date?\",\r\n      \"cityId\": {\r\n        \"_id\": \"67e82a4bd77d2656b12ee477\",\r\n        \"cityName\": \"Madurai\",\r\n        \"order\": 1,\r\n        \"createdAt\": \"2024-09-09T07:29:38.039Z\",\r\n        \"__v\": 0\r\n      },\r\n      \"status\": \"active\",\r\n      \"order\": 2,\r\n      \"createdAt\": \"2024-09-09T07:30:04.420Z\",\r\n      \"updatedAt\": \"2024-09-09T07:30:04.420Z\",\r\n      \"__v\": 0\r\n    },\r\n    {\r\n      \"_id\": \"681f4554962179b0c14f9349\",\r\n      \"questionText\": \"How many days will you be staying?\",\r\n      \"cityId\": {\r\n        \"_id\": \"67e82a4bd77d2656b12ee477\",\r\n        \"cityName\": \"Madurai\",\r\n        \"order\": 1,\r\n        \"createdAt\": \"2024-09-09T07:29:38.039Z\",\r\n        \"__v\": 0\r\n      },\r\n      \"status\": \"active\",\r\n      \"order\": 3,\r\n      \"createdAt\": \"2024-09-09T07:30:04.420Z\",\r\n      \"updatedAt\": \"2024-09-09T07:30:04.420Z\",\r\n      \"__v\": 0\r\n    },\r\n    {\r\n      \"_id\": \"681f456c962179b0c14f934f\",\r\n      \"questionText\": \"What type of traveler are you\",\r\n      \"cityId\": {\r\n        \"_id\": \"67e82a4bd77d2656b12ee477\",\r\n        \"cityName\": \"Madurai\",\r\n        \"order\": 1,\r\n        \"createdAt\": \"2024-09-09T07:29:38.039Z\",\r\n        \"__v\": 0\r\n      },\r\n      \"status\": \"active\",\r\n      \"order\": 4,\r\n      \"createdAt\": \"2024-09-09T07:30:04.420Z\",\r\n      \"updatedAt\": \"2024-09-09T07:30:04.420Z\",\r\n      \"__v\": 0\r\n    }\r\n  ],\r\n  \"answers\": [\r\n    { \"response\": \"05/15/2025\" },\r\n    { \"response\": \"3\" },\r\n    { \"response\": \"Family\" }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/travelPlan/f0b25b9e-ad02-4e30-9a3b-2a7f6c452b32",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"travelPlan",
+										"f0b25b9e-ad02-4e30-9a3b-2a7f6c452b32"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "generating travel planer",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cityName\": \"Madurai\",\r\n  \"questions\": [\r\n    {\r\n      \"_id\": \"681f453c962179b0c14f9343\",\r\n      \"questionText\": \"What is your travel start date?\",\r\n      \"cityId\": {\r\n        \"_id\": \"67e82a4bd77d2656b12ee477\",\r\n        \"cityName\": \"Madurai\",\r\n        \"order\": 1,\r\n        \"createdAt\": \"2024-09-09T07:29:38.039Z\",\r\n        \"__v\": 0\r\n      },\r\n      \"status\": \"active\",\r\n      \"order\": 2,\r\n      \"createdAt\": \"2024-09-09T07:30:04.420Z\",\r\n      \"updatedAt\": \"2024-09-09T07:30:04.420Z\",\r\n      \"__v\": 0\r\n    },\r\n    {\r\n      \"_id\": \"681f4554962179b0c14f9349\",\r\n      \"questionText\": \"How many days will you be staying?\",\r\n      \"cityId\": {\r\n        \"_id\": \"67e82a4bd77d2656b12ee477\",\r\n        \"cityName\": \"Madurai\",\r\n        \"order\": 1,\r\n        \"createdAt\": \"2024-09-09T07:29:38.039Z\",\r\n        \"__v\": 0\r\n      },\r\n      \"status\": \"active\",\r\n      \"order\": 3,\r\n      \"createdAt\": \"2024-09-09T07:30:04.420Z\",\r\n      \"updatedAt\": \"2024-09-09T07:30:04.420Z\",\r\n      \"__v\": 0\r\n    },\r\n    {\r\n      \"_id\": \"681f456c962179b0c14f934f\",\r\n      \"questionText\": \"What type of traveler are you\",\r\n      \"cityId\": {\r\n        \"_id\": \"67e82a4bd77d2656b12ee477\",\r\n        \"cityName\": \"Madurai\",\r\n        \"order\": 1,\r\n        \"createdAt\": \"2024-09-09T07:29:38.039Z\",\r\n        \"__v\": 0\r\n      },\r\n      \"status\": \"active\",\r\n      \"order\": 4,\r\n      \"createdAt\": \"2024-09-09T07:30:04.420Z\",\r\n      \"updatedAt\": \"2024-09-09T07:30:04.420Z\",\r\n      \"__v\": 0\r\n    }\r\n  ],\r\n  \"answers\": [\r\n    { \"response\": \"05/15/2025\" },\r\n    { \"response\": \"3\" },\r\n    { \"response\": \"Family\" }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/travelPlan/",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"travelPlan",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Feedback Module",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Creating a feedback",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"67c9c75da010734af6b872ab\",\r\n    \"guideId\":\"67c945e7298a73d4f38254c7\",\r\n    \"rating\":\"3\",\r\n    \"comments\":\"nice\",\r\n    \"status\":\"submitted\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/feedback/",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"feedback",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "deleting the feedback",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/feedback/67dd03f9d1146ced08d214f3",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"feedback",
+										"67dd03f9d1146ced08d214f3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Fetching the feedback based on guideID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/feedback/67c945e7298a73d4f38254c7",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"feedback",
+								"67c945e7298a73d4f38254c7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Refund Module",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Submitting refund request",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bookingId\":\"67f3e597c99068e5a18a56d8\",\r\n    \"amount\":\"1000\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/refund/create",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"refund",
+										"create"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Updating the refund status",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\":\"refunded\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/refund/6801ea440a796672ec0d7a1a",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"refund",
+										"6801ea440a796672ec0d7a1a"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetching all refund for the admin",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/refund",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"refund"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Proof of the payment and updating the status of the refund",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "adminComment",
+											"value": "nice",
+											"type": "text"
+										},
+										{
+											"key": "proof",
+											"type": "file",
+											"src": "/C:/Users/babua/OneDrive/Pictures/Screenshots/816663-aizen-sosuke-wallpaper.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{URL}}/api/refund/proof/6801ea440a796672ec0d7a1a",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"refund",
+										"proof",
+										"6801ea440a796672ec0d7a1a"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Booking Module",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Getting the booking based on the userId",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/booking/user/67c0104ac1dc5ccf45689814",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"booking",
+										"user",
+										"67c0104ac1dc5ccf45689814"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creating a booking for the trip",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userId\": \"67c0104ac1dc5ccf45689814\",\r\n  \"guideId\": \"67c945e7298a73d4f38254c7\",\r\n \"pickupLocation\":\"Bus Stand\",\r\n \"dropoffLocation\":\"Airport\",\r\n  \"startDate\": \"2025-12-03T12:00:00.000Z\",\r\n  \"endDate\": \"2025-12-15\",\r\n  \"duration\": 5,\r\n  \"places\": [\"Jaipur\", \"Udaipur\", \"Jaisalmer\"],\r\n  \"budget\": 15000,\r\n  \"status\": \"pending\",\r\n  \"order\": 1\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/bookings",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"bookings"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Guide",
+					"item": [
+						{
+							"name": "Fetching booking details for the guide in the website",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/bookings/guide/67c945e7298a73d4f38254c7",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"bookings",
+										"guide",
+										"67c945e7298a73d4f38254c7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Fetching all booking details for the admin",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/bookings/admin",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"bookings",
+										"admin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deleting the booking by the admin in the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/bookings/admin/delete/682ace444bf9a58cfb18b091",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"bookings",
+										"admin",
+										"delete",
+										"682ace444bf9a58cfb18b091"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Payment Module",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Creating payment for the booking by the user in the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"bookingId\": \"682ad10d4bf9a58cfb18b0a1\",\r\n  \"amount\": 5000,\r\n  \"paymentType\": \"installment\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/payment/initiate",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payment",
+										"initiate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creating manual payment record for the booking in the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "bookingId",
+											"value": "682ad10d4bf9a58cfb18b0a1",
+											"type": "text"
+										},
+										{
+											"key": "amount",
+											"value": "3000",
+											"type": "text"
+										},
+										{
+											"key": "paymentMethod",
+											"value": "cash",
+											"type": "text"
+										},
+										{
+											"key": "notes",
+											"value": "paid to the guide",
+											"type": "text"
+										},
+										{
+											"key": "screenshot",
+											"type": "file",
+											"src": "/C:/Users/babua/OneDrive/Pictures/Screenshots/WhatsApp Image 2025-01-27 at 11.01.37_a33f09e3.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{URL}}/api/payment/cash",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payment",
+										"cash"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetching the payment history for the user in the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/payment/history/682ad10d4bf9a58cfb18b0a1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payment",
+										"history",
+										"682ad10d4bf9a58cfb18b0a1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetching payment history for the user in the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/payment/booking/67f8e631ebcef425d2c8ffb7",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payment",
+										"booking",
+										"67f8e631ebcef425d2c8ffb7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Fetching all payment for the admin",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/payments/admin",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payments",
+										"admin"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Guide",
+					"item": [
+						{
+							"name": "Updating the status of manual payment by the guide in the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"paymentStatus\": \"completed\",\r\n  \"notes\": \"Payment verified by guide\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/payment/guide/682ad2eb4bf9a58cfb18b0ac",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payment",
+										"guide",
+										"682ad2eb4bf9a58cfb18b0ac"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetching the guide payment history in the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/payment/guide/67c945e7298a73d4f38254c7",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payment",
+										"guide",
+										"67c945e7298a73d4f38254c7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Getting single payment history to check the payment is paid or not by the guide in the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/payment/682ad2eb4bf9a58cfb18b0ac",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payment",
+										"682ad2eb4bf9a58cfb18b0ac"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Contact module",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Raising the ticket in the contact form by the user",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"babuaravindh\",\r\n  \"email\": \"babuaravindh@mailinator.com\",\r\n  \"message\": \"I have an issue with my booking.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/contact/submit",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"contact",
+										"submit"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Updating the ticket information by the admin in the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"status\": \"resolved\",\r\n  \"adminNotes\": \"We have received your query and resolved the booking issue.\",\r\n  \"sendEmailResponse\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/contact/6800d3c05b9165715412122f",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"contact",
+										"6800d3c05b9165715412122f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetching all ticket for the admin in the website",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/contact/",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"contact",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Notification Module",
+			"item": [
+				{
+					"name": "Creating Notification for the user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"recipientId\": \"67f8e631ebcef425d2c8ffb7\",\r\n  \"senderId\": \"67c945e7298a73d4f38254c7\",\r\n  \"conversationId\": \"67c945e7298a73d4f38254cc\",\r\n  \"type\": \"budget_message\",\r\n  \"message\": \"Guide has sent a new budget proposal.\",\r\n  \"senderRole\": \"guide\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/notifications/create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"notifications",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetching the notification using userId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/notifications/unread/67f8e631ebcef425d2c8ffb7",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"notifications",
+								"unread",
+								"67f8e631ebcef425d2c8ffb7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating the notification as read",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"notificationIds\": [\"67c945e7298a73d4f38254cd\", \"67c945e7298a73d4f38254ce\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/notifications/read/67f8e631ebcef425d2c8ffb7",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"notifications",
+								"read",
+								"67f8e631ebcef425d2c8ffb7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetching all notification for the user in the website",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{URL}}/api/notifications/67f8e631ebcef425d2c8ffb7",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"notifications",
+								"67f8e631ebcef425d2c8ffb7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Filter and search of guide",
+			"item": [
+				{
+					"name": "Search the guide by names",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/guide/profile",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"guide",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter of the guide and activites",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/search/guides?destination=Tamil%20Nadu&activity=Wlidlife Safari",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"search",
+								"guides"
+							],
+							"query": [
+								{
+									"key": "destination",
+									"value": "Tamil%20Nadu"
+								},
+								{
+									"key": "activity",
+									"value": "Wlidlife Safari"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,138 @@
+[{
+  "_id": {
+    "$oid": "68429771a67d1064b2490142"
+  },
+  "name": "Trekking in Samanar Malai",
+  "description": "Offers scenic views of Madurai city",
+  "city": "Madurai",
+  "cityId": {
+    "$oid": "67e82a4bd77d2656b12ee477"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1695387745891-8a929a7e9c75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHxNYWR1cmFpJTIwVHJla2tpbmclMjBpbiUyMFNhbWFuYXIlMjBNYWxhaSUyME1hZHVyYWklMjBhZHZlbnR1cmVzfGVufDB8fHx8MTc0OTE5NDU2NHww&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "Adventures",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-06T07:23:29.541Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T07:23:29.541Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a5f29bf40e05aceda4ea8"
+  },
+  "name": "Kolukkumalai Jeep Safari",
+  "description": "Thrilling off-road adventure to the world's highest tea estate, offering panoramic views",
+  "city": "theni",
+  "cityId": {
+    "$oid": "6819b3df6d2c2c9aea64d3e5"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1558975362-7f3f51ce3a24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHx0aGVuaSUyMEtvbHVra3VtYWxhaSUyMEplZXAlMjBTYWZhcmklMjB0aGVuaSUyMGFkdmVudHVyZXN8ZW58MHx8fHwxNzQ5NzA0NDE5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "adventures",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-12T05:01:29.907Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:01:29.907Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a623dbf40e05aceda505e"
+  },
+  "name": "Nandi Hills Trek",
+  "description": "Scenic trekking destination with breathtaking views",
+  "city": "Bengaluru",
+  "cityId": {
+    "$oid": "682c8a53600ccb081bf24caa"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1705777393753-6a3eed5f5ef6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHxCZW5nYWx1cnUlMjBOYW5kaSUyMEhpbGxzJTIwVHJlayUyMEJlbmdhbHVydSUyMGFkdmVudHVyZXN8ZW58MHx8fHwxNzQ5NzA1MjY0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "Adventures",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-12T05:14:37.295Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:14:37.295Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b60df53456dbceabb73e6"
+  },
+  "name": "Trekking in nearby hills",
+  "description": "Explore scenic trails and enjoy nature",
+  "city": "Lucknow",
+  "cityId": {
+    "$oid": "67e82a4bd77d2656b12ee476"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1702175957428-ec915a9dfca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHxMdWNrbm93JTIwVHJla2tpbmclMjBpbiUyMG5lYXJieSUyMGhpbGxzJTIwTHVja25vdyUyMGFkdmVudHVyZXN8ZW58MHx8fHwxNzUwODE5MDI3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "adventures",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-25T02:37:19.215Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T02:37:19.215Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b60df53456dbceabb73e8"
+  },
+  "name": "Heritage Walks in Old Lucknow",
+  "description": "Discover the city's history and architecture",
+  "city": "Lucknow",
+  "cityId": {
+    "$oid": "67e82a4bd77d2656b12ee476"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1679635520551-cd02914fa9f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHxMdWNrbm93JTIwSGVyaXRhZ2UlMjBXYWxrcyUyMGluJTIwT2xkJTIwTHVja25vdyUyMEx1Y2tub3clMjBhZHZlbnR1cmVzfGVufDB8fHx8MTc1MDgxOTAyOHww&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "adventures",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-25T02:37:19.291Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T02:37:19.291Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b60df53456dbceabb73ea"
+  },
+  "name": "Culinary Tours",
+  "description": "Indulge in Lucknow's famous kebabs and biryanis",
+  "city": "Lucknow",
+  "cityId": {
+    "$oid": "67e82a4bd77d2656b12ee476"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1662101875545-0b0cb8b7795b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHxMdWNrbm93JTIwQ3VsaW5hcnklMjBUb3VycyUyMEx1Y2tub3clMjBhZHZlbnR1cmVzfGVufDB8fHx8MTc1MDgxOTAyOXww&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "adventures",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-25T02:37:19.364Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T02:37:19.364Z"
+  },
+  "__v": 0
+}]

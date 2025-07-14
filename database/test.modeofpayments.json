@@ -1,0 +1,1567 @@
+[{
+  "_id": {
+    "$oid": "67f39c9ac0e5ed4bfd0c5280"
+  },
+  "modeOfPayment": "bank_transfer",
+  "bookingId": {
+    "$oid": "67f364a7b603d5632904a91a"
+  },
+  "details": {
+    "notes": "gpay"
+  },
+  "createdAt": {
+    "$date": "2025-04-07T09:36:26.274Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T09:36:26.274Z"
+  },
+  "order": 1048,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f39d21c6f9b0d28057a11b"
+  },
+  "modeOfPayment": "bank_transfer",
+  "bookingId": {
+    "$oid": "67f364a7b603d5632904a91a"
+  },
+  "details": {
+    "notes": "gpay"
+  },
+  "createdAt": {
+    "$date": "2025-04-07T09:38:41.016Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T09:38:41.016Z"
+  },
+  "order": 1049,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f39d80c6f9b0d28057a127"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f364a7b603d5632904a91a"
+  },
+  "details": {
+    "notes": "gpay"
+  },
+  "createdAt": {
+    "$date": "2025-04-07T09:40:16.304Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T09:40:16.304Z"
+  },
+  "order": 1050,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3c283c6f9b0d28057a1c9"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f364a7b603d5632904a91a"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-07T12:18:11.598Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T12:18:11.598Z"
+  },
+  "order": 1051,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3d940c049c7be4d5e3aa8"
+  },
+  "modeOfPayment": "phonepe",
+  "bookingId": {
+    "$oid": "67f3d7cd27b6f465974fba00"
+  },
+  "details": {
+    "notes": "phonepe payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-07T13:55:12.420Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T13:55:12.420Z"
+  },
+  "order": 1056,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3d955506b700bf42f0be5"
+  },
+  "modeOfPayment": "phonepe",
+  "bookingId": {
+    "$oid": "67f3d7cd27b6f465974fba00"
+  },
+  "details": {
+    "notes": "phonepe payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-07T13:55:34.009Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T13:55:34.009Z"
+  },
+  "order": 1058,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3d96b506b700bf42f0c01"
+  },
+  "modeOfPayment": "gpay",
+  "bookingId": {
+    "$oid": "67f3d7cd27b6f465974fba00"
+  },
+  "details": {
+    "notes": "gpay payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-07T13:55:55.982Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T13:55:55.982Z"
+  },
+  "order": 1059,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3df14af5179423e7f0647"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f3de6baf5179423e7f05b3"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-07T14:20:04.437Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T14:20:04.437Z"
+  },
+  "order": 1060,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3df81d9d3a91b4307e360"
+  },
+  "modeOfPayment": "gpay",
+  "bookingId": {
+    "$oid": "67f3de6baf5179423e7f05b3"
+  },
+  "details": {
+    "notes": "gpay payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-07T14:21:53.601Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T14:21:53.601Z"
+  },
+  "order": 1061,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3e40b85a57f2b7061eabd"
+  },
+  "modeOfPayment": "gpay",
+  "bookingId": {
+    "$oid": "67f3de6baf5179423e7f05b3"
+  },
+  "details": {
+    "notes": "gpay payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-07T14:41:15.958Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T14:41:15.958Z"
+  },
+  "order": 1062,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3e5a8c99068e5a18a5774"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f3e597c99068e5a18a56d8"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-07T14:48:08.652Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T14:48:08.652Z"
+  },
+  "order": 1063,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3e783c99068e5a18a58b8"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f3e597c99068e5a18a56d8"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-07T14:56:03.907Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T14:56:03.907Z"
+  },
+  "order": 1064,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4784c6bd893994c9fd4dc"
+  },
+  "modeOfPayment": "gpay",
+  "bookingId": {
+    "$oid": "67f3de6baf5179423e7f05b3"
+  },
+  "details": {
+    "notes": "gpay payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-08T01:13:48.672Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T01:13:48.672Z"
+  },
+  "order": 1065,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f47f8e8a1c2bc09a8e1300"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "67f3de6baf5179423e7f05b3"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QGO0JHE89enAx4",
+    "paymentId": "pay_QGO0xaVvfJUM9f",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-08T01:44:46.244Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T01:44:46.244Z"
+  },
+  "order": 1066,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4bfca3e401c2ce4d16f07"
+  },
+  "modeOfPayment": "gpay",
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "details": {
+    "notes": "gpay"
+  },
+  "createdAt": {
+    "$date": "2025-04-08T06:18:50.895Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T06:18:50.895Z"
+  },
+  "order": 1067,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4c1853e401c2ce4d16f84"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-08T06:26:13.460Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T06:26:13.460Z"
+  },
+  "order": 1068,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4c1bb3e401c2ce4d16fc0"
+  },
+  "modeOfPayment": "gpay",
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "details": {
+    "notes": "gpay payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-08T06:27:07.274Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T06:27:07.274Z"
+  },
+  "order": 1069,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4c1d13e401c2ce4d16fca"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-08T06:27:29.166Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T06:27:29.166Z"
+  },
+  "order": 1070,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4c4555141db654eefa38b"
+  },
+  "modeOfPayment": "gpay",
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "details": {
+    "notes": "gpay payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-08T06:38:13.374Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T06:38:13.374Z"
+  },
+  "order": 1071,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4cd976381a19e36faf316"
+  },
+  "modeOfPayment": "gpay",
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "details": {
+    "notes": "gpay payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-08T07:17:43.028Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T07:17:43.028Z"
+  },
+  "order": 1072,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f525ebaec806e8503d85af"
+  },
+  "modeOfPayment": "gpay",
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "details": {
+    "notes": "gpay payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-08T13:34:35.723Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T13:34:35.723Z"
+  },
+  "order": 1073,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f61ab0a7baa49cc5790355"
+  },
+  "modeOfPayment": "phonepe",
+  "bookingId": {
+    "$oid": "67f61840a7baa49cc579026d"
+  },
+  "details": {
+    "notes": "phonepe payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-09T06:58:56.117Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-09T06:58:56.117Z"
+  },
+  "order": 1074,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f62254a7baa49cc57905bc"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QGqVPCjRaKcMI6",
+    "paymentId": "pay_QGsSTUq8gptzNh",
+    "method": "upi",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-09T07:31:32.059Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-09T07:31:32.059Z"
+  },
+  "order": 1075,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6229ba7baa49cc57905dc"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "67f61840a7baa49cc579026d"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QGsT9Y1nRPkEZu",
+    "paymentId": "pay_QGsTjhKsd6fx5U",
+    "method": "upi",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-09T07:32:43.296Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-09T07:32:43.296Z"
+  },
+  "order": 1076,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f76a698ad45591b8954840"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "67f767bb8ad45591b895472e"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QHGHgie3xTvYEL",
+    "paymentId": "pay_QHGJ8qUtYliUMa",
+    "method": "upi",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-10T06:51:21.154Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-10T06:51:21.154Z"
+  },
+  "order": 1077,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f76a718ad45591b895484a"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f767bb8ad45591b895472e"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-10T06:51:29.321Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-10T06:51:29.321Z"
+  },
+  "order": 1078,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f76fed8ad45591b89548c0"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f767bb8ad45591b895472e"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-10T07:14:53.771Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-10T07:14:53.771Z"
+  },
+  "order": 1079,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f798412e2abf21be56191f"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "67f797b92e2abf21be561875"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QHJcH2e4AOAULF",
+    "paymentId": "pay_QHJdm3mlyh0e07",
+    "method": "upi",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-10T10:06:57.422Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-10T10:06:57.422Z"
+  },
+  "order": 1080,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f8bedbebcef425d2c8f48d"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "67f8be4aebcef425d2c8f3e9"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QHf1xfuQF9iO5P",
+    "paymentId": "pay_QHf3XQXsv5mzQf",
+    "method": "upi",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-11T07:03:55.110Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-11T07:03:55.110Z"
+  },
+  "order": 1081,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f8bf0aebcef425d2c8f497"
+  },
+  "modeOfPayment": "gpay",
+  "bookingId": {
+    "$oid": "67f8be4aebcef425d2c8f3e9"
+  },
+  "details": {
+    "notes": "gpay payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-11T07:04:42.137Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-11T07:04:42.137Z"
+  },
+  "order": 1082,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f8e7c3ebcef425d2c90346"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QHi1OAqAhieYwC",
+    "paymentId": "pay_QHi1ubUOc5DOUI",
+    "method": "upi",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-11T09:58:27.082Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-11T09:58:27.082Z"
+  },
+  "order": 1083,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f8e7deebcef425d2c90350"
+  },
+  "modeOfPayment": "gpay",
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "details": {
+    "notes": "gpay payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-11T09:58:54.024Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-11T09:58:54.024Z"
+  },
+  "order": 1084,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6802089176cbaaa4b1734242"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QKRt9NNbz02hqw",
+    "paymentId": "pay_QKRtpZeYjyK32T",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-18T08:08:49.692Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T08:08:49.692Z"
+  },
+  "order": 1085,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680208d376cbaaa4b1734250"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QKRuNCm8JYSEqz",
+    "paymentId": "pay_QKRuzwIwMj3ECK",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-18T08:09:55.290Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T08:09:55.290Z"
+  },
+  "order": 1086,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68020aff9cbcffb9b75d7656"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QKS3zSpZuD5ZHM",
+    "paymentId": "pay_QKS4naHaqawEVH",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-18T08:19:11.292Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T08:19:11.292Z"
+  },
+  "order": 1087,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68020b149cbcffb9b75d7660"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-18T08:19:32.554Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T08:19:32.554Z"
+  },
+  "order": 1088,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68020b489cbcffb9b75d7673"
+  },
+  "modeOfPayment": "gpay",
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "details": {
+    "notes": "gpay payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-18T08:20:24.513Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T08:20:24.513Z"
+  },
+  "order": 1089,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68020bbf9cbcffb9b75d7692"
+  },
+  "modeOfPayment": "gpay",
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "details": {
+    "notes": "gpay payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-18T08:22:23.665Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T08:22:23.665Z"
+  },
+  "order": 1090,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6802176757c3572574061910"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QKSyd6lETp7Hs0",
+    "paymentId": "pay_QKSymwA9GgpcO2",
+    "method": "upi",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-18T09:12:07.935Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T09:12:07.935Z"
+  },
+  "order": 1091,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6802248951207a7f05915f2b"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QKTvWW0qyPa9Hy",
+    "paymentId": "pay_QKTvtCAUSNqoci",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-18T10:08:09.618Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T10:08:09.618Z"
+  },
+  "order": 1092,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6804f50bb46f83962bdf5f81"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "6804f428b46f83962bdf5ed7"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QLKHcJ9Vyk9ig8",
+    "paymentId": "pay_QLKJ8jmyYDGcOk",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-20T13:22:19.626Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-20T13:22:19.626Z"
+  },
+  "order": 1093,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805b6b82dc5149a3964cc8e"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QLYNlVRV9OZoSx",
+    "paymentId": "pay_QLYOBO9IGqbMY1",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-21T03:08:40.115Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T03:08:40.115Z"
+  },
+  "order": 1095,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805b8dc2dc5149a3964cedf"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-21T03:17:48.611Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T03:17:48.611Z"
+  },
+  "order": 1096,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805b9422dc5149a3964cfc2"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-21T03:19:30.674Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T03:19:30.674Z"
+  },
+  "order": 1097,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805bac92dc5149a3964d0fb"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-21T03:26:01.635Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T03:26:01.635Z"
+  },
+  "order": 1098,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805bb482dc5149a3964d133"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-21T03:28:08.258Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T03:28:08.258Z"
+  },
+  "order": 1099,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805bb512dc5149a3964d145"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-21T03:28:17.330Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T03:28:17.330Z"
+  },
+  "order": 1100,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805bbc3ea9d010a8d2e98ff"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-21T03:30:11.304Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T03:30:11.304Z"
+  },
+  "order": 1101,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805dff1980df44d4fafff65"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "6805df4c980df44d4fafff3c"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QLbMNpojQn3tCQ",
+    "paymentId": "pay_QLbNsHB1SykhE9",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-21T06:04:33.765Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T06:04:33.765Z"
+  },
+  "order": 1102,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6808b95932cebf9604bf3fbe"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "68089ea032cebf9604bf3cdc"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QMSOZy1GfBbwfW",
+    "paymentId": "pay_QMSPHejbUf2aTR",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-23T09:56:41.729Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-23T09:56:41.729Z"
+  },
+  "order": 1103,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6811c48b0fa6b306b14835ff"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "6811c4170fa6b306b1483576"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QPAhdTjEihUPtf",
+    "paymentId": "pay_QPAi36GUgFrgTi",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-30T06:34:51.644Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T06:34:51.644Z"
+  },
+  "order": 1104,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6811c4b20fa6b306b148361f"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "6811c4170fa6b306b1483576"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-30T06:35:30.821Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T06:35:30.821Z"
+  },
+  "order": 1105,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6811dba38b4b10f18de7cd82"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "6811db508b4b10f18de7cd03"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QPCNnm7t8KG7ta",
+    "paymentId": "pay_QPCO8RstKvdz3f",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-04-30T08:13:23.895Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T08:13:23.895Z"
+  },
+  "order": 1106,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6811dbc48b4b10f18de7cd9c"
+  },
+  "modeOfPayment": "gpay",
+  "bookingId": {
+    "$oid": "6811db508b4b10f18de7cd03"
+  },
+  "details": {
+    "notes": "gpay payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-04-30T08:13:56.329Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T08:13:56.329Z"
+  },
+  "order": 1107,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681f4d93962179b0c14f9c05"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "681f4d58962179b0c14f9b86"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QTEadOc2TFrS8U",
+    "paymentId": "pay_QTEazu6Xv6q4Oj",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-05-10T12:58:59.418Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-10T12:58:59.418Z"
+  },
+  "order": 1108,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ad2eb4bf9a58cfb18b0a8"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "682ad10d4bf9a58cfb18b0a1"
+  },
+  "details": {
+    "notes": "paid to the guide"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T06:42:51.759Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T06:42:51.759Z"
+  },
+  "order": 1109,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68369f43f74c2865172455d9"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "68369eedf74c2865172455ab"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QaEY6ul3Zqiv2P",
+    "paymentId": "pay_QaEYYuNv3dj7sx",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-05-28T05:29:39.849Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-28T05:29:39.849Z"
+  },
+  "order": 1110,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a6f10a8748e807c4a251e"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "68369eedf74c2865172455ab"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QgBEvin0rqQaZK",
+    "paymentId": "pay_QgBFF8i5P0NghR",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-06-12T06:09:20.024Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T06:09:20.024Z"
+  },
+  "order": 1116,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a6f95a8748e807c4a2548"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "68369eedf74c2865172455ab"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-06-12T06:11:33.991Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T06:11:33.991Z"
+  },
+  "order": 1117,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a6fbda8748e807c4a255c"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "68369eedf74c2865172455ab"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-06-12T06:12:13.838Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T06:12:13.838Z"
+  },
+  "order": 1118,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684c018971c89e1bf0423ed8"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "684c011971c89e1bf0423e46"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QgeUxFY5Aa0WA0",
+    "paymentId": "pay_QgeVDuA7ixkE56",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-06-13T10:46:33.347Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-13T10:46:33.347Z"
+  },
+  "order": 1119,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684c01b271c89e1bf0423efb"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "684c011971c89e1bf0423e46"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-06-13T10:47:14.797Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-13T10:47:14.797Z"
+  },
+  "order": 1120,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684c370f07499b3697a82ebb"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "684c36da07499b3697a82e27"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QgiOCKEgCsQJKW",
+    "paymentId": "pay_QgiORl93Sh4w7z",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-06-13T14:34:55.018Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-13T14:34:55.018Z"
+  },
+  "order": 1121,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684c373007499b3697a82ed3"
+  },
+  "modeOfPayment": "cash",
+  "bookingId": {
+    "$oid": "684c36da07499b3697a82e27"
+  },
+  "details": {
+    "notes": "cash payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-06-13T14:35:28.651Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-13T14:35:28.651Z"
+  },
+  "order": 1122,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685402939cac86bebdef8dd2"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "685401f49cac86bebdef8d38"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_Qj3S14N33EyRoL",
+    "paymentId": "pay_Qj3SIw5WSqn3NB",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-06-19T12:29:07.416Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-19T12:29:07.416Z"
+  },
+  "order": 1123,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685ca7b6e1f0bc5b2a91a601"
+  },
+  "modeOfPayment": "razorpay",
+  "bookingId": {
+    "$oid": "685ca771e1f0bc5b2a91a5e9"
+  },
+  "details": {
+    "gateway": "razorpay",
+    "orderId": "order_QleKW4O4ZR9g1R",
+    "paymentId": "pay_QleKvxxYqID3mP",
+    "method": "card",
+    "bank": null,
+    "wallet": null,
+    "status": "captured",
+    "capturedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-06-26T01:51:50.620Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-26T01:51:50.620Z"
+  },
+  "order": 1124,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685ca7d7e1f0bc5b2a91a619"
+  },
+  "modeOfPayment": "bank_transfer",
+  "bookingId": {
+    "$oid": "685ca771e1f0bc5b2a91a5e9"
+  },
+  "details": {
+    "bankName": "Customer Bank",
+    "accountLast4": "1234",
+    "notes": "bank_transfer payment recorded"
+  },
+  "createdAt": {
+    "$date": "2025-06-26T01:52:23.602Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-26T01:52:23.602Z"
+  },
+  "order": 1125,
+  "__v": 0
+}]

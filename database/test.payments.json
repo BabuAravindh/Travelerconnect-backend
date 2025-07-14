@@ -1,0 +1,2855 @@
+[{
+  "_id": {
+    "$oid": "67f3df14af5179423e7f064b"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f3df14af5179423e7f0647"
+  },
+  "bookingId": {
+    "$oid": "67f3de6baf5179423e7f05b3"
+  },
+  "amount": 100,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1744035604652",
+  "createdAt": {
+    "$date": "2025-04-07T14:20:04.656Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T14:36:54.543Z"
+  },
+  "order": 5051,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3df81d9d3a91b4307e364"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f3df81d9d3a91b4307e360"
+  },
+  "bookingId": {
+    "$oid": "67f3de6baf5179423e7f05b3"
+  },
+  "amount": 2,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "isPartial": false,
+  "customerResponse": {
+    "method": "gpay",
+    "notes": "gpay payment recorded"
+  },
+  "payId": "gpay_1744035713798",
+  "createdAt": {
+    "$date": "2025-04-07T14:21:53.810Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T14:40:23.066Z"
+  },
+  "order": 5052,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3e40c85a57f2b7061eac1"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f3e40b85a57f2b7061eabd"
+  },
+  "bookingId": {
+    "$oid": "67f3de6baf5179423e7f05b3"
+  },
+  "amount": 200,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "isPartial": false,
+  "customerResponse": {
+    "method": "gpay",
+    "notes": "gpay payment recorded"
+  },
+  "payId": "gpay_1744036876132",
+  "createdAt": {
+    "$date": "2025-04-07T14:41:16.134Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T14:41:42.696Z"
+  },
+  "order": 5053,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4784c6bd893994c9fd4e0"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f4784c6bd893994c9fd4dc"
+  },
+  "bookingId": {
+    "$oid": "67f3de6baf5179423e7f05b3"
+  },
+  "amount": 233,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "isPartial": false,
+  "customerResponse": {
+    "method": "gpay",
+    "notes": "gpay payment recorded"
+  },
+  "payId": "gpay_1744074828893",
+  "createdAt": {
+    "$date": "2025-04-08T01:13:48.895Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-29T11:22:09.982Z"
+  },
+  "order": 5056,
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-04-29T11:22:09.977Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67f47f8e8a1c2bc09a8e1301"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f47f8e8a1c2bc09a8e1300"
+  },
+  "bookingId": {
+    "$oid": "67f3de6baf5179423e7f05b3"
+  },
+  "amount": 12,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QGO0xaVvfJUM9f",
+    "entity": "payment",
+    "amount": 1200,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QGO0JHE89enAx4",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 67f3de6baf5179423e7f05b3",
+    "card_id": "card_QGO0xkJPD9vt1P",
+    "card": {
+      "id": "card_QGO0xkJPD9vt1P",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "babu@mailinator.com",
+    "contact": "+919944082223",
+    "notes": {
+      "type": "installment",
+      "booking": "67f3de6baf5179423e7f05b3"
+    },
+    "fee": 24,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "422158"
+    },
+    "created_at": 1744076665
+  },
+  "payId": "pay_QGO0xaVvfJUM9f",
+  "completedAt": {
+    "$date": "2025-04-08T01:44:46.228Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-08T01:44:46.510Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T01:44:46.510Z"
+  },
+  "order": 5057,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4bfcb3e401c2ce4d16f0b"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f4bfca3e401c2ce4d16f07"
+  },
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "amount": 12,
+  "paymentStatus": "pending",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "isPartial": false,
+  "customerResponse": {
+    "method": "gpay",
+    "notes": "gpay"
+  },
+  "payId": "gpay_1744093131111",
+  "createdAt": {
+    "$date": "2025-04-08T06:18:51.120Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T06:18:51.120Z"
+  },
+  "order": 5058,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4c1853e401c2ce4d16f88"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f4c1853e401c2ce4d16f84"
+  },
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "amount": 3,
+  "paymentStatus": "pending",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1744093573643",
+  "createdAt": {
+    "$date": "2025-04-08T06:26:13.646Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T06:26:13.646Z"
+  },
+  "order": 5059,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4c1bb3e401c2ce4d16fc4"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f4c1bb3e401c2ce4d16fc0"
+  },
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "amount": 1,
+  "paymentStatus": "pending",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "isPartial": false,
+  "customerResponse": {
+    "method": "gpay",
+    "notes": "gpay payment recorded"
+  },
+  "payId": "gpay_1744093627442",
+  "createdAt": {
+    "$date": "2025-04-08T06:27:07.443Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T06:27:07.443Z"
+  },
+  "order": 5060,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4c1d13e401c2ce4d16fce"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f4c1d13e401c2ce4d16fca"
+  },
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "amount": 2,
+  "paymentStatus": "pending",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1744093649444",
+  "createdAt": {
+    "$date": "2025-04-08T06:27:29.446Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T06:27:29.446Z"
+  },
+  "order": 5061,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4c4555141db654eefa38f"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f4c4555141db654eefa38b"
+  },
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "amount": 2,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "https://res.cloudinary.com/dvexxjkii/image/upload/v1744094293/manual_payments/sm8ki07bwvmcdblmfeer.png"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "gpay",
+    "notes": "gpay payment recorded"
+  },
+  "payId": "gpay_1744094293631",
+  "createdAt": {
+    "$date": "2025-04-08T06:38:13.639Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T13:33:03.215Z"
+  },
+  "order": 5062,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4cd976381a19e36faf31a"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f4cd976381a19e36faf316"
+  },
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "amount": 20,
+  "paymentStatus": "pending",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "https://res.cloudinary.com/dvexxjkii/image/upload/v1744096662/manual_payments/db5prdbfmhocokqyf7hr.png"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "gpay",
+    "notes": "gpay payment recorded"
+  },
+  "payId": "gpay_1744096663319",
+  "createdAt": {
+    "$date": "2025-04-08T07:17:43.323Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T07:17:43.323Z"
+  },
+  "order": 5063,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f525ebaec806e8503d85b3"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f525ebaec806e8503d85af"
+  },
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "amount": 300,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "https://res.cloudinary.com/dvexxjkii/image/upload/v1744119275/manual_payments/fyxcrcxpft2zufqlu7cl.png"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "gpay",
+    "notes": "gpay payment recorded"
+  },
+  "payId": "gpay_1744119275980",
+  "createdAt": {
+    "$date": "2025-04-08T13:34:35.985Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-10T07:27:53.470Z"
+  },
+  "order": 5064,
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-04-10T07:27:53.469Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67f62254a7baa49cc57905bd"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f62254a7baa49cc57905bc"
+  },
+  "bookingId": {
+    "$oid": "67f4814b0843914dd2ee01f6"
+  },
+  "amount": 1,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QGsSTUq8gptzNh",
+    "entity": "payment",
+    "amount": 100,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QGqVPCjRaKcMI6",
+    "invoice_id": null,
+    "international": false,
+    "method": "upi",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 67f4814b0843914dd2ee01f6",
+    "card_id": null,
+    "bank": null,
+    "wallet": null,
+    "vpa": "sucess@razorpay",
+    "email": "babu@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "67f4814b0843914dd2ee01f6"
+    },
+    "fee": 2,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "rrn": "260098413289",
+      "upi_transaction_id": "9CDAE2C030B04BC87CA778B942A27985"
+    },
+    "created_at": 1744183876,
+    "upi": {
+      "vpa": "sucess@razorpay"
+    }
+  },
+  "payId": "pay_QGsSTUq8gptzNh",
+  "completedAt": {
+    "$date": "2025-04-09T07:31:32.056Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-09T07:31:32.241Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-09T07:31:32.241Z"
+  },
+  "order": 5066,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6229ba7baa49cc57905dd"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f6229ba7baa49cc57905dc"
+  },
+  "bookingId": {
+    "$oid": "67f61840a7baa49cc579026d"
+  },
+  "amount": 200,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QGsTjhKsd6fx5U",
+    "entity": "payment",
+    "amount": 20000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QGsT9Y1nRPkEZu",
+    "invoice_id": null,
+    "international": false,
+    "method": "upi",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 67f61840a7baa49cc579026d",
+    "card_id": null,
+    "bank": null,
+    "wallet": null,
+    "vpa": "sucess@razorpay",
+    "email": "dmkstalin@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "67f61840a7baa49cc579026d"
+    },
+    "fee": 472,
+    "tax": 72,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "rrn": "872674051067",
+      "upi_transaction_id": "AC8B5B24FD581992C7131C8B6A5347E4"
+    },
+    "created_at": 1744183948,
+    "upi": {
+      "vpa": "sucess@razorpay"
+    }
+  },
+  "payId": "pay_QGsTjhKsd6fx5U",
+  "completedAt": {
+    "$date": "2025-04-09T07:32:43.294Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-09T07:32:43.499Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-09T07:32:43.499Z"
+  },
+  "order": 5067,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f76a698ad45591b8954841"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f76a698ad45591b8954840"
+  },
+  "bookingId": {
+    "$oid": "67f767bb8ad45591b895472e"
+  },
+  "amount": 500,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QHGJ8qUtYliUMa",
+    "entity": "payment",
+    "amount": 50000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QHGHgie3xTvYEL",
+    "invoice_id": null,
+    "international": false,
+    "method": "upi",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 67f767bb8ad45591b895472e",
+    "card_id": null,
+    "bank": null,
+    "wallet": null,
+    "vpa": "success@razorpay",
+    "email": "jano@mailinator.com",
+    "contact": "+919787421490",
+    "notes": {
+      "type": "installment",
+      "booking": "67f767bb8ad45591b895472e"
+    },
+    "fee": 1180,
+    "tax": 180,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "rrn": "211862592119",
+      "upi_transaction_id": "251F24921461AAC4A75C44C7071BC32B"
+    },
+    "created_at": 1744267865,
+    "upi": {
+      "vpa": "success@razorpay"
+    }
+  },
+  "payId": "pay_QHGJ8qUtYliUMa",
+  "completedAt": {
+    "$date": "2025-04-10T06:51:21.150Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-10T06:51:21.336Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-10T06:51:21.336Z"
+  },
+  "order": 5068,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f76a718ad45591b895484e"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f76a718ad45591b895484a"
+  },
+  "bookingId": {
+    "$oid": "67f767bb8ad45591b895472e"
+  },
+  "amount": 500,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "Upload failed"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1744267889461",
+  "createdAt": {
+    "$date": "2025-04-10T06:51:29.463Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-10T07:27:43.992Z"
+  },
+  "order": 5069,
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-04-10T07:27:43.989Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67f76fed8ad45591b89548c4"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f76fed8ad45591b89548c0"
+  },
+  "bookingId": {
+    "$oid": "67f767bb8ad45591b895472e"
+  },
+  "amount": 400,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "https://res.cloudinary.com/dvexxjkii/image/upload/v1744269294/manual_payments/cc8bbeqm9ttwkri7sjs7.webp"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1744269293971",
+  "createdAt": {
+    "$date": "2025-04-10T07:14:53.974Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-10T07:27:57.543Z"
+  },
+  "order": 5070,
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-04-10T07:27:57.542Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67f798412e2abf21be561920"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f798412e2abf21be56191f"
+  },
+  "bookingId": {
+    "$oid": "67f797b92e2abf21be561875"
+  },
+  "amount": 500,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QHJdm3mlyh0e07",
+    "entity": "payment",
+    "amount": 50000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QHJcH2e4AOAULF",
+    "invoice_id": null,
+    "international": false,
+    "method": "upi",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 67f797b92e2abf21be561875",
+    "card_id": null,
+    "bank": null,
+    "wallet": null,
+    "vpa": "success@razorpay",
+    "email": "manoj@mailinator.com",
+    "contact": "+919787421490",
+    "notes": {
+      "type": "installment",
+      "booking": "67f797b92e2abf21be561875"
+    },
+    "fee": 1180,
+    "tax": 180,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "rrn": "766490712128",
+      "upi_transaction_id": "94063A1924C1A3B3FB9990EB83EEBC23"
+    },
+    "created_at": 1744279602,
+    "upi": {
+      "vpa": "success@razorpay"
+    }
+  },
+  "payId": "pay_QHJdm3mlyh0e07",
+  "completedAt": {
+    "$date": "2025-04-10T10:06:57.418Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-10T10:06:57.727Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-10T10:06:57.727Z"
+  },
+  "order": 5071,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f8bedbebcef425d2c8f48e"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f8bedbebcef425d2c8f48d"
+  },
+  "bookingId": {
+    "$oid": "67f8be4aebcef425d2c8f3e9"
+  },
+  "amount": 200,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QHf3XQXsv5mzQf",
+    "entity": "payment",
+    "amount": 20000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QHf1xfuQF9iO5P",
+    "invoice_id": null,
+    "international": false,
+    "method": "upi",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 67f8be4aebcef425d2c8f3e9",
+    "card_id": null,
+    "bank": null,
+    "wallet": null,
+    "vpa": "sucess@razorpay",
+    "email": "kathir21@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "67f8be4aebcef425d2c8f3e9"
+    },
+    "fee": 472,
+    "tax": 72,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "rrn": "636277055511",
+      "upi_transaction_id": "CC17DB43FDA636EFBF3365D31D4A10BC"
+    },
+    "created_at": 1744355019,
+    "upi": {
+      "vpa": "sucess@razorpay"
+    }
+  },
+  "payId": "pay_QHf3XQXsv5mzQf",
+  "completedAt": {
+    "$date": "2025-04-11T07:03:55.104Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-11T07:03:56.242Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-11T07:03:56.242Z"
+  },
+  "order": 5072,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f8bf0aebcef425d2c8f49b"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f8bf0aebcef425d2c8f497"
+  },
+  "bookingId": {
+    "$oid": "67f8be4aebcef425d2c8f3e9"
+  },
+  "amount": 200,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "https://res.cloudinary.com/dvexxjkii/image/upload/v1744355082/manual_payments/e3wgx33sgph9q0q5txxa.png"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "gpay",
+    "notes": "gpay payment recorded"
+  },
+  "payId": "gpay_1744355082455",
+  "createdAt": {
+    "$date": "2025-04-11T07:04:42.457Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-11T07:06:00.868Z"
+  },
+  "order": 5073,
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-04-11T07:06:00.867Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67f8e7c3ebcef425d2c90347"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f8e7c3ebcef425d2c90346"
+  },
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "amount": 5000,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QHi1ubUOc5DOUI",
+    "entity": "payment",
+    "amount": 500000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QHi1OAqAhieYwC",
+    "invoice_id": null,
+    "international": false,
+    "method": "upi",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 67f8e742ebcef425d2c902a4",
+    "card_id": null,
+    "bank": null,
+    "wallet": null,
+    "vpa": "success@razorpay",
+    "email": "jai@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "67f8e742ebcef425d2c902a4"
+    },
+    "fee": 11800,
+    "tax": 1800,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "rrn": "252032084302",
+      "upi_transaction_id": "02EC299F8B2C7A82F649B92235E2E7A2"
+    },
+    "created_at": 1744365492,
+    "upi": {
+      "vpa": "success@razorpay"
+    }
+  },
+  "payId": "pay_QHi1ubUOc5DOUI",
+  "completedAt": {
+    "$date": "2025-04-11T09:58:27.078Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-11T09:58:27.397Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-11T09:58:27.397Z"
+  },
+  "order": 5074,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f8e7deebcef425d2c90354"
+  },
+  "modeOfPaymentId": {
+    "$oid": "67f8e7deebcef425d2c90350"
+  },
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "amount": 5000,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "https://res.cloudinary.com/dvexxjkii/image/upload/v1744365534/manual_payments/i9ukpiaieels6s8o3awe.webp"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "gpay",
+    "notes": "gpay payment recorded"
+  },
+  "payId": "gpay_1744365534292",
+  "createdAt": {
+    "$date": "2025-04-11T09:58:54.294Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-11T09:59:55.925Z"
+  },
+  "order": 5075,
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-04-11T09:59:55.924Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6802089176cbaaa4b1734243"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6802089176cbaaa4b1734242"
+  },
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "amount": 1200,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QKRtpZeYjyK32T",
+    "entity": "payment",
+    "amount": 120000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QKRt9NNbz02hqw",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 6802044076cbaaa4b17341b9",
+    "card_id": "card_QKRtptNDDGlBNu",
+    "card": {
+      "id": "card_QKRtptNDDGlBNu",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "babuaravindh1@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "6802044076cbaaa4b17341b9"
+    },
+    "fee": 2400,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "473315"
+    },
+    "created_at": 1744963708
+  },
+  "payId": "pay_QKRtpZeYjyK32T",
+  "completedAt": {
+    "$date": "2025-04-18T08:08:49.686Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-18T08:08:49.855Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T08:08:49.855Z"
+  },
+  "order": 5076,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680208d376cbaaa4b1734251"
+  },
+  "modeOfPaymentId": {
+    "$oid": "680208d376cbaaa4b1734250"
+  },
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "amount": 1200,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 2,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QKRuzwIwMj3ECK",
+    "entity": "payment",
+    "amount": 120000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QKRuNCm8JYSEqz",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 6802044076cbaaa4b17341b9",
+    "card_id": "card_QKRv0FBYajP2DD",
+    "card": {
+      "id": "card_QKRv0FBYajP2DD",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "babuaravindh1@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "6802044076cbaaa4b17341b9"
+    },
+    "fee": 2400,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "135259"
+    },
+    "created_at": 1744963774
+  },
+  "payId": "pay_QKRuzwIwMj3ECK",
+  "completedAt": {
+    "$date": "2025-04-18T08:09:55.289Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-18T08:09:55.437Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T08:09:55.437Z"
+  },
+  "order": 5077,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68020aff9cbcffb9b75d7657"
+  },
+  "modeOfPaymentId": {
+    "$oid": "68020aff9cbcffb9b75d7656"
+  },
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "amount": 10,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 3,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QKS4naHaqawEVH",
+    "entity": "payment",
+    "amount": 1000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QKS3zSpZuD5ZHM",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 6802044076cbaaa4b17341b9",
+    "card_id": "card_QKS4nsi6lr58n4",
+    "card": {
+      "id": "card_QKS4nsi6lr58n4",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "babuaravindh1@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "6802044076cbaaa4b17341b9"
+    },
+    "fee": 20,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "471557"
+    },
+    "created_at": 1744964331
+  },
+  "payId": "pay_QKS4naHaqawEVH",
+  "completedAt": {
+    "$date": "2025-04-18T08:19:11.278Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-18T08:19:11.469Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T08:19:11.469Z"
+  },
+  "order": 5078,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68020b149cbcffb9b75d7664"
+  },
+  "modeOfPaymentId": {
+    "$oid": "68020b149cbcffb9b75d7660"
+  },
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "amount": 10,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "Upload failed"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1744964372991",
+  "createdAt": {
+    "$date": "2025-04-18T08:19:32.995Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T08:26:42.234Z"
+  },
+  "order": 5079,
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-04-18T08:26:42.234Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68020b489cbcffb9b75d7677"
+  },
+  "modeOfPaymentId": {
+    "$oid": "68020b489cbcffb9b75d7673"
+  },
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "amount": 10,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "Upload failed"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "gpay",
+    "notes": "gpay payment recorded"
+  },
+  "payId": "gpay_1744964424960",
+  "createdAt": {
+    "$date": "2025-04-18T08:20:24.963Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T08:26:40.936Z"
+  },
+  "order": 5080,
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-04-18T08:26:40.935Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68020bbf9cbcffb9b75d7696"
+  },
+  "modeOfPaymentId": {
+    "$oid": "68020bbf9cbcffb9b75d7692"
+  },
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "amount": 100,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "https://res.cloudinary.com/dvexxjkii/image/upload/v1744964542/manual_payments/izjcbacr5sqcqqrouej9.png"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "gpay",
+    "notes": "gpay payment recorded"
+  },
+  "payId": "gpay_1744964543828",
+  "createdAt": {
+    "$date": "2025-04-18T08:22:23.831Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T08:26:39.174Z"
+  },
+  "order": 5081,
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-04-18T08:26:39.173Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6802176757c3572574061911"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6802176757c3572574061910"
+  },
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "amount": 200,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 4,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QKSymwA9GgpcO2",
+    "entity": "payment",
+    "amount": 20000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QKSyd6lETp7Hs0",
+    "invoice_id": null,
+    "international": false,
+    "method": "upi",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 6802044076cbaaa4b17341b9",
+    "card_id": null,
+    "bank": null,
+    "wallet": null,
+    "vpa": "success@razorpay",
+    "email": "babuaravindh1@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "6802044076cbaaa4b17341b9"
+    },
+    "fee": 472,
+    "tax": 72,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "rrn": "680557687359",
+      "upi_transaction_id": "1E301FEEF5AAEF651D9486FD7274E4FD"
+    },
+    "created_at": 1744967511,
+    "upi": {
+      "vpa": "success@razorpay"
+    }
+  },
+  "payId": "pay_QKSymwA9GgpcO2",
+  "completedAt": {
+    "$date": "2025-04-18T09:12:07.929Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-18T09:12:08.079Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T09:12:08.079Z"
+  },
+  "order": 5082,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6802248951207a7f05915f2c"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6802248951207a7f05915f2b"
+  },
+  "bookingId": {
+    "$oid": "6802044076cbaaa4b17341b9"
+  },
+  "amount": 7270,
+  "paymentStatus": "completed",
+  "paymentType": "final",
+  "installmentNumber": 5,
+  "isPartial": false,
+  "customerResponse": {
+    "id": "pay_QKTvtCAUSNqoci",
+    "entity": "payment",
+    "amount": 727000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QKTvWW0qyPa9Hy",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 6802044076cbaaa4b17341b9",
+    "card_id": "card_QKTvtch9fNtQzj",
+    "card": {
+      "id": "card_QKTvtch9fNtQzj",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "babuaravindh1@mailinator.com",
+    "contact": "+917708878899",
+    "token_id": "token_QKTvu9ZSAwnZWp",
+    "notes": {
+      "type": "installment",
+      "booking": "6802044076cbaaa4b17341b9"
+    },
+    "fee": 17158,
+    "tax": 2618,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "854230"
+    },
+    "created_at": 1744970868
+  },
+  "payId": "pay_QKTvtCAUSNqoci",
+  "completedAt": {
+    "$date": "2025-04-18T10:08:09.613Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-18T10:08:09.772Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-18T10:08:09.772Z"
+  },
+  "order": 5083,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6804f50bb46f83962bdf5f82"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6804f50bb46f83962bdf5f81"
+  },
+  "bookingId": {
+    "$oid": "6804f428b46f83962bdf5ed7"
+  },
+  "amount": 10000,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QLKJ8jmyYDGcOk",
+    "entity": "payment",
+    "amount": 1000000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QLKHcJ9Vyk9ig8",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 6804f428b46f83962bdf5ed7",
+    "card_id": "card_QLKJ91TMTCZTTh",
+    "card": {
+      "id": "card_QLKJ91TMTCZTTh",
+      "entity": "card",
+      "name": "",
+      "last4": "5449",
+      "network": "MasterCard",
+      "type": "credit",
+      "issuer": "UTIB",
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "babu3@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "6804f428b46f83962bdf5ed7"
+    },
+    "fee": 23600,
+    "tax": 3600,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "783384"
+    },
+    "created_at": 1745155312
+  },
+  "payId": "pay_QLKJ8jmyYDGcOk",
+  "completedAt": {
+    "$date": "2025-04-20T13:22:19.618Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-20T13:22:19.865Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-20T13:22:19.865Z"
+  },
+  "order": 5084,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805b6b82dc5149a3964cc8f"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6805b6b82dc5149a3964cc8e"
+  },
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "amount": 200,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 2,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QLYOBO9IGqbMY1",
+    "entity": "payment",
+    "amount": 20000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QLYNlVRV9OZoSx",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 67f8e742ebcef425d2c902a4",
+    "card_id": "card_QLYOBeghgIs3pJ",
+    "card": {
+      "id": "card_QLYOBeghgIs3pJ",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "babuaravindh1@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "67f8e742ebcef425d2c902a4"
+    },
+    "fee": 400,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "359204"
+    },
+    "created_at": 1745204901
+  },
+  "payId": "pay_QLYOBO9IGqbMY1",
+  "completedAt": {
+    "$date": "2025-04-21T03:08:40.099Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-21T03:08:40.324Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T03:08:40.324Z"
+  },
+  "order": 5086,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805b8dc2dc5149a3964cee3"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6805b8dc2dc5149a3964cedf"
+  },
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "amount": 2,
+  "paymentStatus": "pending",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "Upload failed"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1745205468770",
+  "createdAt": {
+    "$date": "2025-04-21T03:17:48.772Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T03:17:48.772Z"
+  },
+  "order": 5087,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805bac92dc5149a3964d0ff"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6805bac92dc5149a3964d0fb"
+  },
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "amount": 2,
+  "paymentStatus": "pending",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "Upload failed"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1745205961820",
+  "createdAt": {
+    "$date": "2025-04-21T03:26:01.821Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T03:26:01.821Z"
+  },
+  "order": 5089,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805bb482dc5149a3964d137"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6805bb482dc5149a3964d133"
+  },
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "amount": 2,
+  "paymentStatus": "pending",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "Upload failed"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1745206088446",
+  "createdAt": {
+    "$date": "2025-04-21T03:28:08.449Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T03:28:08.449Z"
+  },
+  "order": 5090,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805bb512dc5149a3964d149"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6805bb512dc5149a3964d145"
+  },
+  "bookingId": {
+    "$oid": "67f8e742ebcef425d2c902a4"
+  },
+  "amount": 2,
+  "paymentStatus": "pending",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "Upload failed"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1745206097511",
+  "createdAt": {
+    "$date": "2025-04-21T03:28:17.514Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T03:28:17.514Z"
+  },
+  "order": 5091,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6805dff1980df44d4fafff66"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6805dff1980df44d4fafff65"
+  },
+  "bookingId": {
+    "$oid": "6805df4c980df44d4fafff3c"
+  },
+  "amount": 1000,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QLbNsHB1SykhE9",
+    "entity": "payment",
+    "amount": 100000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QLbMNpojQn3tCQ",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 6805df4c980df44d4fafff3c",
+    "card_id": "card_QLbNsYY5OiehIP",
+    "card": {
+      "id": "card_QLbNsYY5OiehIP",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "karthi@mailnator.com",
+    "contact": "+919787421490",
+    "token_id": "token_QLbNsr0paJlLiW",
+    "notes": {
+      "type": "installment",
+      "booking": "6805df4c980df44d4fafff3c"
+    },
+    "fee": 2000,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "761903"
+    },
+    "created_at": 1745215449
+  },
+  "payId": "pay_QLbNsHB1SykhE9",
+  "completedAt": {
+    "$date": "2025-04-21T06:04:33.763Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-21T06:04:33.935Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T06:04:33.935Z"
+  },
+  "order": 5093,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6808b95932cebf9604bf3fbf"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6808b95932cebf9604bf3fbe"
+  },
+  "bookingId": {
+    "$oid": "68089ea032cebf9604bf3cdc"
+  },
+  "amount": 2000,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QMSPHejbUf2aTR",
+    "entity": "payment",
+    "amount": 200000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QMSOZy1GfBbwfW",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 68089ea032cebf9604bf3cdc",
+    "card_id": "card_QMSPHx6Ae3lsuZ",
+    "card": {
+      "id": "card_QMSPHx6Ae3lsuZ",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "babuaravindh1@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "68089ea032cebf9604bf3cdc"
+    },
+    "fee": 4000,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "831265"
+    },
+    "created_at": 1745402174
+  },
+  "payId": "pay_QMSPHejbUf2aTR",
+  "completedAt": {
+    "$date": "2025-04-23T09:56:41.717Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-23T09:56:41.900Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-23T09:56:41.900Z"
+  },
+  "order": 5094,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6811c48b0fa6b306b1483600"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6811c48b0fa6b306b14835ff"
+  },
+  "bookingId": {
+    "$oid": "6811c4170fa6b306b1483576"
+  },
+  "amount": 500,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QPAi36GUgFrgTi",
+    "entity": "payment",
+    "amount": 50000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QPAhdTjEihUPtf",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 6811c4170fa6b306b1483576",
+    "card_id": "card_QPAi3MSNvLMlFM",
+    "card": {
+      "id": "card_QPAi3MSNvLMlFM",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "rohit@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "6811c4170fa6b306b1483576"
+    },
+    "fee": 1000,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "200537"
+    },
+    "created_at": 1745994872
+  },
+  "payId": "pay_QPAi36GUgFrgTi",
+  "completedAt": {
+    "$date": "2025-04-30T06:34:51.641Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-30T06:34:51.788Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T06:34:51.788Z"
+  },
+  "order": 5095,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6811c4b20fa6b306b1483623"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6811c4b20fa6b306b148361f"
+  },
+  "bookingId": {
+    "$oid": "6811c4170fa6b306b1483576"
+  },
+  "amount": 500,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "Upload failed"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1745994930955",
+  "createdAt": {
+    "$date": "2025-04-30T06:35:30.956Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T06:36:15.402Z"
+  },
+  "order": 5096,
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-04-30T06:36:15.402Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6811dba38b4b10f18de7cd83"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6811dba38b4b10f18de7cd82"
+  },
+  "bookingId": {
+    "$oid": "6811db508b4b10f18de7cd03"
+  },
+  "amount": 500,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QPCO8RstKvdz3f",
+    "entity": "payment",
+    "amount": 50000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QPCNnm7t8KG7ta",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 6811db508b4b10f18de7cd03",
+    "card_id": "card_QPCO8kBCdEfUwO",
+    "card": {
+      "id": "card_QPCO8kBCdEfUwO",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "vivek@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "6811db508b4b10f18de7cd03"
+    },
+    "fee": 1000,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "790490"
+    },
+    "created_at": 1746000784
+  },
+  "payId": "pay_QPCO8RstKvdz3f",
+  "completedAt": {
+    "$date": "2025-04-30T08:13:23.892Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-30T08:13:24.030Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T08:13:24.030Z"
+  },
+  "order": 5097,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6811dbc48b4b10f18de7cda0"
+  },
+  "modeOfPaymentId": {
+    "$oid": "6811dbc48b4b10f18de7cd9c"
+  },
+  "bookingId": {
+    "$oid": "6811db508b4b10f18de7cd03"
+  },
+  "amount": 500,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "https://res.cloudinary.com/dvexxjkii/image/upload/v1746000835/manual_payments/fhjd1doxgfrdn4qhy41a.png"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "gpay",
+    "notes": "gpay payment recorded"
+  },
+  "payId": "gpay_1746000836440",
+  "createdAt": {
+    "$date": "2025-04-30T08:13:56.441Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T08:14:33.150Z"
+  },
+  "order": 5098,
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-04-30T08:14:33.149Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681f4d93962179b0c14f9c06"
+  },
+  "modeOfPaymentId": {
+    "$oid": "681f4d93962179b0c14f9c05"
+  },
+  "bookingId": {
+    "$oid": "681f4d58962179b0c14f9b86"
+  },
+  "amount": 2000,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QTEazu6Xv6q4Oj",
+    "entity": "payment",
+    "amount": 200000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QTEadOc2TFrS8U",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 681f4d58962179b0c14f9b86",
+    "card_id": "card_QTEb0BVttNtfG0",
+    "card": {
+      "id": "card_QTEb0BVttNtfG0",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "jai@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "681f4d58962179b0c14f9b86"
+    },
+    "fee": 4000,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "399713"
+    },
+    "created_at": 1746881918
+  },
+  "payId": "pay_QTEazu6Xv6q4Oj",
+  "completedAt": {
+    "$date": "2025-05-10T12:58:59.414Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-10T12:58:59.604Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-10T12:58:59.604Z"
+  },
+  "order": 5099,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ad2eb4bf9a58cfb18b0ac"
+  },
+  "modeOfPaymentId": {
+    "$oid": "682ad2eb4bf9a58cfb18b0a8"
+  },
+  "bookingId": {
+    "$oid": "682ad10d4bf9a58cfb18b0a1"
+  },
+  "amount": 3000,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "https://res.cloudinary.com/dvexxjkii/image/upload/v1747636969/manual_payments/c1dnktnnhxuxyww3uclt.jpg"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "paid to the guide"
+  },
+  "payId": "cash_1747636971921",
+  "createdAt": {
+    "$date": "2025-05-19T06:42:51.928Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T06:47:48.796Z"
+  },
+  "order": 5100,
+  "__v": 0,
+  "notes": "Payment verified by guide"
+},
+{
+  "_id": {
+    "$oid": "68369f43f74c2865172455da"
+  },
+  "modeOfPaymentId": {
+    "$oid": "68369f43f74c2865172455d9"
+  },
+  "bookingId": {
+    "$oid": "68369eedf74c2865172455ab"
+  },
+  "amount": 1000,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QaEYYuNv3dj7sx",
+    "entity": "payment",
+    "amount": 100000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QaEY6ul3Zqiv2P",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 68369eedf74c2865172455ab",
+    "card_id": "card_QaEYZF7puhAh3N",
+    "card": {
+      "id": "card_QaEYZF7puhAh3N",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "jai@mailinator.com",
+    "contact": "+917708878899",
+    "notes": {
+      "type": "installment",
+      "booking": "68369eedf74c2865172455ab"
+    },
+    "fee": 2000,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "718952"
+    },
+    "created_at": 1748410160
+  },
+  "payId": "pay_QaEYYuNv3dj7sx",
+  "completedAt": {
+    "$date": "2025-05-28T05:29:39.845Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-28T05:29:40.034Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-28T05:29:40.034Z"
+  },
+  "order": 5101,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a6f10a8748e807c4a251f"
+  },
+  "modeOfPaymentId": {
+    "$oid": "684a6f10a8748e807c4a251e"
+  },
+  "bookingId": {
+    "$oid": "68369eedf74c2865172455ab"
+  },
+  "amount": 198,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 2,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QgBFF8i5P0NghR",
+    "entity": "payment",
+    "amount": 19800,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QgBEvin0rqQaZK",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 68369eedf74c2865172455ab",
+    "card_id": "card_QgBFFTKQmsDjHw",
+    "card": {
+      "id": "card_QgBFFTKQmsDjHw",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "jai@mailinator.com",
+    "contact": "+917708878899",
+    "notes": [
+      {
+        "type": "installment",
+        "bookingId": "68369eedf74c2865172455ab"
+      }
+    ],
+    "fee": 396,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "915161"
+    },
+    "created_at": 1749708539
+  },
+  "payId": "pay_QgBFF8i5P0NghR",
+  "completedAt": {
+    "$date": "2025-06-12T06:09:20.014Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-12T06:09:20.188Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T06:09:20.188Z"
+  },
+  "order": 5102,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a6f96a8748e807c4a254c"
+  },
+  "modeOfPaymentId": {
+    "$oid": "684a6f95a8748e807c4a2548"
+  },
+  "bookingId": {
+    "$oid": "68369eedf74c2865172455ab"
+  },
+  "amount": 200,
+  "paymentStatus": "pending",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "Upload failed"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1749708694151",
+  "createdAt": {
+    "$date": "2025-06-12T06:11:34.154Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T06:11:34.154Z"
+  },
+  "order": 5103,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a6fbda8748e807c4a2560"
+  },
+  "modeOfPaymentId": {
+    "$oid": "684a6fbda8748e807c4a255c"
+  },
+  "bookingId": {
+    "$oid": "68369eedf74c2865172455ab"
+  },
+  "amount": 231,
+  "paymentStatus": "pending",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "https://res.cloudinary.com/dvexxjkii/image/upload/v1749708732/manual_payments/cklvi9twdl4jkrlpiydo.jpg"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1749708733987",
+  "createdAt": {
+    "$date": "2025-06-12T06:12:13.990Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T06:12:13.990Z"
+  },
+  "order": 5104,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684c018971c89e1bf0423ed9"
+  },
+  "modeOfPaymentId": {
+    "$oid": "684c018971c89e1bf0423ed8"
+  },
+  "bookingId": {
+    "$oid": "684c011971c89e1bf0423e46"
+  },
+  "amount": 1000,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QgeVDuA7ixkE56",
+    "entity": "payment",
+    "amount": 100000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QgeUxFY5Aa0WA0",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 684c011971c89e1bf0423e46",
+    "card_id": "card_QgeVECoTwwKKim",
+    "card": {
+      "id": "card_QgeVECoTwwKKim",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "babuaravindh3@mailinator.com",
+    "contact": "+917708878899",
+    "notes": [
+      {
+        "type": "installment",
+        "bookingId": "684c011971c89e1bf0423e46"
+      }
+    ],
+    "fee": 2000,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "814495"
+    },
+    "created_at": 1749811574
+  },
+  "payId": "pay_QgeVDuA7ixkE56",
+  "completedAt": {
+    "$date": "2025-06-13T10:46:33.344Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-13T10:46:33.534Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-13T10:46:33.534Z"
+  },
+  "order": 5105,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684c01b271c89e1bf0423eff"
+  },
+  "modeOfPaymentId": {
+    "$oid": "684c01b271c89e1bf0423efb"
+  },
+  "bookingId": {
+    "$oid": "684c011971c89e1bf0423e46"
+  },
+  "amount": 499,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "https://res.cloudinary.com/dvexxjkii/image/upload/v1749811633/manual_payments/kvxijdprscljggojqujl.png"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1749811634958",
+  "createdAt": {
+    "$date": "2025-06-13T10:47:14.960Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-13T10:48:47.709Z"
+  },
+  "order": 5106,
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-06-13T10:48:47.708Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "684c370f07499b3697a82ebc"
+  },
+  "modeOfPaymentId": {
+    "$oid": "684c370f07499b3697a82ebb"
+  },
+  "bookingId": {
+    "$oid": "684c36da07499b3697a82e27"
+  },
+  "amount": 100,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QgiORl93Sh4w7z",
+    "entity": "payment",
+    "amount": 10000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QgiOCKEgCsQJKW",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 684c36da07499b3697a82e27",
+    "card_id": "card_QgiOS3NMzASyXC",
+    "card": {
+      "id": "card_QgiOS3NMzASyXC",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "akash123@mailinator.com",
+    "contact": "+917708878899",
+    "notes": [
+      {
+        "type": "installment",
+        "bookingId": "684c36da07499b3697a82e27"
+      }
+    ],
+    "fee": 200,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "314683"
+    },
+    "created_at": 1749825275
+  },
+  "payId": "pay_QgiORl93Sh4w7z",
+  "completedAt": {
+    "$date": "2025-06-13T14:34:55.014Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-13T14:34:55.207Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-13T14:34:55.207Z"
+  },
+  "order": 5107,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684c373007499b3697a82ed7"
+  },
+  "modeOfPaymentId": {
+    "$oid": "684c373007499b3697a82ed3"
+  },
+  "bookingId": {
+    "$oid": "684c36da07499b3697a82e27"
+  },
+  "amount": 100,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "screenshotUrl": "https://res.cloudinary.com/dvexxjkii/image/upload/v1749825326/manual_payments/vwgsbxlwfavmsxgkb7kw.png"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "cash",
+    "notes": "cash payment recorded"
+  },
+  "payId": "cash_1749825328827",
+  "createdAt": {
+    "$date": "2025-06-13T14:35:28.830Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-13T14:36:04.684Z"
+  },
+  "order": 5108,
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-06-13T14:36:04.683Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "685402939cac86bebdef8dd3"
+  },
+  "modeOfPaymentId": {
+    "$oid": "685402939cac86bebdef8dd2"
+  },
+  "bookingId": {
+    "$oid": "685401f49cac86bebdef8d38"
+  },
+  "amount": 200,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_Qj3SIw5WSqn3NB",
+    "entity": "payment",
+    "amount": 20000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_Qj3S14N33EyRoL",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 685401f49cac86bebdef8d38",
+    "card_id": "card_Qj3SJDsDkBZcrH",
+    "card": {
+      "id": "card_Qj3SJDsDkBZcrH",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "samsung@mailinator.com",
+    "contact": "+917708878899",
+    "notes": [
+      {
+        "type": "installment",
+        "bookingId": "685401f49cac86bebdef8d38"
+      }
+    ],
+    "fee": 400,
+    "tax": 0,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "432908"
+    },
+    "created_at": 1750336128
+  },
+  "payId": "pay_Qj3SIw5WSqn3NB",
+  "completedAt": {
+    "$date": "2025-06-19T12:29:07.414Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-19T12:29:07.654Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-19T12:29:07.654Z"
+  },
+  "order": 5109,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685ca7b6e1f0bc5b2a91a602"
+  },
+  "modeOfPaymentId": {
+    "$oid": "685ca7b6e1f0bc5b2a91a601"
+  },
+  "bookingId": {
+    "$oid": "685ca771e1f0bc5b2a91a5e9"
+  },
+  "amount": 5000,
+  "paymentStatus": "completed",
+  "paymentType": "deposit",
+  "installmentNumber": 1,
+  "isPartial": true,
+  "customerResponse": {
+    "id": "pay_QleKvxxYqID3mP",
+    "entity": "payment",
+    "amount": 500000,
+    "currency": "INR",
+    "status": "captured",
+    "order_id": "order_QleKW4O4ZR9g1R",
+    "invoice_id": null,
+    "international": false,
+    "method": "card",
+    "amount_refunded": 0,
+    "refund_status": null,
+    "captured": true,
+    "description": "Payment for booking 685ca771e1f0bc5b2a91a5e9",
+    "card_id": "card_QleKwElzeTEbrg",
+    "card": {
+      "id": "card_QleKwElzeTEbrg",
+      "entity": "card",
+      "name": "",
+      "last4": "1111",
+      "network": "Visa",
+      "type": "prepaid",
+      "issuer": null,
+      "international": false,
+      "emi": false,
+      "sub_type": "consumer",
+      "token_iin": null
+    },
+    "bank": null,
+    "wallet": null,
+    "vpa": null,
+    "email": "sampath@mailinator.com",
+    "contact": "+917708878899",
+    "notes": [
+      {
+        "type": "installment",
+        "bookingId": "685ca771e1f0bc5b2a91a5e9"
+      }
+    ],
+    "fee": 11800,
+    "tax": 1800,
+    "error_code": null,
+    "error_description": null,
+    "error_source": null,
+    "error_step": null,
+    "error_reason": null,
+    "acquirer_data": {
+      "auth_code": "756230"
+    },
+    "created_at": 1750902689
+  },
+  "payId": "pay_QleKvxxYqID3mP",
+  "completedAt": {
+    "$date": "2025-06-26T01:51:50.617Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-26T01:51:50.817Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-26T01:51:50.817Z"
+  },
+  "order": 5110,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685ca7d7e1f0bc5b2a91a61d"
+  },
+  "modeOfPaymentId": {
+    "$oid": "685ca7d7e1f0bc5b2a91a619"
+  },
+  "bookingId": {
+    "$oid": "685ca771e1f0bc5b2a91a5e9"
+  },
+  "amount": 5000,
+  "paymentStatus": "completed",
+  "paymentType": "installment",
+  "installmentNumber": 0,
+  "transactionDetails": {
+    "bankName": "Customer Bank",
+    "accountLast4": "1234",
+    "screenshotUrl": "https://res.cloudinary.com/dvexxjkii/image/upload/v1750902743/manual_payments/r0jolzspiswyl1yu7eiv.jpg"
+  },
+  "isPartial": false,
+  "customerResponse": {
+    "method": "bank_transfer",
+    "notes": "bank_transfer payment recorded"
+  },
+  "payId": "bank_transfer_1750902743786",
+  "createdAt": {
+    "$date": "2025-06-26T01:52:23.789Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-26T01:54:43.345Z"
+  },
+  "order": 5111,
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-06-26T01:54:43.345Z"
+  }
+}]

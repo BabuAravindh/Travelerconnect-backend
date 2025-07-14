@@ -1,0 +1,345 @@
+[{
+  "_id": {
+    "$oid": "68429771a67d1064b249013c"
+  },
+  "name": "Alagar Koyil",
+  "description": "Hilltop temple dedicated to Lord Vishnu",
+  "city": "Madurai",
+  "cityId": {
+    "$oid": "67e82a4bd77d2656b12ee477"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1695387745891-8a929a7e9c75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHxNYWR1cmFpJTIwQWxhZ2FyJTIwS295aWwlMjBNYWR1cmFpJTIwYXR0cmFjdGlvbnN8ZW58MHx8fHwxNzQ5MTk0NTYzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "Attractions",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-06T07:23:29.392Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T07:23:29.392Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68429771a67d1064b249013e"
+  },
+  "name": "Vandiyur Mariamman Teppakulam",
+  "description": "Large temple tank with a connected temple",
+  "city": "Madurai",
+  "cityId": {
+    "$oid": "67e82a4bd77d2656b12ee477"
+  },
+  "images": [
+    "https://res.cloudinary.com/dvexxjkii/image/upload/v1749194600/travel_items/bjsi3n4eif1me0dvyoiv.jpg"
+  ],
+  "category": "Attractions",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-06T07:23:29.442Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T07:23:29.442Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a5f29bf40e05aceda4ea2"
+  },
+  "name": "Suruli Falls",
+  "description": "Scenic waterfall nestled in the Western Ghats, surrounded by lush greenery",
+  "city": "theni",
+  "cityId": {
+    "$oid": "6819b3df6d2c2c9aea64d3e5"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1695432266974-975f2fd1d8d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHx0aGVuaSUyMFN1cnVsaSUyMEZhbGxzJTIwdGhlbmklMjBhdHRyYWN0aW9uc3xlbnwwfHx8fDE3NDk3MDQ0MTR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "attractions",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-12T05:01:29.721Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:01:29.721Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a5f29bf40e05aceda4ea4"
+  },
+  "name": "Theni Mango Market",
+  "description": "Famous for its delicious mangoes, offering a vibrant market experience",
+  "city": "theni",
+  "cityId": {
+    "$oid": "6819b3df6d2c2c9aea64d3e5"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1720553359883-43e221149b74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHx0aGVuaSUyMFRoZW5pJTIwTWFuZ28lMjBNYXJrZXQlMjB0aGVuaSUyMGF0dHJhY3Rpb25zfGVufDB8fHx8MTc0OTcwNDQxN3ww&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "attractions",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-12T05:01:29.767Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:01:29.767Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a618ebf40e05aceda4f83"
+  },
+  "name": "Marina Beach",
+  "description": "One of the most iconic beaches in India, perfect for leisurely walks and enjoying sunsets.",
+  "city": "Chennai",
+  "cityId": {
+    "$oid": "67e82a4bd77d2656b12ee471"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1705330409537-e6476e6ca90c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHxDaGVubmFpJTIwTWFyaW5hJTIwQmVhY2glMjBDaGVubmFpJTIwYXR0cmFjdGlvbnN8ZW58MHx8fHwxNzQ5NzA1MDcwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "attractions",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-12T05:11:42.763Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:11:42.763Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a618ebf40e05aceda4f85"
+  },
+  "name": "Kapaleeshwarar Temple",
+  "description": "An architectural marvel with intricate carvings and a vibrant religious atmosphere.",
+  "city": "Chennai",
+  "cityId": {
+    "$oid": "67e82a4bd77d2656b12ee471"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1738474570473-6b693c062171?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHxDaGVubmFpJTIwS2FwYWxlZXNod2FyYXIlMjBUZW1wbGUlMjBDaGVubmFpJTIwYXR0cmFjdGlvbnN8ZW58MHx8fHwxNzQ5NzA1MDcxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "attractions",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-12T05:11:42.815Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:11:42.815Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a618ebf40e05aceda4f87"
+  },
+  "name": "Fort St. George",
+  "description": "Explore the history of British India through artifacts and exhibits in this imposing fort.",
+  "city": "Chennai",
+  "cityId": {
+    "$oid": "67e82a4bd77d2656b12ee471"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1665910690956-2d16ce1cf515?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHxDaGVubmFpJTIwRm9ydCUyMFN0JTIwR2VvcmdlJTIwQ2hlbm5haSUyMGF0dHJhY3Rpb25zfGVufDB8fHx8MTc0OTcwNTA3Mnww&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "attractions",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-12T05:11:42.856Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:11:42.856Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a618ebf40e05aceda4f89"
+  },
+  "name": "San Thome Basilica",
+  "description": "A serene place of worship with stunning architecture and spiritual significance.",
+  "city": "Chennai",
+  "cityId": {
+    "$oid": "67e82a4bd77d2656b12ee471"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1715363956669-1bc653483e23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHxDaGVubmFpJTIwU2FuJTIwVGhvbWUlMjBCYXNpbGljYSUyMENoZW5uYWklMjBhdHRyYWN0aW9uc3xlbnwwfHx8fDE3NDk3MDUwNzN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "attractions",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-12T05:11:42.896Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:11:42.896Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a618ebf40e05aceda4f8b"
+  },
+  "name": "Arignar Anna Zoological Park",
+  "description": "Home to a diverse range of animals and a popular spot for family outings.",
+  "city": "Chennai",
+  "cityId": {
+    "$oid": "67e82a4bd77d2656b12ee471"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1686149057093-6354bcb0fd3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwyfHxDaGVubmFpJTIwQXJpZ25hciUyMEFubmElMjBab29sb2dpY2FsJTIwUGFyayUyMENoZW5uYWklMjBhdHRyYWN0aW9uc3xlbnwwfHx8fDE3NDk3MDUwNzR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "attractions",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-12T05:11:42.943Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:11:42.943Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a623dbf40e05aceda5058"
+  },
+  "name": "Vidhana Soudha",
+  "description": "Iconic government building with Dravidian architecture",
+  "city": "Bengaluru",
+  "cityId": {
+    "$oid": "682c8a53600ccb081bf24caa"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1624783322853-03b9f14cffa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHxCZW5nYWx1cnUlMjBWaWRoYW5hJTIwU291ZGhhJTIwQmVuZ2FsdXJ1JTIwYXR0cmFjdGlvbnN8ZW58MHx8fHwxNzQ5NzA1MjYxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "Attractions",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-12T05:14:37.115Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:14:37.115Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684a623dbf40e05aceda505a"
+  },
+  "name": "ISKCON Temple Bangalore",
+  "description": "Spiritual center with beautiful temple architecture",
+  "city": "Bengaluru",
+  "cityId": {
+    "$oid": "682c8a53600ccb081bf24caa"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1556830609-4bfe11d37c3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHxCZW5nYWx1cnUlMjBJU0tDT04lMjBUZW1wbGUlMjBCYW5nYWxvcmUlMjBCZW5nYWx1cnUlMjBhdHRyYWN0aW9uc3xlbnwwfHx8fDE3NDk3MDUyNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "Attractions",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-12T05:14:37.155Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T05:14:37.155Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b603d53456dbceabb732d"
+  },
+  "name": "Chota Imambara",
+  "description": "Elegant monument with intricate Arabic calligraphy",
+  "city": "Lucknow",
+  "cityId": {
+    "$oid": "67e82a4bd77d2656b12ee476"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1610948325208-4fe8ee1db766?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwyfHxMdWNrbm93JTIwQ2hvdGElMjBJbWFtYmFyYSUyMEx1Y2tub3clMjBhdHRyYWN0aW9uc3xlbnwwfHx8fDE3NTA4MTg4NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "Attractions",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-25T02:34:37.508Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T02:34:37.508Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b603d53456dbceabb732f"
+  },
+  "name": "British Residency",
+  "description": "Historical site showcasing the British colonial past",
+  "city": "Lucknow",
+  "cityId": {
+    "$oid": "67e82a4bd77d2656b12ee476"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1662563012463-2780e82c1073?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHxMdWNrbm93JTIwQnJpdGlzaCUyMFJlc2lkZW5jeSUyMEx1Y2tub3clMjBhdHRyYWN0aW9uc3xlbnwwfHx8fDE3NTA4MTg4NDd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "Attractions",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-25T02:34:37.593Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T02:34:37.593Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685caa2ee1f0bc5b2a91a775"
+  },
+  "name": "Silent Valley National Park",
+  "description": "Untouched tropical rainforest with diverse wildlife",
+  "city": "Palakkad",
+  "cityId": {
+    "$oid": "685ca9d7e1f0bc5b2a91a763"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1664886629760-bfa500a4b4ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHwxfHxQYWxha2thZCUyMFNpbGVudCUyMFZhbGxleSUyME5hdGlvbmFsJTIwUGFyayUyMFBhbGFra2FkJTIwYXR0cmFjdGlvbnN8ZW58MHx8fHwxNzUwOTAzMjgwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "Natural attraction",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-26T02:02:22.112Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-26T02:02:22.112Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685caa2ee1f0bc5b2a91a777"
+  },
+  "name": "Nelliyampathy Hills",
+  "description": "Scenic hill station offering panoramic views",
+  "city": "Palakkad",
+  "cityId": {
+    "$oid": "685ca9d7e1f0bc5b2a91a763"
+  },
+  "images": [
+    "https://images.unsplash.com/photo-1693681966787-0dbd3f7e6e26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDcwMzh8MHwxfHNlYXJjaHw0fHxQYWxha2thZCUyME5lbGxpeWFtcGF0aHklMjBIaWxscyUyMFBhbGFra2FkJTIwYXR0cmFjdGlvbnN8ZW58MHx8fHwxNzUwOTAzMjgyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+  ],
+  "category": "Hill station",
+  "rating": 0,
+  "createdAt": {
+    "$date": "2025-06-26T02:02:22.180Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-26T02:02:22.180Z"
+  },
+  "__v": 0
+}]

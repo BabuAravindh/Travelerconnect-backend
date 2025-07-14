@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "67ebffb68647509baa412246"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "guideId": {
+    "$oid": "67dfa6ce56cc58d0f5d82452"
+  },
+  "rating": 1,
+  "comments": "welcome on onboard",
+  "status": "submitted",
+  "submittedAt": {
+    "$date": "2025-04-01T15:01:10.852Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ecb06e8974b96da10f9764"
+  },
+  "userId": {
+    "$oid": "67dd1fa804e0339a85a10687"
+  },
+  "guideId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "rating": 1,
+  "comments": "best guide",
+  "status": "submitted",
+  "submittedAt": {
+    "$date": "2025-04-02T03:35:10.623Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ecce33eaf7e8e128660ee2"
+  },
+  "userId": {
+    "$oid": "67dd1fa804e0339a85a10687"
+  },
+  "guideId": {
+    "$oid": "67dfa6ce56cc58d0f5d82452"
+  },
+  "rating": 3,
+  "comments": "WELCOME",
+  "status": "submitted",
+  "submittedAt": {
+    "$date": "2025-04-02T05:42:11.186Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67fcfbc1cb897171830495b7"
+  },
+  "userId": {
+    "$oid": "67f51db4aec806e8503d82e8"
+  },
+  "guideId": {
+    "$oid": "67ea2dbfc5847e1984b9d80a"
+  },
+  "rating": 2,
+  "comments": "frfrff",
+  "status": "submitted",
+  "submittedAt": {
+    "$date": "2025-04-14T12:12:49.186Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67fe11b20014f80bc1f4ecb8"
+  },
+  "userId": {
+    "$oid": "67fdf8146cf27e5c38257143"
+  },
+  "guideId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "rating": 3,
+  "comments": "welcome",
+  "status": "submitted",
+  "submittedAt": {
+    "$date": "2025-04-15T07:58:42.041Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ff3d52a4722552cb8a74ee"
+  },
+  "userId": {
+    "$oid": "67f6093f97bb7555b9efd47a"
+  },
+  "guideId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "rating": 1,
+  "comments": "racist",
+  "status": "submitted",
+  "submittedAt": {
+    "$date": "2025-04-16T05:17:06.114Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ff5aa80d44908a1a781b34"
+  },
+  "userId": {
+    "$oid": "67f6093f97bb7555b9efd47a"
+  },
+  "guideId": {
+    "$oid": "67ea2dbfc5847e1984b9d80a"
+  },
+  "rating": 3,
+  "comments": "well know guide very rare to find him",
+  "status": "submitted",
+  "submittedAt": {
+    "$date": "2025-04-16T07:22:16.371Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685ca8e0e1f0bc5b2a91a713"
+  },
+  "userId": {
+    "$oid": "685ca302e1f0bc5b2a91a1f0"
+  },
+  "guideId": {
+    "$oid": "685ca3f1e1f0bc5b2a91a313"
+  },
+  "rating": 3,
+  "comments": "very nice guide",
+  "status": "submitted",
+  "submittedAt": {
+    "$date": "2025-06-26T01:56:48.130Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,3194 @@
+[{
+  "_id": {
+    "$oid": "680ceeeedc3e29b06a1074d3"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 0,
+  "creditsUsed": 10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-04-26T14:34:22.921Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-26T14:34:22.921Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680cf1ccdc3e29b06a10754d"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 1,
+  "creditsAfter": 9,
+  "interactionId": {
+    "$oid": "680cf1ccdc3e29b06a10754a"
+  },
+  "createdAt": {
+    "$date": "2025-04-26T14:46:36.684Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-26T14:46:36.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680cf308c7fbea8fc025e099"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 9,
+  "creditsUsed": 1,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "680cf307c7fbea8fc025e096"
+  },
+  "createdAt": {
+    "$date": "2025-04-26T14:51:52.087Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-26T14:51:52.087Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680cf3b69463422441e2d9a9"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 1,
+  "creditsAfter": 7,
+  "interactionId": {
+    "$oid": "680cf3b69463422441e2d9a6"
+  },
+  "createdAt": {
+    "$date": "2025-04-26T14:54:46.743Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-26T14:54:46.743Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680cfaf39463422441e2da5f"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 7,
+  "creditsUsed": 1,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "680cfaf39463422441e2da5c"
+  },
+  "createdAt": {
+    "$date": "2025-04-26T15:25:39.758Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-26T15:25:39.758Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680cfba59463422441e2db48"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 0,
+  "creditsUsed": 10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-04-26T15:28:37.474Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-26T15:28:37.474Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680cfba59463422441e2db4a"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 0,
+  "creditsUsed": 10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-04-26T15:28:37.511Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-26T15:28:37.511Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680cfbb49463422441e2dbb8"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 1,
+  "creditsAfter": 9,
+  "interactionId": {
+    "$oid": "680cfbb49463422441e2dbb5"
+  },
+  "createdAt": {
+    "$date": "2025-04-26T15:28:52.393Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-26T15:28:52.393Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680cfc809463422441e2dc25"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 6,
+  "creditsUsed": 1,
+  "creditsAfter": 5,
+  "interactionId": {
+    "$oid": "680cfc809463422441e2dc22"
+  },
+  "createdAt": {
+    "$date": "2025-04-26T15:32:16.780Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-26T15:32:16.780Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680cfdff5cafcbff793e5a0e"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 9,
+  "creditsUsed": 1,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "680cfdff5cafcbff793e5a0b"
+  },
+  "createdAt": {
+    "$date": "2025-04-26T15:38:39.586Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-26T15:38:39.586Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680cfee05cafcbff793e5b67"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 1,
+  "creditsAfter": 7,
+  "interactionId": {
+    "$oid": "680cfee05cafcbff793e5b64"
+  },
+  "createdAt": {
+    "$date": "2025-04-26T15:42:24.678Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-26T15:42:24.678Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680f800f34629ddf3b31cdc2"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 5,
+  "creditsUsed": 1,
+  "creditsAfter": 4,
+  "interactionId": {
+    "$oid": "680f800f34629ddf3b31cdbf"
+  },
+  "createdAt": {
+    "$date": "2025-04-28T13:18:07.607Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-28T13:18:07.607Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6810649cd3b6e26be5fa1a12"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 7,
+  "creditsUsed": 1,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "6810649cd3b6e26be5fa1a0f"
+  },
+  "createdAt": {
+    "$date": "2025-04-29T05:33:16.953Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-29T05:33:16.953Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681064b7d3b6e26be5fa1a1a"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 6,
+  "creditsUsed": 1,
+  "creditsAfter": 5,
+  "interactionId": {
+    "$oid": "681064b7d3b6e26be5fa1a17"
+  },
+  "createdAt": {
+    "$date": "2025-04-29T05:33:43.504Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-29T05:33:43.504Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68106537d3b6e26be5fa1aea"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 5,
+  "creditsUsed": 1,
+  "creditsAfter": 4,
+  "interactionId": {
+    "$oid": "68106537d3b6e26be5fa1ae7"
+  },
+  "createdAt": {
+    "$date": "2025-04-29T05:35:51.558Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-29T05:35:51.558Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681065f0d3b6e26be5fa1c24"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 1,
+  "creditsAfter": 3,
+  "interactionId": {
+    "$oid": "681065f0d3b6e26be5fa1c21"
+  },
+  "createdAt": {
+    "$date": "2025-04-29T05:38:56.252Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-29T05:38:56.252Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68106633d3b6e26be5fa1cf6"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 1,
+  "creditsAfter": 3,
+  "interactionId": {
+    "$oid": "68106633d3b6e26be5fa1cf3"
+  },
+  "createdAt": {
+    "$date": "2025-04-29T05:40:03.425Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-29T05:40:03.425Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68106d09d3b6e26be5fa23c2"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 3,
+  "creditsUsed": 1,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "68106d09d3b6e26be5fa23bf"
+  },
+  "createdAt": {
+    "$date": "2025-04-29T06:09:13.862Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-29T06:09:13.862Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68106fc7d3b6e26be5fa277e"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 1,
+  "creditsAfter": 1,
+  "interactionId": {
+    "$oid": "68106fc6d3b6e26be5fa277b"
+  },
+  "createdAt": {
+    "$date": "2025-04-29T06:20:55.084Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-29T06:20:55.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6811adf7600b12f6040cfbd9"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 1,
+  "creditsUsed": 1,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "6811adf7600b12f6040cfbd6"
+  },
+  "createdAt": {
+    "$date": "2025-04-30T04:58:31.608Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T04:58:31.608Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6811d5888b4b10f18de7c5f3"
+  },
+  "userId": {
+    "$oid": "6811b620600b12f6040d0039"
+  },
+  "creditBefore": 0,
+  "creditsUsed": 10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-04-30T07:47:20.625Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T07:47:20.625Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6811d5a28b4b10f18de7c5fa"
+  },
+  "userId": {
+    "$oid": "6811b620600b12f6040d0039"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 1,
+  "creditsAfter": 9,
+  "interactionId": {
+    "$oid": "6811d5a28b4b10f18de7c5f7"
+  },
+  "createdAt": {
+    "$date": "2025-04-30T07:47:46.952Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T07:47:46.952Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6811d9f68b4b10f18de7c9f7"
+  },
+  "userId": {
+    "$oid": "6811d90f8b4b10f18de7c908"
+  },
+  "creditBefore": 0,
+  "creditsUsed": 10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-04-30T08:06:14.268Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T08:06:14.268Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6811da118b4b10f18de7ca6c"
+  },
+  "userId": {
+    "$oid": "6811d90f8b4b10f18de7c908"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 1,
+  "creditsAfter": 9,
+  "interactionId": {
+    "$oid": "6811da118b4b10f18de7ca69"
+  },
+  "createdAt": {
+    "$date": "2025-04-30T08:06:41.466Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T08:06:41.466Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6823342cac9834a7b0372e48"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 3,
+  "creditsUsed": 1,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "6823342cac9834a7b0372e45"
+  },
+  "createdAt": {
+    "$date": "2025-05-13T11:59:40.933Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-13T11:59:40.933Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682457d2cdebc4551531b588"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 1,
+  "creditsAfter": 1,
+  "interactionId": {
+    "$oid": "682457d2cdebc4551531b585"
+  },
+  "createdAt": {
+    "$date": "2025-05-14T08:44:02.180Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T08:44:02.180Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6824993f96754b646615a43d"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 1,
+  "creditsAfter": 7,
+  "interactionId": {
+    "$oid": "6824993f96754b646615a43a"
+  },
+  "createdAt": {
+    "$date": "2025-05-14T13:23:11.881Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T13:23:11.881Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682499c2986b674cec3cc20d"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 7,
+  "creditsUsed": 1,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "682499c2986b674cec3cc208"
+  },
+  "createdAt": {
+    "$date": "2025-05-14T13:25:22.848Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T13:25:22.848Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682499e9986b674cec3cc216"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 6,
+  "creditsUsed": 1,
+  "creditsAfter": 5,
+  "interactionId": {
+    "$oid": "682499e9986b674cec3cc213"
+  },
+  "createdAt": {
+    "$date": "2025-05-14T13:26:01.153Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T13:26:01.153Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68249d3f9d43d1622e0411c7"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 5,
+  "creditsUsed": 1,
+  "creditsAfter": 4,
+  "interactionId": {
+    "$oid": "68249d3e9d43d1622e0411c4"
+  },
+  "createdAt": {
+    "$date": "2025-05-14T13:40:15.100Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T13:40:15.100Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68249ea67953e225d86b3b20"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 1,
+  "creditsAfter": 3,
+  "interactionId": {
+    "$oid": "68249ea67953e225d86b3b1d"
+  },
+  "createdAt": {
+    "$date": "2025-05-14T13:46:14.750Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T13:46:14.750Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68249fefd1f20b20a1005156"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 3,
+  "creditsUsed": 1,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "68249fefd1f20b20a1005153"
+  },
+  "createdAt": {
+    "$date": "2025-05-14T13:51:43.410Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T13:51:43.410Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6824a12353cbe371b51c6e90"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 1,
+  "creditsAfter": 1,
+  "interactionId": {
+    "$oid": "6824a12353cbe371b51c6e8d"
+  },
+  "createdAt": {
+    "$date": "2025-05-14T13:56:51.777Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T13:56:51.777Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6824a46c379c0a3c0f354022"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 1,
+  "creditsUsed": 10,
+  "creditsAfter": 11,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-05-14T14:10:52.838Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T14:10:52.838Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6824a50a02618474afc1b19b"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 3,
+  "creditsUsed": 1,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "6824a50a02618474afc1b198"
+  },
+  "createdAt": {
+    "$date": "2025-05-14T14:13:30.364Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T14:13:30.364Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68257d903ca07ecb055531b7"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 1,
+  "creditsAfter": 1,
+  "interactionId": {
+    "$oid": "68257d903ca07ecb055531b4"
+  },
+  "createdAt": {
+    "$date": "2025-05-15T05:37:20.096Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T05:37:20.096Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68257d9b3ca07ecb055531bc"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 1,
+  "creditsUsed": 1,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "68257d9b3ca07ecb055531b9"
+  },
+  "createdAt": {
+    "$date": "2025-05-15T05:37:31.104Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T05:37:31.104Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68257f527bce112c67744fcb"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 0,
+  "creditsUsed": 10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-05-15T05:44:50.910Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T05:44:50.910Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68257ff07bce112c67744fd2"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 2,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "68257ff07bce112c67744fd0"
+  },
+  "createdAt": {
+    "$date": "2025-05-15T05:47:28.187Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T05:47:28.187Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682580eedafd0ee7ddb9b258"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 2,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "682580eedafd0ee7ddb9b256"
+  },
+  "createdAt": {
+    "$date": "2025-05-15T05:51:42.707Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T05:51:42.707Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682582d5ed6dbee493b5ae07"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 6,
+  "creditsUsed": 2,
+  "creditsAfter": 4,
+  "interactionId": {
+    "$oid": "682582d5ed6dbee493b5ae04"
+  },
+  "createdAt": {
+    "$date": "2025-05-15T05:59:49.211Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T05:59:49.211Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68258430ed6dbee493b5ae80"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 2,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "68258430ed6dbee493b5ae7c"
+  },
+  "createdAt": {
+    "$date": "2025-05-15T06:05:36.859Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T06:05:36.859Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68258430ed6dbee493b5ae82"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 2,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "68258430ed6dbee493b5ae7e"
+  },
+  "createdAt": {
+    "$date": "2025-05-15T06:05:36.876Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T06:05:36.876Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68258468ed6dbee493b5ae8f"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 2,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "68258468ed6dbee493b5ae8b"
+  },
+  "createdAt": {
+    "$date": "2025-05-15T06:06:32.926Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T06:06:32.926Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68258468ed6dbee493b5ae91"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 2,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "68258468ed6dbee493b5ae8d"
+  },
+  "createdAt": {
+    "$date": "2025-05-15T06:06:32.955Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T06:06:32.955Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6825f0d202e040fa54a4ffd3"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 1,
+  "creditsUsed": 1,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "6825f0d202e040fa54a4ffd0"
+  },
+  "createdAt": {
+    "$date": "2025-05-15T13:49:06.341Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T13:49:06.341Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826dc2e6d21f4306f48e2c9"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 0,
+  "creditsUsed": 10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-05-16T06:33:18.849Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T06:33:18.849Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826dc486d21f4306f48e2d0"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 1,
+  "creditsAfter": 9,
+  "interactionId": {
+    "$oid": "6826dc486d21f4306f48e2cd"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T06:33:44.870Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T06:33:44.870Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826dc4f6d21f4306f48e2da"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 9,
+  "creditsUsed": 2,
+  "creditsAfter": 7,
+  "interactionId": {
+    "$oid": "6826dc4f6d21f4306f48e2d7"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T06:33:51.296Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T06:33:51.296Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826dc4f6d21f4306f48e2de"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 9,
+  "creditsUsed": 2,
+  "creditsAfter": 7,
+  "interactionId": {
+    "$oid": "6826dc4f6d21f4306f48e2dc"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T06:33:51.343Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T06:33:51.343Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826dc606d21f4306f48e2e3"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 7,
+  "creditsUsed": 1,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "6826dc606d21f4306f48e2e0"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T06:34:08.497Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T06:34:08.497Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826df456d21f4306f48e466"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 6,
+  "creditsUsed": 2,
+  "creditsAfter": 4,
+  "interactionId": {
+    "$oid": "6826df456d21f4306f48e464"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T06:46:29.867Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T06:46:29.867Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826e58a6d21f4306f48e4f6"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 2,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "6826e58a6d21f4306f48e4f1"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T07:13:14.196Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T07:13:14.196Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826e58a6d21f4306f48e4f8"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 2,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "6826e58a6d21f4306f48e4f4"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T07:13:14.229Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T07:13:14.229Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826eaa8dac2b8a50dac9f41"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 2,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "6826eaa8dac2b8a50dac9f3e"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T07:35:04.759Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T07:35:04.759Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826eaa8dac2b8a50dac9f45"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 2,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "6826eaa8dac2b8a50dac9f43"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T07:35:04.808Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T07:35:04.808Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826eae5dac2b8a50dac9f59"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 0,
+  "creditsUsed": -10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-05-16T07:36:05.599Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T07:36:05.599Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826eaf8dac2b8a50dac9f60"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 1,
+  "creditsAfter": 9,
+  "interactionId": {
+    "$oid": "6826eaf8dac2b8a50dac9f5d"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T07:36:24.968Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T07:36:24.968Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826ec5adac2b8a50daca039"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 9,
+  "creditsUsed": 1,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "6826ec59dac2b8a50daca036"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T07:42:18.092Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T07:42:18.092Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826edd0dac2b8a50daca03f"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 1,
+  "creditsAfter": 7,
+  "interactionId": {
+    "$oid": "6826edd0dac2b8a50daca03c"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T07:48:32.311Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T07:48:32.311Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826edd8dac2b8a50daca049"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 7,
+  "creditsUsed": 2,
+  "creditsAfter": 5,
+  "interactionId": {
+    "$oid": "6826edd8dac2b8a50daca046"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T07:48:40.686Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T07:48:40.686Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826edd8dac2b8a50daca04d"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 7,
+  "creditsUsed": 2,
+  "creditsAfter": 5,
+  "interactionId": {
+    "$oid": "6826edd8dac2b8a50daca04b"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T07:48:40.747Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T07:48:40.747Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826eddddac2b8a50daca052"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 5,
+  "creditsUsed": 1,
+  "creditsAfter": 4,
+  "interactionId": {
+    "$oid": "6826eddddac2b8a50daca04f"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T07:48:45.657Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T07:48:45.657Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f036dac2b8a50daca05c"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 1,
+  "creditsAfter": 3,
+  "interactionId": {
+    "$oid": "6826f036dac2b8a50daca059"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T07:58:46.575Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T07:58:46.575Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f048dac2b8a50daca064"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 3,
+  "creditsUsed": 1,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "6826f048dac2b8a50daca061"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T07:59:04.495Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T07:59:04.495Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f1d3dac2b8a50daca075"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 2,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "6826f1d3dac2b8a50daca070"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T08:05:39.929Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T08:05:39.929Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f1d3dac2b8a50daca077"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 2,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "6826f1d3dac2b8a50daca073"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T08:05:39.959Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T08:05:39.959Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f69117474c87ae5a7018"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 0,
+  "creditsUsed": -10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-05-16T08:25:53.049Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T08:25:53.049Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f6a217474c87ae5a7020"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 1,
+  "creditsAfter": 9,
+  "interactionId": {
+    "$oid": "6826f6a217474c87ae5a701d"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T08:26:10.864Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T08:26:10.864Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f6c017474c87ae5a7093"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 9,
+  "creditsUsed": 2,
+  "creditsAfter": 7,
+  "interactionId": {
+    "$oid": "6826f6c017474c87ae5a7090"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T08:26:40.692Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T08:26:40.692Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f6c017474c87ae5a7097"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 9,
+  "creditsUsed": 2,
+  "creditsAfter": 7,
+  "interactionId": {
+    "$oid": "6826f6c017474c87ae5a7095"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T08:26:40.744Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T08:26:40.744Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f6f617474c87ae5a7161"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 7,
+  "creditsUsed": 2,
+  "creditsAfter": 5,
+  "interactionId": {
+    "$oid": "6826f6f617474c87ae5a715f"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T08:27:34.607Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T08:27:34.607Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f71c17474c87ae5a722b"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 5,
+  "creditsUsed": 2,
+  "creditsAfter": 3,
+  "interactionId": {
+    "$oid": "6826f71c17474c87ae5a7229"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T08:28:12.637Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T08:28:12.637Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f93d17474c87ae5a723c"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 3,
+  "creditsUsed": 1,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "6826f93d17474c87ae5a7239"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T08:37:17.373Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T08:37:17.373Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f94e17474c87ae5a7243"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 1,
+  "creditsAfter": 1,
+  "interactionId": {
+    "$oid": "6826f94e17474c87ae5a7240"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T08:37:34.694Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T08:37:34.694Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6826f9c317474c87ae5a72b9"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 1,
+  "creditsUsed": 1,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "6826f9c317474c87ae5a72b6"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T08:39:31.253Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T08:39:31.253Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68271a8df61bf7beedf04894"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 0,
+  "creditsUsed": -10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-05-16T10:59:25.082Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T10:59:25.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68271aa8f61bf7beedf0489a"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 0,
+  "creditsUsed": -10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-05-16T10:59:52.698Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T10:59:52.698Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ac4854bf9a58cfb18ae90"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 2,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "682ac4854bf9a58cfb18ae8e"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T05:41:25.057Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T05:41:25.057Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ac9014bf9a58cfb18ae97"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 2,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "682ac9014bf9a58cfb18ae95"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T06:00:33.445Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T06:00:33.445Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ae7b21a99a9f960266385"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 0,
+  "creditsUsed": -10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-05-19T08:11:30.588Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T08:11:30.588Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ae7c61a99a9f9602663f8"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 1,
+  "creditsAfter": 9,
+  "interactionId": {
+    "$oid": "682ae7c61a99a9f9602663f5"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T08:11:50.483Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T08:11:50.483Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ae8521ca823a996fc57ec"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 9,
+  "creditsUsed": 1,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "682ae8521ca823a996fc57e9"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T08:14:10.304Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T08:14:10.304Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ae86b1ca823a996fc57f3"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 1,
+  "creditsAfter": 7,
+  "interactionId": {
+    "$oid": "682ae86b1ca823a996fc57f0"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T08:14:35.421Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T08:14:35.421Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ae91f1ca823a996fc57fd"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 7,
+  "creditsUsed": 1,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "682ae91f1ca823a996fc57fa"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T08:17:35.767Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T08:17:35.767Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ae98c1ca823a996fc58dc"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 6,
+  "creditsUsed": 1,
+  "creditsAfter": 5,
+  "interactionId": {
+    "$oid": "682ae98c1ca823a996fc58d9"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T08:19:24.492Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T08:19:24.492Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682aea2a1ca823a996fc5a21"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 5,
+  "creditsUsed": 1,
+  "creditsAfter": 4,
+  "interactionId": {
+    "$oid": "682aea2a1ca823a996fc5a1e"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T08:22:02.558Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T08:22:02.558Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682aea611ca823a996fc5a28"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 1,
+  "creditsAfter": 3,
+  "interactionId": {
+    "$oid": "682aea611ca823a996fc5a25"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T08:22:57.405Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T08:22:57.405Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682aee5676f1bd29129ba515"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 3,
+  "creditsUsed": 1,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "682aee5676f1bd29129ba512"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T08:39:50.851Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T08:39:50.851Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682aee6c76f1bd29129ba537"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 2,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "682aee6c76f1bd29129ba530"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T08:40:12.540Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T08:40:12.540Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682aee6c76f1bd29129ba53b"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 2,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "682aee6c76f1bd29129ba534"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T08:40:12.569Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T08:40:12.569Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682aee6c76f1bd29129ba543"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 2,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "682aee6c76f1bd29129ba53e"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T08:40:12.616Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T08:40:12.616Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682aee6c76f1bd29129ba549"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 2,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "682aee6c76f1bd29129ba545"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T08:40:12.680Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T08:40:12.680Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682afabbc79e4b333cb35aa4"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 0,
+  "creditsUsed": -10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-05-19T09:32:43.853Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T09:32:43.853Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682afac9c79e4b333cb35b3b"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 2,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "682afac9c79e4b333cb35b36"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T09:32:57.518Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T09:32:57.518Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682afac9c79e4b333cb35b42"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 2,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "682afac9c79e4b333cb35b3d"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T09:32:57.566Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T09:32:57.566Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682afac9c79e4b333cb35b49"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 2,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "682afac9c79e4b333cb35b45"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T09:32:57.631Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T09:32:57.631Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682afac9c79e4b333cb35b4f"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 2,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "682afac9c79e4b333cb35b4c"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T09:32:57.677Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T09:32:57.677Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682afac9c79e4b333cb35b55"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 2,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "682afac9c79e4b333cb35b52"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T09:32:57.742Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T09:32:57.742Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682afac9c79e4b333cb35b59"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 2,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "682afac9c79e4b333cb35b57"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T09:32:57.806Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T09:32:57.806Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682afad6c79e4b333cb35b61"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 6,
+  "creditsUsed": 2,
+  "creditsAfter": 4,
+  "interactionId": {
+    "$oid": "682afad6c79e4b333cb35b5f"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T09:33:10.772Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T09:33:10.772Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682afad8c79e4b333cb35b68"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 2,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "682afad8c79e4b333cb35b66"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T09:33:12.071Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T09:33:12.071Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682afad9c79e4b333cb35b6f"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 2,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "682afad9c79e4b333cb35b6d"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T09:33:13.450Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T09:33:13.450Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682afdc5c79e4b333cb374e9"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 0,
+  "creditsUsed": -10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-05-19T09:45:41.668Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T09:45:41.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682afe07c79e4b333cb3755e"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 2,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "682afe07c79e4b333cb3755c"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T09:46:47.654Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T09:46:47.654Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b011dc79e4b333cb377f7"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 2,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "682b011dc79e4b333cb377f2"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T09:59:57.084Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T09:59:57.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b011dc79e4b333cb377f9"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 2,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "682b011dc79e4b333cb377f5"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T09:59:57.123Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T09:59:57.123Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b0172c79e4b333cb378c9"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 6,
+  "creditsUsed": 2,
+  "creditsAfter": 4,
+  "interactionId": {
+    "$oid": "682b0172c79e4b333cb378c7"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T10:01:22.085Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T10:01:22.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b085fc79e4b333cb37aa5"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 2,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "682b085fc79e4b333cb37aa0"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T10:30:55.523Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T10:30:55.523Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b085fc79e4b333cb37aa7"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 2,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "682b085fc79e4b333cb37aa3"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T10:30:55.555Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T10:30:55.555Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b104bc79e4b333cb38457"
+  },
+  "userId": {
+    "$oid": "682b0fbfc79e4b333cb382f8"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 2,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "682b104ac79e4b333cb38453"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T11:04:43.034Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T11:04:43.034Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b104bc79e4b333cb38459"
+  },
+  "userId": {
+    "$oid": "682b0fbfc79e4b333cb382f8"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 2,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "682b104bc79e4b333cb38455"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T11:04:43.060Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T11:04:43.060Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b1057c79e4b333cb38465"
+  },
+  "userId": {
+    "$oid": "682b0fbfc79e4b333cb382f8"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 2,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "682b1057c79e4b333cb38461"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T11:04:55.719Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T11:04:55.719Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b1057c79e4b333cb38467"
+  },
+  "userId": {
+    "$oid": "682b0fbfc79e4b333cb382f8"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 2,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "682b1057c79e4b333cb38463"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T11:04:55.755Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T11:04:55.755Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b1059c79e4b333cb38470"
+  },
+  "userId": {
+    "$oid": "682b0fbfc79e4b333cb382f8"
+  },
+  "creditBefore": 6,
+  "creditsUsed": 2,
+  "creditsAfter": 4,
+  "interactionId": {
+    "$oid": "682b1059c79e4b333cb3846e"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T11:04:57.113Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T11:04:57.113Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b1082c79e4b333cb384e8"
+  },
+  "userId": {
+    "$oid": "682b0fbfc79e4b333cb382f8"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 1,
+  "creditsAfter": 3,
+  "interactionId": {
+    "$oid": "682b1082c79e4b333cb384e5"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T11:05:38.598Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T11:05:38.598Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b1086c79e4b333cb384f4"
+  },
+  "userId": {
+    "$oid": "682b0fbfc79e4b333cb382f8"
+  },
+  "creditBefore": 3,
+  "creditsUsed": 2,
+  "creditsAfter": 1,
+  "interactionId": {
+    "$oid": "682b1086c79e4b333cb384f0"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T11:05:42.616Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T11:05:42.616Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b1086c79e4b333cb384f6"
+  },
+  "userId": {
+    "$oid": "682b0fbfc79e4b333cb382f8"
+  },
+  "creditBefore": 3,
+  "creditsUsed": 2,
+  "creditsAfter": 1,
+  "interactionId": {
+    "$oid": "682b1086c79e4b333cb384f2"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T11:05:42.633Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T11:05:42.633Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b10a3c79e4b333cb384ff"
+  },
+  "userId": {
+    "$oid": "682b0fbfc79e4b333cb382f8"
+  },
+  "creditBefore": 1,
+  "creditsUsed": 1,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "682b10a3c79e4b333cb384fc"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T11:06:11.413Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T11:06:11.413Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b153fc79e4b333cb38946"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 6,
+  "creditsUsed": 2,
+  "creditsAfter": 4,
+  "interactionId": {
+    "$oid": "682b153fc79e4b333cb38944"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T11:25:51.441Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T11:25:51.441Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b15f3c79e4b333cb38953"
+  },
+  "userId": {
+    "$oid": "682b10d7c79e4b333cb38503"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 2,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "682b15f3c79e4b333cb3894f"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T11:28:51.801Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T11:28:51.801Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b15f3c79e4b333cb38955"
+  },
+  "userId": {
+    "$oid": "682b10d7c79e4b333cb38503"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 2,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "682b15f3c79e4b333cb38951"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T11:28:51.827Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T11:28:51.827Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682b15f5c79e4b333cb3895d"
+  },
+  "userId": {
+    "$oid": "682b10d7c79e4b333cb38503"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 2,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "682b15f5c79e4b333cb3895b"
+  },
+  "createdAt": {
+    "$date": "2025-05-19T11:28:53.788Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T11:28:53.788Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c388c7abbf9a45d39bee6"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 2,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "682c388b7abbf9a45d39bee4"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:08:44.008Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:08:44.008Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c3a4dad5a2a6eb5c225b7"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 2,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "682c3a4dad5a2a6eb5c225b4"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:16:13.701Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:16:13.701Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c3bad684a3c6023d69978"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 2,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "682c3bac684a3c6023d69976"
+  },
+  "createdAt": {
+    "$date": "2025-05-20T08:22:05.091Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T08:22:05.091Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d34f7f7890087750ff178"
+  },
+  "userId": {
+    "$oid": "682b10d7c79e4b333cb38503"
+  },
+  "creditBefore": 6,
+  "creditsUsed": 2,
+  "creditsAfter": 4,
+  "interactionId": {
+    "$oid": "682d34f7f7890087750ff176"
+  },
+  "createdAt": {
+    "$date": "2025-05-21T02:05:43.839Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T02:05:43.839Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d350bf7890087750ff17f"
+  },
+  "userId": {
+    "$oid": "682b10d7c79e4b333cb38503"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 2,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "682d350bf7890087750ff17d"
+  },
+  "createdAt": {
+    "$date": "2025-05-21T02:06:03.734Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T02:06:03.734Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d5fdb1287ab9fd11f204a"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 0,
+  "creditsUsed": -10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-05-21T05:08:43.057Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T05:08:43.057Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d5fe41287ab9fd11f2051"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 2,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "682d5fe31287ab9fd11f204f"
+  },
+  "createdAt": {
+    "$date": "2025-05-21T05:08:52.475Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T05:08:52.475Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d604a1287ab9fd11f2058"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 2,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "682d604a1287ab9fd11f2056"
+  },
+  "createdAt": {
+    "$date": "2025-05-21T05:10:34.966Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T05:10:34.966Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d607a1287ab9fd11f20da"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 6,
+  "creditsUsed": 2,
+  "creditsAfter": 4,
+  "interactionId": {
+    "$oid": "682d60791287ab9fd11f20d8"
+  },
+  "createdAt": {
+    "$date": "2025-05-21T05:11:22.902Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T05:11:22.902Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d6be531ef2360836d1c5c"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 4,
+  "creditsUsed": 2,
+  "creditsAfter": 2,
+  "interactionId": {
+    "$oid": "682d6be531ef2360836d1c5a"
+  },
+  "createdAt": {
+    "$date": "2025-05-21T06:00:05.706Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T06:00:05.706Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d6f5331ef2360836d1c63"
+  },
+  "userId": {
+    "$oid": "67f8e631ebcef425d2c8ffb7"
+  },
+  "creditBefore": 2,
+  "creditsUsed": 2,
+  "creditsAfter": 0,
+  "interactionId": {
+    "$oid": "682d6f5331ef2360836d1c61"
+  },
+  "createdAt": {
+    "$date": "2025-05-21T06:14:43.918Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T06:14:43.918Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682d747df9dde291f51eac0a"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 0,
+  "creditsUsed": -10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-05-21T06:36:45.108Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T06:36:45.108Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ed4341450be01c44ea545"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 1,
+  "creditsAfter": 9,
+  "interactionId": {
+    "$oid": "682ed4341450be01c44ea542"
+  },
+  "createdAt": {
+    "$date": "2025-05-22T07:37:24.466Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-22T07:37:24.466Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68429b70e90a1b95131435b3"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 9,
+  "creditsUsed": -10,
+  "creditsAfter": 19,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-06-06T07:40:32.063Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T07:40:32.063Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6842ae39e90a1b9513143d63"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 19,
+  "creditsUsed": 1,
+  "creditsAfter": 18,
+  "interactionId": {
+    "$oid": "6842ae39e90a1b9513143d60"
+  },
+  "createdAt": {
+    "$date": "2025-06-06T09:00:41.408Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T09:00:41.408Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6842ae44e90a1b9513143d6a"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 18,
+  "creditsUsed": 1,
+  "creditsAfter": 17,
+  "interactionId": {
+    "$oid": "6842ae44e90a1b9513143d67"
+  },
+  "createdAt": {
+    "$date": "2025-06-06T09:00:52.468Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T09:00:52.468Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6842ae4fe90a1b9513143d71"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 17,
+  "creditsUsed": 1,
+  "creditsAfter": 16,
+  "interactionId": {
+    "$oid": "6842ae4fe90a1b9513143d6e"
+  },
+  "createdAt": {
+    "$date": "2025-06-06T09:01:03.300Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T09:01:03.300Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6842ae65e90a1b9513143d78"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "creditBefore": 16,
+  "creditsUsed": 1,
+  "creditsAfter": 15,
+  "interactionId": {
+    "$oid": "6842ae65e90a1b9513143d75"
+  },
+  "createdAt": {
+    "$date": "2025-06-06T09:01:25.604Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-06T09:01:25.604Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684bffff71c89e1bf0423b06"
+  },
+  "userId": {
+    "$oid": "684bfbeb71c89e1bf04237d8"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 1,
+  "creditsAfter": 9,
+  "interactionId": {
+    "$oid": "684bffff71c89e1bf0423b03"
+  },
+  "createdAt": {
+    "$date": "2025-06-13T10:39:59.534Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-13T10:39:59.534Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6853fc839cac86bebdef84eb"
+  },
+  "userId": {
+    "$oid": "6853fbde9cac86bebdef8271"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 1,
+  "creditsAfter": 9,
+  "interactionId": {
+    "$oid": "6853fc839cac86bebdef84e8"
+  },
+  "createdAt": {
+    "$date": "2025-06-19T12:03:15.641Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-19T12:03:15.641Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b40ae976914383a7e8510"
+  },
+  "userId": {
+    "$oid": "67ea2dbfc5847e1984b9d80a"
+  },
+  "creditBefore": 0,
+  "creditsUsed": -10,
+  "creditsAfter": 10,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-06-25T00:19:58.526Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T00:19:58.526Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b40bc976914383a7e859d"
+  },
+  "userId": {
+    "$oid": "67ea2dbfc5847e1984b9d80a"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 1,
+  "creditsAfter": 9,
+  "interactionId": {
+    "$oid": "685b40bc976914383a7e859a"
+  },
+  "createdAt": {
+    "$date": "2025-06-25T00:20:12.435Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T00:20:12.435Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b40cd976914383a7e85a4"
+  },
+  "userId": {
+    "$oid": "67ea2dbfc5847e1984b9d80a"
+  },
+  "creditBefore": 9,
+  "creditsUsed": 1,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "685b40cd976914383a7e85a1"
+  },
+  "createdAt": {
+    "$date": "2025-06-25T00:20:29.210Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T00:20:29.210Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b40e2976914383a7e85b7"
+  },
+  "userId": {
+    "$oid": "67ea2dbfc5847e1984b9d80a"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 1,
+  "creditsAfter": 7,
+  "interactionId": {
+    "$oid": "685b40e1976914383a7e85b4"
+  },
+  "createdAt": {
+    "$date": "2025-06-25T00:20:50.068Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T00:20:50.068Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b4bf353456dbceabb5220"
+  },
+  "userId": {
+    "$oid": "67ea2dbfc5847e1984b9d80a"
+  },
+  "creditBefore": 9,
+  "creditsUsed": 1,
+  "creditsAfter": 8,
+  "interactionId": {
+    "$oid": "685b4bf353456dbceabb521d"
+  },
+  "createdAt": {
+    "$date": "2025-06-25T01:08:03.684Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T01:08:03.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b4d0553456dbceabb5335"
+  },
+  "userId": {
+    "$oid": "67ea2dbfc5847e1984b9d80a"
+  },
+  "creditBefore": 8,
+  "creditsUsed": 1,
+  "creditsAfter": 7,
+  "interactionId": {
+    "$oid": "685b4d0553456dbceabb5332"
+  },
+  "createdAt": {
+    "$date": "2025-06-25T01:12:37.228Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T01:12:37.228Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b4d6053456dbceabb5456"
+  },
+  "userId": {
+    "$oid": "67ea2dbfc5847e1984b9d80a"
+  },
+  "creditBefore": 7,
+  "creditsUsed": 1,
+  "creditsAfter": 6,
+  "interactionId": {
+    "$oid": "685b4d6053456dbceabb5453"
+  },
+  "createdAt": {
+    "$date": "2025-06-25T01:14:08.430Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T01:14:08.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b4de353456dbceabb5601"
+  },
+  "userId": {
+    "$oid": "67ea2dbfc5847e1984b9d80a"
+  },
+  "creditBefore": 6,
+  "creditsUsed": 1,
+  "creditsAfter": 5,
+  "interactionId": {
+    "$oid": "685b4de353456dbceabb55fe"
+  },
+  "createdAt": {
+    "$date": "2025-06-25T01:16:19.544Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T01:16:19.544Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685b4f2253456dbceabb569b"
+  },
+  "userId": {
+    "$oid": "67ea2dbfc5847e1984b9d80a"
+  },
+  "creditBefore": 5,
+  "creditsUsed": 1,
+  "creditsAfter": 4,
+  "interactionId": {
+    "$oid": "685b4f2153456dbceabb5698"
+  },
+  "createdAt": {
+    "$date": "2025-06-25T01:21:38.074Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-25T01:21:38.074Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685ca635e1f0bc5b2a91a40a"
+  },
+  "userId": {
+    "$oid": "685ca302e1f0bc5b2a91a1f0"
+  },
+  "creditBefore": 10,
+  "creditsUsed": 1,
+  "creditsAfter": 9,
+  "interactionId": {
+    "$oid": "685ca635e1f0bc5b2a91a407"
+  },
+  "createdAt": {
+    "$date": "2025-06-26T01:45:25.914Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-26T01:45:25.914Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685ca989e1f0bc5b2a91a75e"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "creditBefore": 10,
+  "creditsUsed": -10,
+  "creditsAfter": 20,
+  "interactionId": null,
+  "createdAt": {
+    "$date": "2025-06-26T01:59:37.898Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-26T01:59:37.898Z"
+  },
+  "__v": 0
+}]

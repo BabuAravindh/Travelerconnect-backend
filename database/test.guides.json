@@ -1,0 +1,1117 @@
+[{
+  "_id": {
+    "$oid": "67dbcefdac811b37518d41d0"
+  },
+  "userId": {
+    "$oid": "67c945e7298a73d4f38254c7"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3865"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3863"
+    }
+  ],
+  "bio": "Experienced guide specializing in adventure tours.",
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa34"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa35"
+    }
+  ],
+  "aadharCardPhoto": "https://res.cloudinary.com/dvexxjkii/image/upload/v1743490610/guide_documents/p3kk7vu3cdjtdsbqpk7j.png",
+  "bankAccountNumber": "1234567890",
+  "__v": 22,
+  "serviceLocations": [
+    {
+      "$oid": "67e82a4bd77d2656b12ee472"
+    },
+    {
+      "$oid": "67e82a4bd77d2656b12ee473"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-05-28T05:27:37.285Z"
+  },
+  "active": true,
+  "bankName": "5035238586934",
+  "ifscCode": "1234"
+},
+{
+  "_id": {
+    "$oid": "67df9a752c55712500f69391"
+  },
+  "userId": {
+    "$oid": "67dba624441228f36be5c2b5"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3862"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3863"
+    }
+  ],
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa34"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa39"
+    }
+  ],
+  "bio": "welcome to the my profile iam going to walking around the cultural exploration around the madurai",
+  "bankAccountNumber": "5035789301284",
+  "aadharCardPhoto": "https://picsum.photos/300/300?grayscale",
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2025-05-28T05:27:38.744Z"
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67df9e8a09fb15f9e404da2c"
+  },
+  "userId": {
+    "$oid": "67c9c75da010734af6b872ab"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3865"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3864"
+    }
+  ],
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa33"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa38"
+    }
+  ],
+  "bio": "i take of the expenses for the trip and cutltural exploration all around the states",
+  "bankAccountNumber": "224345687985343",
+  "aadharCardPhoto": "https://picsum.photos/300/300?grayscale",
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2025-04-17T05:36:51.247Z"
+  },
+  "verificationStatus": "pending"
+},
+{
+  "_id": {
+    "$oid": "67df9f4e09fb15f9e404daeb"
+  },
+  "userId": {
+    "$oid": "67dd1f6504e0339a85a10680"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3866"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3864"
+    }
+  ],
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa34"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa38"
+    }
+  ],
+  "bio": "iam just part time employee in this travel guide iam help you with cultural exploration etc.",
+  "bankAccountNumber": "2498776943321",
+  "aadharCardPhoto": "https://picsum.photos/300/300?grayscale",
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2025-04-17T06:11:49.587Z"
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67dfa03009fb15f9e404dba3"
+  },
+  "userId": {
+    "$oid": "67dd1fa804e0339a85a10687"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3865"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3863"
+    }
+  ],
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa37"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa39"
+    }
+  ],
+  "bio": "iam going to walk you around the hostiptal and restraunants",
+  "bankAccountNumber": "50258549372958",
+  "aadharCardPhoto": "https://picsum.photos/300/300?grayscale",
+  "__v": 1,
+  "updatedAt": {
+    "$date": "2025-04-17T06:11:52.537Z"
+  },
+  "verificationStatus": "approved",
+  "rejectionReason": "",
+  "serviceLocations": [],
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67dfa7a656cc58d0f5d82587"
+  },
+  "userId": {
+    "$oid": "67dfa6ce56cc58d0f5d82452"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3866"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3863"
+    }
+  ],
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa33"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa35"
+    }
+  ],
+  "bio": "welcome to my  city",
+  "bankAccountNumber": "503568698787",
+  "aadharCardPhoto": "https://picsum.photos/300/300?grayscale",
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2025-04-17T06:11:53.764Z"
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67e2560c24688d6166441794"
+  },
+  "userId": {
+    "$oid": "67e2543024688d6166441614"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3865"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3863"
+    }
+  ],
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa32"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa35"
+    }
+  ],
+  "bio": "from tamil nadu",
+  "bankAccountNumber": "5106235778900",
+  "aadharCardPhoto": "https://picsum.photos/300/300?grayscale",
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2025-04-17T06:11:55.658Z"
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67eb94a3817831fa0f9e1600"
+  },
+  "userId": {
+    "$oid": "67ea2dbfc5847e1984b9d80a"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3865"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3866"
+    }
+  ],
+  "serviceLocations": [
+    {
+      "$oid": "67e82a4bd77d2656b12ee471"
+    },
+    {
+      "$oid": "67e82a4bd77d2656b12ee472"
+    }
+  ],
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa38"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa34"
+    }
+  ],
+  "bio": "you want to know yourself",
+  "bankAccountNumber": "50357087932452",
+  "aadharCardPhoto": "https://res.cloudinary.com/dvexxjkii/image/upload/v1743492259/guide_documents/vdlajp3thswiussjkrob.webp",
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2025-05-28T05:27:41.945Z"
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67ee61a823e7fd9d7ed8bc0e"
+  },
+  "userId": {
+    "$oid": "67ee613223e7fd9d7ed8bb7d"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3863"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3864"
+    }
+  ],
+  "serviceLocations": [
+    {
+      "$oid": "67e82a4bd77d2656b12ee470"
+    },
+    {
+      "$oid": "67e82a4bd77d2656b12ee473"
+    }
+  ],
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa33"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa34"
+    }
+  ],
+  "bio": "tell use yourself",
+  "bankAccountNumber": "820382038208",
+  "aadharCardPhoto": "https://res.cloudinary.com/dvexxjkii/image/upload/v1743675816/guide_documents/zklkyxbzdsf8bofuimm7.png",
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2025-04-17T05:36:51.247Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67eeb28dd242394111a031a9"
+  },
+  "userId": {
+    "$oid": "67eeb2625217468d61673c36"
+  },
+  "__v": 0,
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa34"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa36"
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-04-03T16:08:45.481Z"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3866"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3863"
+    }
+  ],
+  "rejectionReason": "",
+  "serviceLocations": [
+    {
+      "$oid": "67e82a4bd77d2656b12ee471"
+    },
+    {
+      "$oid": "67e82a4bd77d2656b12ee472"
+    },
+    {
+      "$oid": "67e82a4bd77d2656b12ee477"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-04-17T10:07:13.701Z"
+  },
+  "verificationStatus": "approved",
+  "bankAccountNumber": "1234567890",
+  "bankName": "indian bank",
+  "bio": "tell us about yourself iam tell mine",
+  "ifscCode": "1234",
+  "profilePic": {
+    "public_id": "guide_profiles/j7r96icen4hwqvihlezy",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1744704367/guide_profiles/j7r96icen4hwqvihlezy.png",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1744704367/guide_profiles/j7r96icen4hwqvihlezy.png",
+    "uploadedAt": {
+      "$date": "2025-04-15T08:06:08.812Z"
+    }
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67fdf84a5ee8fc74edb3cffd"
+  },
+  "userId": {
+    "$oid": "67fdf8146cf27e5c38257143"
+  },
+  "__v": 0,
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa38"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa33"
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-04-15T06:10:18.331Z"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3862"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3863"
+    }
+  ],
+  "rejectionReason": "",
+  "serviceLocations": [
+    {
+      "$oid": "67e82a4bd77d2656b12ee471"
+    },
+    {
+      "$oid": "67e82a4bd77d2656b12ee477"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-04-20T11:59:48.264Z"
+  },
+  "verificationStatus": "pending",
+  "bankAccountNumber": "503501289053",
+  "bankName": "indian bank",
+  "bio": "tell us about yourself in the world of the travlerconnect",
+  "ifscCode": "1234",
+  "profilePic": {
+    "public_id": "guide_profiles/cdiayblbzjyhfs9mghac",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1744703608/guide_profiles/cdiayblbzjyhfs9mghac.png",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1744703608/guide_profiles/cdiayblbzjyhfs9mghac.png",
+    "uploadedAt": {
+      "$date": "2025-04-15T07:53:29.588Z"
+    }
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67fe14215ee8fc74edb3d0f6"
+  },
+  "userId": {
+    "$oid": "67f66568efef70da850b2957"
+  },
+  "__v": 0,
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa33"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa34"
+    }
+  ],
+  "bankAccountNumber": "7890233235235",
+  "bankName": "Axis bank",
+  "bio": "tell us about yourself in the travelerconnect",
+  "createdAt": {
+    "$date": "2025-04-15T08:09:05.557Z"
+  },
+  "ifscCode": "1234",
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3862"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3866"
+    }
+  ],
+  "rejectionReason": "",
+  "serviceLocations": [
+    {
+      "$oid": "67e82a4bd77d2656b12ee470"
+    },
+    {
+      "$oid": "67e82a4bd77d2656b12ee471"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-04-17T06:12:10.711Z"
+  },
+  "verificationStatus": "pending",
+  "profilePic": {
+    "public_id": "guide_profiles/fmaz0gkqjcys5nczzyqw",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1744704575/guide_profiles/fmaz0gkqjcys5nczzyqw.jpg",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1744704575/guide_profiles/fmaz0gkqjcys5nczzyqw.jpg",
+    "uploadedAt": {
+      "$date": "2025-04-15T08:09:35.706Z"
+    }
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67fe14ea5ee8fc74edb3d0f9"
+  },
+  "userId": {
+    "$oid": "67f6093f97bb7555b9efd47a"
+  },
+  "__v": 0,
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa33"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa34"
+    }
+  ],
+  "bankAccountNumber": "8798442456635",
+  "bankName": "indian bank",
+  "bio": "tell us about yourself in the history well being",
+  "createdAt": {
+    "$date": "2025-04-15T08:12:26.250Z"
+  },
+  "ifscCode": "1234",
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3866"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3863"
+    }
+  ],
+  "rejectionReason": "",
+  "serviceLocations": [
+    {
+      "$oid": "67e82a4bd77d2656b12ee471"
+    },
+    {
+      "$oid": "67e82a4bd77d2656b12ee475"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-04-17T06:12:08.458Z"
+  },
+  "verificationStatus": "pending",
+  "profilePic": {
+    "public_id": "guide_profiles/s28in5ca9ux9uxjjw5pk",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1744704781/guide_profiles/s28in5ca9ux9uxjjw5pk.jpg",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1744704781/guide_profiles/s28in5ca9ux9uxjjw5pk.jpg",
+    "uploadedAt": {
+      "$date": "2025-04-15T08:13:02.003Z"
+    }
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67fe170a5ee8fc74edb3d10a"
+  },
+  "userId": {
+    "$oid": "67fe16d0f1d09838cabb934f"
+  },
+  "__v": 0,
+  "activities": [],
+  "createdAt": {
+    "$date": "2025-04-15T08:21:29.662Z"
+  },
+  "languages": [],
+  "rejectionReason": "",
+  "serviceLocations": [],
+  "updatedAt": {
+    "$date": "2025-04-17T06:12:15.113Z"
+  },
+  "verificationStatus": "pending",
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67fe19a25ee8fc74edb3d129"
+  },
+  "userId": {
+    "$oid": "67fe196bc2f5425bd7f07c1e"
+  },
+  "__v": 0,
+  "activities": [],
+  "createdAt": {
+    "$date": "2025-04-15T08:32:34.599Z"
+  },
+  "languages": [],
+  "rejectionReason": "",
+  "serviceLocations": [],
+  "updatedAt": {
+    "$date": "2025-04-17T06:12:16.841Z"
+  },
+  "verificationStatus": "pending",
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67fe1acc5ee8fc74edb3d137"
+  },
+  "userId": {
+    "$oid": "67fe1aa2f3c4e960045eba39"
+  },
+  "__v": 0,
+  "aadharCardPhoto": {
+    "public_id": "government_ids/piixcv32wnyoqxavp1ly",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1744706252/government_ids/piixcv32wnyoqxavp1ly.jpg",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1744706252/government_ids/piixcv32wnyoqxavp1ly.jpg",
+    "uploadedAt": {
+      "$date": "2025-04-15T08:37:32.532Z"
+    },
+    "_id": {
+      "$oid": "67fe1accf3c4e960045eba3d"
+    }
+  },
+  "activities": [],
+  "createdAt": {
+    "$date": "2025-04-15T08:37:32.538Z"
+  },
+  "languages": [],
+  "rejectionReason": "",
+  "serviceLocations": [],
+  "updatedAt": {
+    "$date": "2025-04-17T06:12:18.144Z"
+  },
+  "verificationStatus": "pending",
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "6804debed30de92ee952c5c0"
+  },
+  "userId": {
+    "$oid": "6804dda9beed40a4cd09d42f"
+  },
+  "__v": 0,
+  "aadharCardPhoto": {
+    "public_id": "government_ids/zhfy0ua2wbcsoomeezkb",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1745149931/government_ids/zhfy0ua2wbcsoomeezkb.png",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1745149931/government_ids/zhfy0ua2wbcsoomeezkb.png",
+    "uploadedAt": {
+      "$date": "2025-04-20T11:52:14.189Z"
+    },
+    "_id": {
+      "$oid": "6804dfee120f45ae3f0a3d6f"
+    }
+  },
+  "activities": [],
+  "createdAt": {
+    "$date": "2025-04-20T11:47:11.784Z"
+  },
+  "languages": [],
+  "rejectionReason": "",
+  "serviceLocations": [],
+  "updatedAt": {
+    "$date": "2025-04-20T11:52:14.200Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6804e01fd30de92ee952c5c2"
+  },
+  "userId": {
+    "$oid": "6804e003151bd831829d8e10"
+  },
+  "__v": 0,
+  "aadharCardPhoto": {
+    "public_id": "government_ids/ljtisi5ob9ewyllld6vy",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1745149981/government_ids/ljtisi5ob9ewyllld6vy.png",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1745149981/government_ids/ljtisi5ob9ewyllld6vy.png",
+    "uploadedAt": {
+      "$date": "2025-04-20T11:53:05.054Z"
+    },
+    "_id": {
+      "$oid": "6804e021151bd831829d8e14"
+    }
+  },
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa34"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa37"
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-04-20T11:53:05.061Z"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3865"
+    },
+    {
+      "$oid": "67eab0480aeb5e0b4bbda5c0"
+    }
+  ],
+  "rejectionReason": "",
+  "serviceLocations": [
+    {
+      "$oid": "67e82a4bd77d2656b12ee471"
+    },
+    {
+      "$oid": "67e82a4bd77d2656b12ee473"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-04-20T11:59:05.909Z"
+  },
+  "bankAccountNumber": "1234567890",
+  "bankName": "indian bank",
+  "bio": "tell us about yourself in the project",
+  "ifscCode": "1234",
+  "profilePic": {
+    "public_id": "guide_profiles/d9knrsqasqlq1k9w2npk",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1745150212/guide_profiles/d9knrsqasqlq1k9w2npk.png",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1745150212/guide_profiles/d9knrsqasqlq1k9w2npk.png",
+    "uploadedAt": {
+      "$date": "2025-04-20T11:56:55.143Z"
+    }
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "6804e2f8d30de92ee952c5cb"
+  },
+  "userId": {
+    "$oid": "67ee25bc6c86188c597167b1"
+  },
+  "__v": 0,
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa34"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa38"
+    }
+  ],
+  "bankAccountNumber": "123456789",
+  "bankName": "indian bank",
+  "bio": "tell us about yourslef for the past decades",
+  "createdAt": {
+    "$date": "2025-04-20T12:05:14.144Z"
+  },
+  "ifscCode": "1234",
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3862"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3863"
+    }
+  ],
+  "rejectionReason": "",
+  "serviceLocations": [
+    {
+      "$oid": "67e82a4bd77d2656b12ee476"
+    },
+    {
+      "$oid": "67e82a4bd77d2656b12ee474"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-04-20T12:06:06.161Z"
+  },
+  "profilePic": {
+    "public_id": "guide_profiles/k5nx3zjzgpzeq62wtl6v",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1745150734/guide_profiles/k5nx3zjzgpzeq62wtl6v.jpg",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1745150734/guide_profiles/k5nx3zjzgpzeq62wtl6v.jpg",
+    "uploadedAt": {
+      "$date": "2025-04-20T12:05:36.144Z"
+    }
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "6811bfa2acf17788d97b751a"
+  },
+  "userId": {
+    "$oid": "6811bf6d0fa6b306b1483112"
+  },
+  "__v": 0,
+  "aadharCardPhoto": {
+    "public_id": "government_ids/z0jk4fdjavmqhwmdwuha",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1745993633/government_ids/z0jk4fdjavmqhwmdwuha.jpg",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1745993633/government_ids/z0jk4fdjavmqhwmdwuha.jpg",
+    "uploadedAt": {
+      "$date": "2025-04-30T06:13:54.268Z"
+    },
+    "_id": {
+      "$oid": "6811bfa20fa6b306b1483117"
+    }
+  },
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa34"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa37"
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-04-30T06:13:54.273Z"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3865"
+    },
+    {
+      "$oid": "67eab0480aeb5e0b4bbda5c0"
+    }
+  ],
+  "rejectionReason": "",
+  "serviceLocations": [
+    {
+      "$oid": "67e82a4bd77d2656b12ee475"
+    },
+    {
+      "$oid": "67e82a4bd77d2656b12ee46f"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-04-30T06:28:34.940Z"
+  },
+  "bankAccountNumber": "2342434243424324223",
+  "bankName": "indian bank",
+  "bio": "i show around the west bengal and city",
+  "ifscCode": "1234",
+  "profilePic": {
+    "public_id": "guide_profiles/f7ajfyxdutl13y12u1fr",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1745993938/guide_profiles/f7ajfyxdutl13y12u1fr.png",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1745993938/guide_profiles/f7ajfyxdutl13y12u1fr.png",
+    "uploadedAt": {
+      "$date": "2025-04-30T06:18:58.584Z"
+    }
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "682b1222bd0eca341553622f"
+  },
+  "userId": {
+    "$oid": "682b10d7c79e4b333cb38503"
+  },
+  "__v": 0,
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa35"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa36"
+    }
+  ],
+  "bankAccountNumber": "1234567899",
+  "bankName": "state bank of india",
+  "bio": "tell us about yourself",
+  "createdAt": {
+    "$date": "2025-05-19T11:12:36.024Z"
+  },
+  "ifscCode": "12345",
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3866"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3864"
+    }
+  ],
+  "rejectionReason": "",
+  "serviceLocations": [
+    {
+      "$oid": "67e82a4bd77d2656b12ee470"
+    },
+    {
+      "$oid": "67e82a4bd77d2656b12ee473"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-05-19T11:14:19.058Z"
+  },
+  "profilePic": {
+    "public_id": "guide_profiles/kwiaeufzgytrzt6c1wg7",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1747653178/guide_profiles/kwiaeufzgytrzt6c1wg7.jpg",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1747653178/guide_profiles/kwiaeufzgytrzt6c1wg7.jpg",
+    "uploadedAt": {
+      "$date": "2025-05-19T11:13:01.143Z"
+    }
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "684bffadc6958063c52a1ec1"
+  },
+  "userId": {
+    "$oid": "684bfe2d71c89e1bf04238e7"
+  },
+  "__v": 0,
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa32"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa35"
+    }
+  ],
+  "bankAccountNumber": "1234567890",
+  "bankName": "state bank",
+  "bio": "I walk you around bengaluru",
+  "createdAt": {
+    "$date": "2025-06-13T10:38:38.296Z"
+  },
+  "ifscCode": "123",
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3863"
+    },
+    {
+      "$oid": "67eab0480aeb5e0b4bbda5c0"
+    }
+  ],
+  "rejectionReason": "",
+  "serviceLocations": [
+    {
+      "$oid": "67e82a4bd77d2656b12ee474"
+    },
+    {
+      "$oid": "682c8a53600ccb081bf24caa"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-06-13T10:41:20.628Z"
+  },
+  "profilePic": {
+    "public_id": "guide_profiles/pnvhqw5ki9gnd0hmeoxv",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1749811141/guide_profiles/pnvhqw5ki9gnd0hmeoxv.jpg",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1749811141/guide_profiles/pnvhqw5ki9gnd0hmeoxv.jpg",
+    "uploadedAt": {
+      "$date": "2025-06-13T10:39:02.580Z"
+    }
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "684c0872c6958063c52a1f0f"
+  },
+  "userId": {
+    "$oid": "684c083571c89e1bf0423fd2"
+  },
+  "__v": 0,
+  "aadharCardPhoto": {
+    "public_id": "government_ids/ntily9rjkptiz0adw1ga",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1749813361/government_ids/ntily9rjkptiz0adw1ga.jpg",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1749813361/government_ids/ntily9rjkptiz0adw1ga.jpg",
+    "uploadedAt": {
+      "$date": "2025-06-13T11:16:03.039Z"
+    },
+    "_id": {
+      "$oid": "684c087371c89e1bf0423fd8"
+    }
+  },
+  "activities": [],
+  "createdAt": {
+    "$date": "2025-06-13T11:16:03.042Z"
+  },
+  "languages": [],
+  "rejectionReason": "",
+  "serviceLocations": [],
+  "updatedAt": {
+    "$date": "2025-06-13T11:16:03.042Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6853ffb164876c6764b70fcd"
+  },
+  "userId": {
+    "$oid": "6853ff119cac86bebdef8576"
+  },
+  "__v": 0,
+  "aadharCardPhoto": {
+    "public_id": "government_ids/him9p7c0fo3iql2ebbof",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1750335622/government_ids/him9p7c0fo3iql2ebbof.jpg",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1750335622/government_ids/him9p7c0fo3iql2ebbof.jpg",
+    "uploadedAt": {
+      "$date": "2025-06-19T12:20:22.871Z"
+    },
+    "_id": {
+      "$oid": "685400869cac86bebdef89fe"
+    }
+  },
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa33"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa34"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa36"
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-19T12:16:49.209Z"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3862"
+    },
+    {
+      "$oid": "67dad18186fb0ea8cf7f3863"
+    }
+  ],
+  "rejectionReason": "",
+  "serviceLocations": [
+    {
+      "$oid": "67e82a4bd77d2656b12ee471"
+    },
+    {
+      "$oid": "67e82a4bd77d2656b12ee475"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-06-19T12:24:37.073Z"
+  },
+  "bankAccountNumber": "5061522225031",
+  "bankName": "indian bank",
+  "bio": "tell us about yourself ",
+  "ifscCode": "123",
+  "profilePic": {
+    "public_id": "guide_profiles/k2bhhzsfd5dtus8ajvkc",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1750335812/guide_profiles/k2bhhzsfd5dtus8ajvkc.jpg",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1750335812/guide_profiles/k2bhhzsfd5dtus8ajvkc.jpg",
+    "uploadedAt": {
+      "$date": "2025-06-19T12:23:33.068Z"
+    }
+  },
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "685b961564876c6764b744f7"
+  },
+  "userId": {
+    "$oid": "685b95c182d5c5f28747e935"
+  },
+  "__v": 0,
+  "aadharCardPhoto": {
+    "public_id": "government_ids/ry94hgtruvi7plosumhl",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1750832660/government_ids/ry94hgtruvi7plosumhl.jpg",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1750832660/government_ids/ry94hgtruvi7plosumhl.jpg",
+    "uploadedAt": {
+      "$date": "2025-06-25T06:24:20.842Z"
+    },
+    "_id": {
+      "$oid": "685b961482d5c5f28747e93d"
+    }
+  },
+  "activities": [],
+  "createdAt": {
+    "$date": "2025-06-25T06:24:20.848Z"
+  },
+  "languages": [],
+  "rejectionReason": "",
+  "serviceLocations": [],
+  "updatedAt": {
+    "$date": "2025-06-25T06:24:20.848Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "685ca46d64876c6764b7517a"
+  },
+  "userId": {
+    "$oid": "685ca3f1e1f0bc5b2a91a313"
+  },
+  "__v": 0,
+  "aadharCardPhoto": {
+    "public_id": "government_ids/coca2ayfmdbhn7nrskqw",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1750901867/government_ids/coca2ayfmdbhn7nrskqw.jpg",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1750901867/government_ids/coca2ayfmdbhn7nrskqw.jpg",
+    "uploadedAt": {
+      "$date": "2025-06-26T01:37:48.921Z"
+    },
+    "_id": {
+      "$oid": "685ca46ce1f0bc5b2a91a319"
+    }
+  },
+  "activities": [
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa33"
+    },
+    {
+      "$oid": "67d8fd7d4e8d7922ca40fa36"
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-26T01:37:48.926Z"
+  },
+  "languages": [
+    {
+      "$oid": "67dad18186fb0ea8cf7f3863"
+    },
+    {
+      "$oid": "67eab0480aeb5e0b4bbda5c0"
+    }
+  ],
+  "rejectionReason": "",
+  "serviceLocations": [
+    {
+      "$oid": "67e82a4bd77d2656b12ee471"
+    },
+    {
+      "$oid": "67e82a4bd77d2656b12ee476"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-06-26T01:47:25.296Z"
+  },
+  "bankAccountNumber": "5021345683221",
+  "bankName": "state bank",
+  "bio": "Iam show attractions adventures, culture around the lucknow",
+  "ifscCode": "123",
+  "profilePic": {
+    "public_id": "guide_profiles/b4wsb6r2v17hkzz99rl7",
+    "url": "http://res.cloudinary.com/dvexxjkii/image/upload/v1750902267/guide_profiles/b4wsb6r2v17hkzz99rl7.jpg",
+    "secure_url": "https://res.cloudinary.com/dvexxjkii/image/upload/v1750902267/guide_profiles/b4wsb6r2v17hkzz99rl7.jpg",
+    "uploadedAt": {
+      "$date": "2025-06-26T01:44:28.736Z"
+    }
+  },
+  "active": true
+}]

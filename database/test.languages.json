@@ -1,0 +1,105 @@
+[{
+  "_id": {
+    "$oid": "67dad18186fb0ea8cf7f3862"
+  },
+  "languageName": "Hindi",
+  "languageStatus": "active",
+  "order": 2,
+  "createdAt": {
+    "$date": "2025-03-19T14:15:29.284Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-19T14:15:29.284Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67dad18186fb0ea8cf7f3865"
+  },
+  "languageName": "Marathi",
+  "languageStatus": "active",
+  "order": 4,
+  "createdAt": {
+    "$date": "2025-03-19T14:15:29.286Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-19T14:15:29.286Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67dad18186fb0ea8cf7f3866"
+  },
+  "languageName": "Bengali",
+  "languageStatus": "active",
+  "order": 5,
+  "createdAt": {
+    "$date": "2025-03-19T14:15:29.287Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-19T14:15:29.287Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67dad18186fb0ea8cf7f3863"
+  },
+  "languageName": "Tamil",
+  "languageStatus": "active",
+  "order": 2,
+  "createdAt": {
+    "$date": "2025-03-19T14:15:29.285Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-19T14:15:29.285Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67dad18186fb0ea8cf7f3864"
+  },
+  "languageName": "Telugu",
+  "languageStatus": "inactive",
+  "order": 3,
+  "createdAt": {
+    "$date": "2025-03-19T14:15:29.286Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-19T14:15:29.286Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eab0480aeb5e0b4bbda5c0"
+  },
+  "languageName": "Malayam",
+  "languageStatus": "active",
+  "order": 1,
+  "createdAt": {
+    "$date": "2025-03-31T15:10:00.035Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-31T15:10:00.035Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685caa76e1f0bc5b2a91a782"
+  },
+  "languageName": "Kashmiri",
+  "languageStatus": "active",
+  "order": 6,
+  "createdAt": {
+    "$date": "2025-06-26T02:03:34.814Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-26T02:03:34.814Z"
+  },
+  "__v": 0
+}]

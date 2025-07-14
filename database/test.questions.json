@@ -1,0 +1,109 @@
+[{
+  "_id": {
+    "$oid": "682d312a307ec471546ae1a1"
+  },
+  "questionText": "What is the best tourist spot in West bengal",
+  "cityId": {
+    "$oid": "682c8a53600ccb081bf24caa"
+  },
+  "type": "specific",
+  "options": [],
+  "status": "active",
+  "order": 1,
+  "createdAt": {
+    "$date": "2025-05-21T01:49:30.321Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T01:49:30.400Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682db989bb6b8fd4977ea782"
+  },
+  "questionText": "What is the best category to visit",
+  "cityId": null,
+  "type": "common",
+  "options": [
+    "events",
+    "adventures",
+    "activities",
+    "attractions"
+  ],
+  "status": "active",
+  "order": 1,
+  "createdAt": {
+    "$date": "2025-05-21T11:31:22.005Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T11:31:22.010Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682e82d8dde2c14f2f80bb9a"
+  },
+  "questionText": "How many of them are travelling",
+  "cityId": null,
+  "type": "common",
+  "options": [
+    "5-10",
+    "10-20",
+    "20-30"
+  ],
+  "status": "active",
+  "order": 2,
+  "createdAt": {
+    "$date": "2025-05-22T01:50:16.266Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-22T01:50:16.281Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ebc241da2346cca2bf05f"
+  },
+  "questionText": "what mode of transport do you prefer",
+  "cityId": null,
+  "type": "common",
+  "options": [
+    "public transport",
+    "railways",
+    "airport"
+  ],
+  "status": "active",
+  "order": 1,
+  "createdAt": {
+    "$date": "2025-05-22T05:54:44.756Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-22T05:54:44.769Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68330cf39fbb91f5eb017040"
+  },
+  "questionText": "How many days for the trip",
+  "cityId": null,
+  "type": "common",
+  "options": [
+    "3 days",
+    "7 days",
+    "10 days"
+  ],
+  "status": "active",
+  "order": 1,
+  "createdAt": {
+    "$date": "2025-05-25T12:28:35.564Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T12:28:35.578Z"
+  },
+  "__v": 0
+}]
