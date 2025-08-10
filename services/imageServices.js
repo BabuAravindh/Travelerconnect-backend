@@ -41,7 +41,7 @@ export const getImageFromApis = async (queries) => {
     const cacheKey = `image:${name}:${city}:${type}`;
     const cachedImage = getCache(cacheKey);
     if (cachedImage) {
-      console.log(`Retrieved cached image for "${name}" in ${city} (${type})`);
+      (`Retrieved cached image for "${name}" in ${city} (${type})`);
       results.push({
         success: true,
         imageUrl: cachedImage,
@@ -75,7 +75,7 @@ export const getImageFromApis = async (queries) => {
     for (const api of imageApis) {
       try {
         const searchQuery = `${name} ${city} ${type}`.trim().replace(/[^a-zA-Z0-9\s]/g, "");
-        console.log(`Fetching image from ${api.name} for "${searchQuery}"`);
+        (`Fetching image from ${api.name} for "${searchQuery}"`);
 
         const response = await axios.get(api.url, {
           headers: api.headers,
@@ -85,7 +85,7 @@ export const getImageFromApis = async (queries) => {
 
         const apiResults = response.data.results || response.data.photos || [];
         if (!apiResults || apiResults.length === 0) {
-          console.log(`No results from ${api.name} for "${searchQuery}"`);
+          (`No results from ${api.name} for "${searchQuery}"`);
           continue;
         }
 
@@ -112,11 +112,11 @@ export const getImageFromApis = async (queries) => {
                 selectedImage = { imageUrl, result };
                 usedImages.add(imageUrl);
                 setCache(cacheKey, imageUrl, IMAGE_CACHE_TTL);
-                console.log(`Selected image from ${api.name} for "${name}" in ${city} (${type})`);
+                (`Selected image from ${api.name} for "${name}" in ${city} (${type})`);
                 break;
               }
             } catch (error) {
-              console.log(`Invalid image URL from ${api.name} for "${searchQuery}": ${error.message}`);
+              (`Invalid image URL from ${api.name} for "${searchQuery}": ${error.message}`);
               continue;
             }
           }
@@ -127,7 +127,7 @@ export const getImageFromApis = async (queries) => {
           break;
         }
       } catch (error) {
-        console.log(`Error fetching from ${api.name} for "${searchQuery}": ${error.message}`);
+        (`Error fetching from ${api.name} for "${searchQuery}": ${error.message}`);
         continue;
       }
     }
@@ -141,7 +141,7 @@ export const getImageFromApis = async (queries) => {
         imageUrl: placeholderImage,
         imageFound: false,
       });
-      console.log(`No image found for "${name}" in ${city} (${type}); using placeholder`);
+      (`No image found for "${name}" in ${city} (${type}); using placeholder`);
     }
   }
 

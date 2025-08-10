@@ -8,13 +8,13 @@ mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
-  .then(() => console.log('Connected to MongoDB'))
+  .then(() => ('Connected to MongoDB'))
   .catch((error) => console.error('Error connecting to MongoDB:', error));
 
 const createDocument = async (Model, data) => {
   try {
     await Model.create(data);
-    console.log(`${Model.modelName} data seeded successfully!`);
+    (`${Model.modelName} data seeded successfully!`);
   } catch (error) {
     console.error(`Error seeding ${Model.modelName}:`, error);
   }
@@ -57,7 +57,7 @@ const seedData = async () => {
       ...guideLanguages.map(gl => createDocument(GuideLanguage, gl)),
     ]);
 
-    console.log('Seeding completed successfully!');
+    ('Seeding completed successfully!');
     mongoose.connection.close();
   } catch (error) {
     console.error('Error during seeding:', error);

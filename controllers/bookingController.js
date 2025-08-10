@@ -22,7 +22,7 @@ export const createBooking = async (req, res) => {
       specialRequests = ''
     } = req.body;
 
-    console.log(activities, "activities in booking controller");
+    (activities, "activities in booking controller");
 
     // Validate required fields
     const requiredFields = { userId, guideId, startDate, endDate, budget };
@@ -323,13 +323,13 @@ export const getUserBookings = async (req, res) => {
       return res.status(400).json({ message: "Invalid user ID format" });
     }
 
-    console.log("Fetching bookings for User ID:", userId);
+    ("Fetching bookings for User ID:", userId);
 
     // Fetch all bookings for the given userId with lean() for better performance
     const bookings = await Booking.find({ userId }).lean();
-     console.log("Bookings found:", bookings.length);
+     ("Bookings found:", bookings.length);
     if (!bookings.length) {
-      console.log(`No bookings found for user ${userId}`);
+      (`No bookings found for user ${userId}`);
       return res.status(200).json([]);
     }
 

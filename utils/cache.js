@@ -18,7 +18,7 @@ const getCache = (key) => {
 
 const clearCache = () => {
   cache.clear();
-  console.log('Cache store cleared');
+  ('Cache store cleared');
 };
 
 export { setCache, getCache, clearCache };

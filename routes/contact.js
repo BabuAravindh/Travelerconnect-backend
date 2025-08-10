@@ -30,7 +30,7 @@ const sendEmail = async ({ to, subject, text, html }) => {
     };
     
     await transporter.sendMail(mailOptions);
-    console.log('Email sent successfully');
+    ('Email sent successfully');
   } catch (error) {
     console.error('Error sending email:', error);
     throw error;
@@ -140,7 +140,7 @@ router.put('/:id', async (req, res) => {
                 <p>Best regards,<br>The Support Team</p>
               `
             });
-            console.log(`Email sent for ticket ${updatedTicket._id}`);
+            (`Email sent for ticket ${updatedTicket._id}`);
           }
         } catch (emailError) {
           console.error('Failed to send email response:', emailError);

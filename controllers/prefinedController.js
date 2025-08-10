@@ -269,7 +269,7 @@ export const getQuestionsByCity = async (req, res) => {
 export const createQuestion = async (req, res) => {
   try {
     const { questionText, cityId, status, order, type, options } = req.body;
-     console.log({ questionText, cityId, status, order, type, options } )
+     ({ questionText, cityId, status, order, type, options } )
     // Validate required fields
     if (!questionText || !type || !order) {
       return res.status(400).json({ success: false, message: "Question text, type, and order are required" });
@@ -328,47 +328,47 @@ export const createQuestion = async (req, res) => {
 export const updateQuestion = async (req, res) => {
   try {
     const { questionText, cityId, status, order, type, options } = req.body;
-    console.log("Request Body:", { questionText, cityId, status, order, type, options });
+    ("Request Body:", { questionText, cityId, status, order, type, options });
 
     if (type && !["specific", "common"].includes(type)) {
-      console.log("❌ Invalid type provided:", type);
+      ("❌ Invalid type provided:", type);
       return res.status(400).json({ success: false, message: "Type must be 'specific' or 'common'" });
     }
 
     const existingQuestion = await Question.findById(req.params.id);
     if (!existingQuestion) {
-      console.log("❌ Question not found with ID:", req.params.id);
+      ("❌ Question not found with ID:", req.params.id);
       return res.status(404).json({ success: false, message: "Question not found" });
     }
-    console.log("✅ Found existing question:", existingQuestion);
+    ("✅ Found existing question:", existingQuestion);
 
     const questionType = type || existingQuestion.type;
-    console.log("Question Type to use:", questionType);
+    ("Question Type to use:", questionType);
 
     if (questionType === "specific") {
       if (cityId === null || cityId === "") {
-        console.log("❌ City ID missing for specific question");
+        ("❌ City ID missing for specific question");
         return res.status(400).json({ success: false, message: "City ID is required for specific questions" });
       }
       if (cityId) {
         const city = await City.findById(cityId);
         if (!city) {
-          console.log("❌ City not found with ID:", cityId);
+          ("❌ City not found with ID:", cityId);
           return res.status(404).json({ success: false, message: "City not found" });
         }
-        console.log("✅ Valid city found:", city);
+        ("✅ Valid city found:", city);
       }
       if (options && options.length > 0) {
-        console.log("❌ Options provided for specific question:", options);
+        ("❌ Options provided for specific question:", options);
         return res.status(400).json({ success: false, message: "Options are not allowed for specific questions" });
       }
     } else if (questionType === "common") {
       if (cityId) {
-        console.log("❌ City ID provided for common question:", cityId);
+        ("❌ City ID provided for common question:", cityId);
         return res.status(400).json({ success: false, message: "City ID must not be provided for common questions" });
       }
       if (!Array.isArray(options) || options.length === 0) {
-        console.log("❌ Invalid options for common question:", options);
+        ("❌ Invalid options for common question:", options);
         return res.status(400).json({ success: false, message: "Options must be a non-empty array for common questions" });
       }
     }
@@ -382,7 +382,7 @@ export const updateQuestion = async (req, res) => {
       options: questionType === "common" ? options || existingQuestion.options : [],
     };
 
-    console.log("🔄 Updating question with payload:", updatePayload);
+    ("🔄 Updating question with payload:", updatePayload);
 
     const updatedQuestion = await Question.findByIdAndUpdate(
       req.params.id,
@@ -391,11 +391,11 @@ export const updateQuestion = async (req, res) => {
     );
 
     if (!updatedQuestion) {
-      console.log("❌ Failed to update question - not found after update attempt");
+      ("❌ Failed to update question - not found after update attempt");
       return res.status(404).json({ success: false, message: "Question not found" });
     }
 
-    console.log("✅ Question updated successfully:", updatedQuestion);
+    ("✅ Question updated successfully:", updatedQuestion);
     res.status(200).json({ success: true, data: updatedQuestion });
   } catch (error) {
     console.error("❌ Error occurred during update:", error);

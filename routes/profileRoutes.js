@@ -166,7 +166,7 @@ router.put("/guides/:userId/toggleStatus", async (req, res) => {
 router.delete("/:userId", async (req, res) => {
   const { userId } = req.params;
   const result = await deleteUser(userId);
-   console.log('user deleted succssfully',result)
+   ('user deleted succssfully',result)
   if (result.success) {
     res.status(200).json(result);
   } else {

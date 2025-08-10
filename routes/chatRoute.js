@@ -78,8 +78,8 @@ router.get("/profile/:userId", async (req, res) => {
 
 router.post("/auth", (req, res) => {
   const { socket_id, channel_name } = req.body;
-  console.log("Socket ID:", socket_id);
-  console.log("Channel Name:", channel_name);
+  ("Socket ID:", socket_id);
+  ("Channel Name:", channel_name);
 
   const authHeader = req.headers.authorization;
   if (!authHeader) {
@@ -93,7 +93,7 @@ router.post("/auth", (req, res) => {
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    console.log("Decoded JWT:", decoded);
+    ("Decoded JWT:", decoded);
     const userId = decoded.id;
 
     const expectedChannel = `private-notifications-${userId}`;

@@ -116,7 +116,7 @@ export const getProfile = async (req, res) => {
         : null
     ]);
 
-    console.log(`Profile fetched for ${userId}`);
+    (`Profile fetched for ${userId}`);
 
     res.status(200).json({
       ...profile,
@@ -167,7 +167,7 @@ export const createProfile = async (req, res) => {
         profilePicUrl = uploadResult.secure_url;
         cloudinaryPublicId = uploadResult.public_id;
 
-        console.log(`Uploaded profile picture to Cloudinary: ${profilePicUrl}`);
+        (`Uploaded profile picture to Cloudinary: ${profilePicUrl}`);
       } catch (uploadError) {
         console.error("Cloudinary upload failed:", uploadError);
         return res.status(500).json({
@@ -227,7 +227,7 @@ export const createProfile = async (req, res) => {
     if (cloudinaryPublicId) {
       try {
         await deleteFromCloudinary(cloudinaryPublicId);
-        console.log(`Cleaned up orphaned Cloudinary image: ${cloudinaryPublicId}`);
+        (`Cleaned up orphaned Cloudinary image: ${cloudinaryPublicId}`);
       } catch (cleanupError) {
         console.error("Failed to clean up Cloudinary image:", cleanupError);
       }
@@ -289,14 +289,14 @@ export const updateProfile = async (req, res) => {
     // Handle new profile picture upload
     if (req.file) {
       try {
-        console.log(`Processing new profile picture for ${userId}`);
+        (`Processing new profile picture for ${userId}`);
         
         const optimizedBuffer = await optimizeImage(req.file.buffer);
         const uploadResult = await uploadToCloudinary(optimizedBuffer);
         profilePicUrl = uploadResult.secure_url;
         newCloudinaryPublicId = uploadResult.public_id;
 
-        console.log(`New profile picture uploaded for ${userId}: ${profilePicUrl}`);
+        (`New profile picture uploaded for ${userId}: ${profilePicUrl}`);
       } catch (uploadError) {
         console.error("Cloudinary upload failed:", uploadError);
         return res.status(500).json({
@@ -333,7 +333,7 @@ export const updateProfile = async (req, res) => {
     if (newCloudinaryPublicId && oldCloudinaryPublicId && !existingProfile.profilePicture.includes("picsum.photos")) {
       try {
         await deleteFromCloudinary(oldCloudinaryPublicId);
-        console.log(`Old profile picture deleted from Cloudinary: ${oldCloudinaryPublicId}`);
+        (`Old profile picture deleted from Cloudinary: ${oldCloudinaryPublicId}`);
       } catch (deleteError) {
         console.error("Failed to delete old Cloudinary image:", deleteError);
       }
@@ -351,7 +351,7 @@ export const updateProfile = async (req, res) => {
     if (newCloudinaryPublicId) {
       try {
         await deleteFromCloudinary(newCloudinaryPublicId);
-        console.log(`Cleaned up orphaned Cloudinary image: ${newCloudinaryPublicId}`);
+        (`Cleaned up orphaned Cloudinary image: ${newCloudinaryPublicId}`);
       } catch (cleanupError) {
         console.error("Failed to clean up new Cloudinary image:", cleanupError);
       }
@@ -382,7 +382,7 @@ export const deleteProfile = async (req, res) => {
     if (profile.cloudinaryPublicId && !profile.profilePicture.includes("picsum.photos")) {
       try {
         await deleteFromCloudinary(profile.cloudinaryPublicId);
-        console.log(`Profile picture deleted from Cloudinary for ${userId}: ${profile.cloudinaryPublicId}`);
+        (`Profile picture deleted from Cloudinary for ${userId}: ${profile.cloudinaryPublicId}`);
       } catch (deleteError) {
         console.error("Failed to delete Cloudinary image:", deleteError);
         // Continue with profile deletion even if image deletion fails
@@ -390,7 +390,7 @@ export const deleteProfile = async (req, res) => {
     }
 
     await databaseOperation(UserProfile.findOneAndDelete.bind(UserProfile), { userId });
-    console.log(`Profile deleted for ${userId}`);
+    (`Profile deleted for ${userId}`);
 
     res.status(200).json({ message: "Profile deleted successfully" });
   } catch (error) {
