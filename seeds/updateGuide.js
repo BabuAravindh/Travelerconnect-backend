@@ -5,7 +5,7 @@ import Guide from "../models/Guide.js";
 
 dotenv.config(); // Make sure .env is in the root directory
 
-console.log("MONGO_URI:", process.env.MONGO_URI); // Debug
+("MONGO_URI:", process.env.MONGO_URI); // Debug
 
 const updateOldGuides = async () => {
   try {
@@ -16,7 +16,7 @@ const updateOldGuides = async () => {
       { $set: { status: "pending" } }
     );
 
-    console.log("✅ Old guide records updated:", result.modifiedCount);
+    ("✅ Old guide records updated:", result.modifiedCount);
   } catch (err) {
     console.error("❌ Error updating old guides:", err);
   } finally {

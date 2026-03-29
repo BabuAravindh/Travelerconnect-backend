@@ -38,7 +38,7 @@ export const getRequestsForGuide = async (req, res) => {
 
 export const updateRequestStatus = async (req, res) => {
   try {
-    console.log(req.body);
+    (req.body);
     const { id } = req.params;
     const { status } = req.body;
 

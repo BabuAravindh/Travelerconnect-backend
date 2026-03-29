@@ -23,11 +23,11 @@ const seedCities = async () => {
       useUnifiedTopology: true,
     });
 
-    console.log("✅ Connected to MongoDB");
+    ("✅ Connected to MongoDB");
 
     // Clear existing cities
     await City.deleteMany({});
-    console.log("🗑️ Existing cities deleted");
+    ("🗑️ Existing cities deleted");
 
     // Prepare city data
     const cityData = cities.map((cityName, index) => ({
@@ -37,7 +37,7 @@ const seedCities = async () => {
 
     // Insert cities
     await City.insertMany(cityData);
-    console.log("🌍 Cities seeded successfully");
+    ("🌍 Cities seeded successfully");
 
     mongoose.connection.close();
   } catch (error) {

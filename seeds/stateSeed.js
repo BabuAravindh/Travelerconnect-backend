@@ -26,11 +26,11 @@ const seedStates = async () => {
 
     // Clear existing states
     await State.deleteMany();
-    console.log("✅ Existing states cleared.");
+    ("✅ Existing states cleared.");
 
     // Insert predefined states
     await State.insertMany(states);
-    console.log("✅ Predefined states added successfully.");
+    ("✅ Predefined states added successfully.");
 
     mongoose.connection.close();
   } catch (error) {

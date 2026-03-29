@@ -74,7 +74,7 @@ const withRetry = async (fn, operationName = 'operation', maxRetries = 3, initia
       
       if (i < maxRetries - 1) {
         const waitTime = delayMs * (i + 1);
-        console.log(`Waiting ${waitTime}ms before retry...`);
+        (`Waiting ${waitTime}ms before retry...`);
         await new Promise(resolve => setTimeout(resolve, waitTime));
       }
     }
@@ -96,7 +96,7 @@ const checkCloudinaryConnection = async () => {
 };
 export const uploadGovernmentIdAndBecomeGuide = async (req, res) => {
   let uploadResult = null;
-  console.log(req.file)
+  (req.file)
   try {
     // 1. Validate request contains file
     if (!req.file) {
@@ -245,7 +245,7 @@ const verifiedResetSessions = new Map();
 
 export const signup = async (req, res) => {
   try {
-    console.log("✅ Received Data:", req.body);
+    ("✅ Received Data:", req.body);
     const { name, email, password, confirmPassword } = req.body;
 
     // Initialize errors array
@@ -353,7 +353,7 @@ export const signup = async (req, res) => {
 
 export const signupGuide = async (req, res) => {
   try {
-    console.log("✅ Received Guide Data:", req.body);
+    ("✅ Received Guide Data:", req.body);
     const { name, email, password } = req.body;
     const role = "guide"; // Force the role to guide, no matter what
 
@@ -386,7 +386,7 @@ export const signupGuide = async (req, res) => {
     });
 
     await newGuide.save();
-    console.log("🟢 Saved new guide:", newGuide);
+    ("🟢 Saved new guide:", newGuide);
 
     const verificationUrl = `${process.env.CLIENT_URL}/guides/guide-verify-mail/${verificationToken}`;
     await transporter.sendMail({
@@ -625,7 +625,7 @@ export const verifyGuideEmail = async (req, res) => {
 
       // 5. Check if government ID needs to be uploaded
       const requiresIdUpload = !guide.govIdVerified && !guide.govIdPath;
-       console.log( {         token: jwtToken, // Include the JWT token in the response
+       ( {         token: jwtToken, // Include the JWT token in the response
         user: { id: guide._id, name: guide.name, role: guide.role }, // Include user details
         requiresIdUpload,
         redirectUrl: requiresIdUpload ? "/guides/upload-id" : "/guide-dashboard"})

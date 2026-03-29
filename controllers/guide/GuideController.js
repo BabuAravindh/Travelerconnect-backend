@@ -50,13 +50,13 @@ const uploadToCloudinaryWithDebug = async (fileBuffer, folder) => {
   // Test API connectivity
   try {
     await cloudinary.api.resource_type('upload');
-    console.log('Cloudinary API connectivity confirmed');
+    ('Cloudinary API connectivity confirmed');
   } catch (err) {
     throw new Error(`Cloudinary API check failed: ${err.message}`);
   }
 
   return new Promise((resolve, reject) => {
-    console.log(`Initiating upload to ${folder}, Buffer size: ${(fileBuffer.length / 1024).toFixed(2)} KB`);
+    (`Initiating upload to ${folder}, Buffer size: ${(fileBuffer.length / 1024).toFixed(2)} KB`);
     const startTime = Date.now();
 
     const uploadStream = cloudinary.uploader.upload_stream(
@@ -73,7 +73,7 @@ const uploadToCloudinaryWithDebug = async (fileBuffer, folder) => {
           });
           reject(error);
         } else {
-          console.log(`Upload succeeded after ${elapsedTime}s:`, result.secure_url);
+          (`Upload succeeded after ${elapsedTime}s:`, result.secure_url);
           resolve(result);
         }
       }
@@ -108,18 +108,18 @@ const uploadWithRetry = async (fileBuffer, folder, retries = 5) => {
 export const becomeGuide = async (req, res) => {
   try {
     // Log Cloudinary config and test connectivity (unchanged)
-    console.log("Cloudinary Config:", {
+    ("Cloudinary Config:", {
       cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
       api_key: process.env.CLOUDINARY_API_KEY,
       api_secret: process.env.CLOUDINARY_API_SECRET ? "Set" : "Not Set",
       timeout: 180000,
     });
 
-    console.log("Testing Cloudinary connectivity...");
+    ("Testing Cloudinary connectivity...");
     const pingStart = Date.now();
     try {
       const resources = await cloudinary.api.resources({ max_results: 1 });
-      console.log(`Cloudinary API ping succeeded after ${(Date.now() - pingStart) / 1000}s:`, resources);
+      (`Cloudinary API ping succeeded after ${(Date.now() - pingStart) / 1000}s:`, resources);
     } catch (pingError) {
       console.error(`Cloudinary API ping failed after ${(Date.now() - pingStart) / 1000}s:`, pingError.message);
     }
@@ -127,10 +127,10 @@ export const becomeGuide = async (req, res) => {
     // Handle file upload
     let aadharPhotoUrl = "";
     if (req.file) {
-      console.log(`Aadhar Card Photo received for user ${req.body.userId}: ${req.file.originalname}, Size: ${(req.file.buffer.length / 1024 / 1024).toFixed(2)} MB`);
+      (`Aadhar Card Photo received for user ${req.body.userId}: ${req.file.originalname}, Size: ${(req.file.buffer.length / 1024 / 1024).toFixed(2)} MB`);
       const result = await uploadWithRetry(req.file.buffer, "aadhar_cards");
       aadharPhotoUrl = result.secure_url;
-      console.log(`Aadhar Card Photo uploaded for user ${req.body.userId}: ${aadharPhotoUrl}`);
+      (`Aadhar Card Photo uploaded for user ${req.body.userId}: ${aadharPhotoUrl}`);
     }
 
     // Extract form data

@@ -30,7 +30,7 @@ const generatePlanId = () => {
 
 // Static itinerary generator - Modified to handle optional preferences
 const generateStaticItinerary = async (cityName, questions, answers) => {
-  console.log('Generating itinerary for:', { cityName, questions, answers });
+  ('Generating itinerary for:', { cityName, questions, answers });
 
   // Validate required fields
   if (!cityName || typeof cityName !== 'string') {
@@ -67,7 +67,7 @@ Include:
 
 Format as plain text without markdown. Structure by days with clear sections.`;
 
-  console.log('Itinerary Prompt:\n', itineraryPrompt);
+  ('Itinerary Prompt:\n', itineraryPrompt);
 
   // Generate itinerary using AI service
   const itineraryResult = await generateAIContent(itineraryPrompt, null, {
@@ -174,7 +174,7 @@ export const getQuestionsByCity = [
       })
         .select('questionText type options order cityId status createdAt updatedAt __v')
         .sort({ order: 1 });
-      console.log('City-specific questions:', questions);
+      ('City-specific questions:', questions);
 
       if (questions.length === 0) {
         questions = await Question.find({ 
@@ -183,7 +183,7 @@ export const getQuestionsByCity = [
         })
           .select('questionText type options order cityId status createdAt updatedAt __v')
           .sort({ order: 1 });
-        console.log('Falling back to common questions:', questions);
+        ('Falling back to common questions:', questions);
       }
 
       questions = questions.map(q => {
@@ -263,7 +263,7 @@ export const getCities = [
       }));
 
       const cities = await City.find().sort({ order: 1 });
-      console.log('Cities retrieved:', cities);
+      ('Cities retrieved:', cities);
       res.status(200).json({
         success: true,
         data: cities,
