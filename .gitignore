@@ -12,10 +12,6 @@ out/
 dist/
 build/
 
-# Ignore generated lock files (Optional, unless needed)
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
 
 # Environment variables
 .env
