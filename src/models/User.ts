@@ -20,6 +20,16 @@ const UserSchema = new mongoose.Schema({
     default: 10, 
     min: 0 
 },
+govIdVerified: {
+  type: Boolean,
+  default: false
+},
+govIdPath: {
+  type: String
+},
+verificationDate: {
+  type: Date
+},
   
   resetPasswordCode: String,
   resetPasswordExpires: Date,

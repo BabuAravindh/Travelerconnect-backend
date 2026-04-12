@@ -25,7 +25,7 @@ import {
   createQuestion,
   updateQuestion,
   deleteQuestion,
-} from '../controllers/prefinedController.js';
+} from '../../controllers/prefinedController.js';
 
 const router = express.Router();
 

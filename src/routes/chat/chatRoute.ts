@@ -16,10 +16,10 @@ import {
   startConversation,
   typingIndicator,
   updateMessage,
-} from "../controllers/chatController.js";
-import authenticateUser from "../middleware/authMiddleware.js";
-import User from "../models/User.js";
-import Guide from "../models/Guide.js";
+} from "../../controllers/chatController.js";
+import authenticateUser from "../../middleware/authMiddleware.js";
+import User from "../../models/User.js";
+import Guide from "../../models/Guide.js";
 import dotenv from "dotenv";
 import Pusher from "pusher";
 

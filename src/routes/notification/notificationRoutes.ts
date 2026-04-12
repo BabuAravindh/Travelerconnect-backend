@@ -4,8 +4,8 @@ import createNotification, {
   markNotificationsAsRead,
   getAllNotifications,
   clearAllNotifications,
-} from "../controllers/notificationController.js";
-import authenticateUser from "../middleware/authMiddleware.js";
+} from "../../controllers/notificationController.js";
+import authenticateUser from "../../middleware/authMiddleware.js";
 
 const router = express.Router();
 router.post("/create", authenticateUser, async (req, res) => {

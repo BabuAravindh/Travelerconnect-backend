@@ -7,10 +7,10 @@ import mongoose from 'mongoose';
 import jwt from 'jsonwebtoken';
 import cloudinary from 'cloudinary';
 import { setCache, getCache } from '../../utils/cache.js';
-import { generateAIContent, fetchCityCoordinates } from '../../services/aiService.js';
-import { getImageFromApis } from '../../services/imageServices.js';
+import { getImageFromApis } from '../../utils/imageServices.js';
 import axios from 'axios';
 import sharp from 'sharp';
+import { fetchCityCoordinates, generateAIContent } from '../../utils/aiService.js';
 
 // Configure Cloudinary
 cloudinary.v2.config({
@@ -19,7 +19,6 @@ cloudinary.v2.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
   timeout: 30000,
 });
-
 // In-memory cache for preview data and image uploads
 const previewCache = new Map();
 const PREVIEW_CACHE_TTL = 60 * 60 * 1000; // 1 hour

@@ -2,8 +2,8 @@ import mongoose from 'mongoose';
 import jwt from 'jsonwebtoken';
 import User from '../../models/User.js';
 import { Question } from '../../models/predefineSchemas.js';
-import { generateAIContent, fetchCityCoordinates } from '../../services/aiService.js';
 import { deductCredits } from '../../utils/deductCredits.js'; // Import deductCredits from util
+import { generateAIContent } from '../../utils/aiService.js';
 
 // In-memory store for travel plans (replace with DB later)
 const travelPlans = new Map();

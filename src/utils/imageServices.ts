@@ -1,6 +1,6 @@
 
 import axios from "axios";
-import { setCache, getCache } from "../utils/cache.js";
+import { setCache, getCache } from "./cache.js";
 import * as fuzzball from "fuzzball";
 
 const IMAGE_CACHE_TTL = 24 * 60 * 60 * 1000; // 1 day

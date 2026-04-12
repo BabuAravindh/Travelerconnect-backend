@@ -1,6 +1,6 @@
 // routes/contact.js
 import express from "express";
-import ContactForm from "../models/ContactSchema.js";
+import ContactForm from "../../models/ContactSchema.js";
 const router = express.Router()
 import mongoose from "mongoose";
 import nodemailer from  'nodemailer'

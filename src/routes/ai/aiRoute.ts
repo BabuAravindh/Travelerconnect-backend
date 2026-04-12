@@ -11,9 +11,9 @@ import {
   getAllAiInteractions,
   getAllCreditRecords,
   getCurrentCredit,
-} from '../controllers/aiController.js';
-import authenticateUser from '../middleware/authMiddleware.js'; // Your middleware
-import { validateAiIntegration, validateCityInsights, validateCreditHistory, validateCreditRequest } from '../middleware/validateMiddleware.js';
+} from '../../controllers/aiController.js';
+import authenticateUser from '../../middleware/authMiddleware.js'; // Your middleware
+import { validateAiIntegration, validateCityInsights, validateCreditHistory, validateCreditRequest } from '../../middleware/validateMiddleware.js';
 
 // Admin middleware to check role
 const requireAdmin = (req, res, next) => {

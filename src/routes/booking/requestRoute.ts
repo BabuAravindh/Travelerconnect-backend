@@ -1,5 +1,5 @@
 import express from "express";
-import { createRequest, getRequestsForGuide, updateRequestStatus } from "../controllers/RequestController.js";
+import { createRequest, getRequestsForGuide, updateRequestStatus } from "../../controllers/RequestController.js";
 
 const router = express.Router();
 

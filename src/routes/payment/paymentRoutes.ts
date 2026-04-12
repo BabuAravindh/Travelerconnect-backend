@@ -10,7 +10,7 @@ import {
   getUserPaymentDetails,
   getGuidePaymentHistory,
   updateManualPaymentStatus
-} from '../controllers/paymentController.js';
+} from '../../controllers/paymentController.js';
 
 const router = express.Router();
 // At the top of paymentController.js

@@ -1,6 +1,6 @@
 import express from "express"
-import { adminDeleteFeedback, createFeedback, deleteFeedback, getAllFeedback, getFeedbackForGuide, getFeedbackStats } from "../controllers/FeedbackController.js"
-import authenticateUser from "../middleware/authMiddleware.js"
+import { adminDeleteFeedback, createFeedback, deleteFeedback, getAllFeedback, getFeedbackForGuide, getFeedbackStats } from "../../controllers/FeedbackController.js"
+import authenticateUser from "../../middleware/authMiddleware.js"
 
 const router = express.Router()
 

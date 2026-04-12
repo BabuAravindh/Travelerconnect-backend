@@ -1,10 +1,10 @@
 
 import { authMiddleware } from "./AttractionController.js";
-import { generateAIContent } from "../../services/aiService.js"; // Import from aiUtils.js
 import Route from "../../models/routeSchema.js";
 import { City } from "../../models/predefineSchemas.js";
 import { setCache } from "../../utils/cache.js";
 import mongoose from "mongoose";
+import { generateAIContent } from "../../utils/aiService.js";
 
 export const generateRoutes = [
   authMiddleware,

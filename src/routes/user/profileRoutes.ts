@@ -4,14 +4,14 @@ import {
   createProfile,
   updateProfile,
   deleteProfile,
-} from "../controllers/user/profileController.js";
+} from "../../controllers/user/profileController.js";
 import multer from "multer";
-import User from "../models/User.js";
-import deleteUser from "../services/deleteUser.js"; // Import the function
+import User from "../../models/User.js";
+import deleteUser from "../../utils/deleteUser.js"; // Import the function
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
-import Guide from "../models/Guide.js";
-import Booking from "../models/BookingModel.js"; // Import the Booking model
+import Guide from "../../models/Guide.js";
+import Booking from "../../models/bookingModel.js";
 
 const router = express.Router();
 
