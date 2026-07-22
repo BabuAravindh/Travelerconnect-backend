@@ -4,10 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-     "start": "node index.js",
-    "dev": "nodemon server.js",
+     "dev": "nodemon --exec tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel . --out-dir build --ignore node_modules",
     "seed:activities": "node seeds/seedActivities.js",
     "seed:states": "node seeds/stateSeed.js",
     "seed:cities": "node seeds/city.js"
@@ -38,7 +38,6 @@
     "multer": "^1.4.5-lts.2",
     "multer-storage-cloudinary": "^4.0.0",
     "nodemailer": "^6.10.0",
-    "nodemon": "^3.1.9",
     "openai": "^4.87.4",
     "p-limit": "^6.2.0",
     "parser": "^0.1.4",
@@ -62,6 +61,12 @@
   "devDependencies": {
     "@babel/cli": "^7.27.2",
     "@babel/core": "^7.27.7",
-    "@babel/preset-env": "^7.27.2"
+    "@babel/preset-env": "^7.27.2",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
   }
 }
