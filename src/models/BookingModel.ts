@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import {Payment} from "./payment.js"; // Adjust the import path based on your project structure
+import { Payment } from "./payment.js"; // Adjust the import path based on your project structure
 import createNotification from "../controllers/notificationController.js"; // Adjust the import path
 
 const bookingSchema = new mongoose.Schema(
@@ -14,7 +14,7 @@ const bookingSchema = new mongoose.Schema(
     dropoffLocation: { type: String, required: true },
     status: {
       type: String,
-      enum: ["pending", "confirmed", "finalized", "paid", "completed", "cancelled", "refunded"],
+      enum: ["pending", "confirmed", "finalized", "paid", "completed", "cancelled", "rejected", "refunded"],
       default: "pending",
     },
     paymentStatus: {

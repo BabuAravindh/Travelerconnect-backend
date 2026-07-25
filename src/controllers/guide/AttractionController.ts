@@ -48,7 +48,7 @@ const uploadImageToCloudinary = async (file, retries = 3, backoff = 1000) => {
   const cacheKey = `image:${file.fieldname}:${file.originalname}`;
   const cachedUrl = getCache(cacheKey);
   if (cachedUrl) {
-    (`Retrieved cached image URL for ${file.originalname}`);
+    console.log(`Retrieved cached image URL for ${file.originalname}`);
     return cachedUrl;
   }
 
@@ -71,7 +71,7 @@ const uploadImageToCloudinary = async (file, retries = 3, backoff = 1000) => {
         });
         const imageUrl = result.secure_url;
         setCache(cacheKey, imageUrl, IMAGE_CACHE_TTL);
-        (`Successfully uploaded image ${file.originalname} to Cloudinary`);
+        console.log(`Successfully uploaded image ${file.originalname} to Cloudinary`);
         return imageUrl;
       } catch (error) {
         if (attempt === retries) throw error;

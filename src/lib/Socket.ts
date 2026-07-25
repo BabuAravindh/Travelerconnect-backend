@@ -22,12 +22,12 @@ const getReceiverSocketId = (receiverId) => userSocketMap[receiverId] || null;
 
 export const chatSocket = () => {
   io.on("connection", (socket) => {
-    ("A user connected:", socket.id);
+    console.log("A user connected:", socket.id);
   
     const userId = socket.handshake.query.userId;
     if (userId && userId !== "undefined") {
       userSocketMap[userId] = socket.id;
-      (`User ${userId} connected with socket ID ${socket.id}`);
+      console.log(`User ${userId} connected with socket ID ${socket.id}`);
     }
   
     // Listen for the 'send-message' event
@@ -55,7 +55,7 @@ export const chatSocket = () => {
     
   
     socket.on("disconnect", () => {
-      ("User disconnected:", socket.id);
+      console.log("User disconnected:", socket.id);
       if (userId) {
         delete userSocketMap[userId];
         io.emit("getOnlineUsers", Object.keys(userSocketMap));

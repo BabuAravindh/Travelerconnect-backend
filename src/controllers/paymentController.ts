@@ -35,7 +35,7 @@ const streamUploadWithRetry = async (fileBuffer, retries = MAX_RETRIES, timeoutM
   let attempt = 0;
   while (attempt < retries) {
     try {
-      (`🔁 Cloudinary upload attempt ${attempt + 1} starting...`);
+      console.log(`🔁 Cloudinary upload attempt ${attempt + 1} starting...`);
       return await new Promise((resolve, reject) => {
         const timeout = setTimeout(() => {
           console.error(`Cloudinary upload attempt ${attempt + 1} timed out after ${timeoutMs}ms`);
@@ -49,7 +49,7 @@ const streamUploadWithRetry = async (fileBuffer, retries = MAX_RETRIES, timeoutM
           (error, result) => {
             clearTimeout(timeout);
             if (result) {
-              (`Cloudinary upload attempt ${attempt + 1} succeeded`);
+              console.log(`Cloudinary upload attempt ${attempt + 1} succeeded`);
               resolve(result);
             } else {
               console.error(`Cloudinary upload attempt ${attempt + 1} failed: ${error?.message || 'Unknown error'}`);
@@ -550,7 +550,7 @@ export const recordManualPayment = async (req, res) => {
     // Upload screenshot if exists, but proceed if it fails
     let screenshotUrl = null;
     if (req.file) {
-      ('🔁 Uploading manual payment screenshot...');
+      console.log('🔁 Uploading manual payment screenshot...');
       try {
         const uploadResult = await streamUploadWithRetry(req.file.buffer);
         screenshotUrl = uploadResult.secure_url;

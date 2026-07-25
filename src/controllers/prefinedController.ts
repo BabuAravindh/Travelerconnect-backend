@@ -328,47 +328,47 @@ export const createQuestion = async (req, res) => {
 export const updateQuestion = async (req, res) => {
   try {
     const { questionText, cityId, status, order, type, options } = req.body;
-    ("Request Body:", { questionText, cityId, status, order, type, options });
+    console.log("Request Body:", { questionText, cityId, status, order, type, options });
 
     if (type && !["specific", "common"].includes(type)) {
-      ("❌ Invalid type provided:", type);
+      console.log("❌ Invalid type provided:", type);
       return res.status(400).json({ success: false, message: "Type must be 'specific' or 'common'" });
     }
 
     const existingQuestion = await Question.findById(req.params.id);
     if (!existingQuestion) {
-      ("❌ Question not found with ID:", req.params.id);
+      console.log("❌ Question not found with ID:", req.params.id);
       return res.status(404).json({ success: false, message: "Question not found" });
     }
-    ("✅ Found existing question:", existingQuestion);
+    console.log("✅ Found existing question:", existingQuestion);
 
     const questionType = type || existingQuestion.type;
-    ("Question Type to use:", questionType);
+    console.log("Question Type to use:", questionType);
 
     if (questionType === "specific") {
       if (cityId === null || cityId === "") {
-        ("❌ City ID missing for specific question");
+        console.log("❌ City ID missing for specific question");
         return res.status(400).json({ success: false, message: "City ID is required for specific questions" });
       }
       if (cityId) {
         const city = await City.findById(cityId);
         if (!city) {
-          ("❌ City not found with ID:", cityId);
+          console.log("❌ City not found with ID:", cityId);
           return res.status(404).json({ success: false, message: "City not found" });
         }
-        ("✅ Valid city found:", city);
+        console.log("✅ Valid city found:", city);
       }
       if (options && options.length > 0) {
-        ("❌ Options provided for specific question:", options);
+        console.log("❌ Options provided for specific question:", options);
         return res.status(400).json({ success: false, message: "Options are not allowed for specific questions" });
       }
     } else if (questionType === "common") {
       if (cityId) {
-        ("❌ City ID provided for common question:", cityId);
+        console.log("❌ City ID provided for common question:", cityId);
         return res.status(400).json({ success: false, message: "City ID must not be provided for common questions" });
       }
       if (!Array.isArray(options) || options.length === 0) {
-        ("❌ Invalid options for common question:", options);
+        console.log("❌ Invalid options for common question:", options);
         return res.status(400).json({ success: false, message: "Options must be a non-empty array for common questions" });
       }
     }
@@ -382,7 +382,7 @@ export const updateQuestion = async (req, res) => {
       options: questionType === "common" ? options || existingQuestion.options : [],
     };
 
-    ("🔄 Updating question with payload:", updatePayload);
+    console.log("🔄 Updating question with payload:", updatePayload);
 
     const updatedQuestion = await Question.findByIdAndUpdate(
       req.params.id,
@@ -391,11 +391,11 @@ export const updateQuestion = async (req, res) => {
     );
 
     if (!updatedQuestion) {
-      ("❌ Failed to update question - not found after update attempt");
+      console.log("❌ Failed to update question - not found after update attempt");
       return res.status(404).json({ success: false, message: "Question not found" });
     }
 
-    ("✅ Question updated successfully:", updatedQuestion);
+    console.log("✅ Question updated successfully:", updatedQuestion);
     res.status(200).json({ success: true, data: updatedQuestion });
   } catch (error) {
     console.error("❌ Error occurred during update:", error);

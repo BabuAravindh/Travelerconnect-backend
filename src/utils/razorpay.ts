@@ -20,4 +20,4 @@ const generatedSignature = crypto
   .update(webhookBody)
   .digest("hex");
 
-("Generated Signature:", generatedSignature);
+console.log("Generated Signature:", generatedSignature);

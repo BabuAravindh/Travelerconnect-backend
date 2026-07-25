@@ -103,22 +103,22 @@ export const getMessages = async (req, res) => {
     const { id } = req.params;
 
     if (!mongoose.Types.ObjectId.isValid(id)) {
-      ("❌ Invalid conversation ID format:", id);
+      console.log("❌ Invalid conversation ID format:", id);
       return res.status(400).json({ error: "Invalid conversation ID format" });
     }
 
     const conversationId = new mongoose.Types.ObjectId(id); // ✅ Convert to ObjectId
 
-    ("📢 Fetching messages for conversationId:", conversationId);
+    console.log("📢 Fetching messages for conversationId:", conversationId);
 
     const messages = await Message.find({ conversationId })
       .populate("senderId receiverId", "name avatar") // ✅ Ensure proper population
       .lean(); // ✅ Convert Mongoose objects to plain JSON
 
-    ("📢 Retrieved Messages:", messages);
+    console.log("📢 Retrieved Messages:", messages);
 
     if (messages.length === 0) {
-      ("⚠️ No messages found for this conversation.");
+      console.log("⚠️ No messages found for this conversation.");
     }
 
     res.status(200).json(messages);
@@ -140,11 +140,11 @@ export const getUserConversations = async (req, res) => {
     const conversations = await Conversation.find({
       participants: userId,
     }).populate("participants", "name avatar _id"); // ✅ Ensure participants are included
-     (conversations)    
+     console.log(conversations)    
 
     res.status(200).json(conversations); // Respond with the conversations
   } catch (error) {
-    ("Error in getUserConversations controller: ", error.message);
+    console.log("Error in getUserConversations controller: ", error.message);
     res.status(500).json({ error: "Internal server error" });
   }
 };
@@ -182,7 +182,7 @@ export const getUsersForSidebar = async (req, res) => {
 
 export const startConversation = async (req, res) => {
   try {
-    ("Request received at /api/chats/startConversion:", req.body);
+    console.log("Request received at /api/chats/startConversion:", req.body);
     
     const { senderId, receiverId } = req.body; // Destructure both from req.body
 
@@ -196,7 +196,7 @@ export const startConversation = async (req, res) => {
       return res.status(400).json({ error: "Cannot start a conversation with yourself" });
     }
 
-    (`Checking existing conversation between ${senderId} and ${receiverId}`);
+    console.log(`Checking existing conversation between ${senderId} and ${receiverId}`);
     
     // Check if a conversation already exists between the two participants
     const existingConversation = await Conversation.findOne({
@@ -205,7 +205,7 @@ export const startConversation = async (req, res) => {
 
     if (existingConversation) {
       // If a conversation already exists, return it without creating a new one
-      ("Conversation already exists:", existingConversation);
+      console.log("Conversation already exists:", existingConversation);
       return res.status(200).json({ 
         message: "Conversation already exists",
         conversation: existingConversation 
@@ -213,13 +213,13 @@ export const startConversation = async (req, res) => {
     }
 
     // If no conversation exists, create a new one
-    ("No existing conversation. Creating a new one...");
+    console.log("No existing conversation. Creating a new one...");
     const newConversation = new Conversation({
       participants: [senderId, receiverId],
     });
 
     await newConversation.save();
-    ("New conversation created:", newConversation);
+    console.log("New conversation created:", newConversation);
 
     // Return the newly created conversation
     res.status(201).json({ 
@@ -250,7 +250,7 @@ export const getLastBudgetMessage = async (req, res) => {
     })
       .sort({ timestamp: -1 }) // ✅ Get the latest budget message
       .lean();
-(lastBudgetMessage)
+console.log(lastBudgetMessage)
     if (!lastBudgetMessage) {
       return res.status(404).json({ message: "No budget message found" });
     }
@@ -290,10 +290,10 @@ export const getOrCreateConversation = async (req, res) => {
 
     if (!conversation) {
       // Create a new conversation if none exists
-      (`No conversation found between ${userId} and ${guideId}. Creating a new one...`);
+      console.log(`No conversation found between ${userId} and ${guideId}. Creating a new one...`);
       conversation = new Conversation({ participants: [userId, guideId] });
       await conversation.save();
-      ("New conversation created:", conversation._id);
+      console.log("New conversation created:", conversation._id);
       
       return res.status(201).json({ 
         success: true, 
@@ -303,7 +303,7 @@ export const getOrCreateConversation = async (req, res) => {
     }
 
     // Return the existing conversation
-    (`Conversation already exists between ${userId} and ${guideId}:`, conversation._id);
+    console.log(`Conversation already exists between ${userId} and ${guideId}:`, conversation._id);
     return res.status(200).json({ 
       success: true, 
       message: "Conversation already exists",

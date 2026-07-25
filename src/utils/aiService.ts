@@ -22,7 +22,7 @@ export const generateAIContent = async (prompt, cacheKey, options = {}) => {
 
   const cachedData = getCache(cacheKey);
   if (cachedData) {
-    (`Retrieved cached AI content for key "${cacheKey}"`);
+    console.log(`Retrieved cached AI content for key "${cacheKey}"`);
     return {
       success: true,
       content: cachedData.content,
@@ -43,7 +43,7 @@ export const generateAIContent = async (prompt, cacheKey, options = {}) => {
     });
 
     let content = response.choices[0]?.message.content?.trim() || fallback;
-    (`[AI] Raw content for "${cacheKey}":`, content.slice(0, 2000));
+    console.log(`[AI] Raw content for "${cacheKey}":`, content.slice(0, 2000));
 
   if (parseJson) {
   // Strip common formatting wrappers
@@ -65,7 +65,7 @@ export const generateAIContent = async (prompt, cacheKey, options = {}) => {
      content = JSON.parse(rawJson);
   } catch (error) {
    console.error(`❌ Failed JSON parse for "${cacheKey}": ${error.message}`);
-  (`[RAW JSON ERROR]:\n${rawJson.slice(0, 1000)}\n...`);
+  console.log(`[RAW JSON ERROR]:\n${rawJson.slice(0, 1000)}\n...`);
   return {
     success: false,
     content: fallback,
@@ -83,7 +83,7 @@ export const generateAIContent = async (prompt, cacheKey, options = {}) => {
 
     const result = { content, tokenUsage };
     setCache(cacheKey, result, ttl);
-    (`Generated AI content for key "${cacheKey}"`);
+    console.log(`Generated AI content for key "${cacheKey}"`);
     return {
       success: true,
       content,
@@ -93,7 +93,7 @@ export const generateAIContent = async (prompt, cacheKey, options = {}) => {
   } catch (error) {
     console.error(`Error generating AI content for "${cacheKey}": ${error.message}`);
     const partialContent = error.response?.data?.choices?.[0]?.message?.content?.trim() || fallback || "No content generated.";
-    (`[AI] Partial content for "${cacheKey}":`, partialContent.slice(0, 2000)); // preview
+    console.log(`[AI] Partial content for "${cacheKey}":`, partialContent.slice(0, 2000)); // preview
     return {
       success: false,
       content: partialContent,
@@ -101,7 +101,7 @@ export const generateAIContent = async (prompt, cacheKey, options = {}) => {
       message: `Failed to generate content: ${error.message}. Partial content (if any) is provided. Use POST /generateCustomContent with a valid JWT token to submit custom content manually.`,
     };
   }
-  (`[AI] Raw content for "${cacheKey}":`, content.slice(0, 2000)); // preview
+  // Unreachable code removed (was after return statement)
 };
 
 // Fetch city coordinates using Nominatim API (unchanged, included for completeness)
@@ -109,7 +109,7 @@ export const fetchCityCoordinates = async (cityName) => {
   const cacheKey = `city:${cityName}:coords`;
   const cachedData = getCache(cacheKey);
   if (cachedData) {
-    (`Retrieved cached coordinates for "${cityName}"`);
+    console.log(`Retrieved cached coordinates for "${cityName}"`);
     return { success: true, coords: cachedData, message: "Coordinates retrieved from cache." };
   }
 
@@ -136,7 +136,7 @@ export const fetchCityCoordinates = async (cityName) => {
       country: address.country || null,
     };
     setCache(cacheKey, coords, CONTENT_CACHE_TTL);
-    (`Fetched coordinates for "${cityName}": ${JSON.stringify(coords)}`);
+    console.log(`Fetched coordinates for "${cityName}": ${JSON.stringify(coords)}`);
     return { success: true, coords, message: "Coordinates fetched successfully." };
   } catch (error) {
     console.error(`Error fetching coordinates for "${cityName}": ${error.message}`);

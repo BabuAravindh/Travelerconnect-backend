@@ -27,7 +27,7 @@ router.post('/verify', verifyPayment);
 router.post(
   '/cash',
   (req, res, next) => {
-    ('🔁 Uploading manual payment screenshot...');
+    console.log('🔁 Uploading manual payment screenshot...');
     next();
   },
   upload.single('screenshot'),

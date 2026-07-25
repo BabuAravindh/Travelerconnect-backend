@@ -47,7 +47,7 @@ const checkCloudinaryStatus = async () => {
 // Utility function to upload to Cloudinary with detailed diagnostics
 const uploadToCloudinaryWithDebug = (fileBuffer, folder) => {
   return new Promise((resolve, reject) => {
-    (`Initiating upload to ${folder}, Buffer size: ${(fileBuffer.length / 1024).toFixed(2)} KB`);
+    console.log(`Initiating upload to ${folder}, Buffer size: ${(fileBuffer.length / 1024).toFixed(2)} KB`);
     const startTime = Date.now();
 
     const timeoutId = setTimeout(() => {
@@ -72,7 +72,7 @@ const uploadToCloudinaryWithDebug = (fileBuffer, folder) => {
             console.error(`Invalid Cloudinary response:`, result);
             reject(new Error("Invalid Cloudinary response: missing secure_url or public_id"));
           } else {
-            (`Upload succeeded after ${elapsedTime}s:`, result.secure_url);
+            console.log(`Upload succeeded after ${elapsedTime}s:`, result.secure_url);
             resolve(result);
           }
         }
@@ -107,10 +107,10 @@ const uploadWithRetry = async (fileBuffer, folder, retries = 5) => {
     await checkCloudinaryStatus();
     await checkNetwork();
     for (let attempt = 1; attempt <= retries; attempt++) {
-      (`Attempt ${attempt} of ${retries}`);
+      console.log(`Attempt ${attempt} of ${retries}`);
       try {
         const result = await uploadToCloudinaryWithDebug(fileBuffer, folder);
-        ("Upload completed successfully:", result.secure_url);
+        console.log("Upload completed successfully:", result.secure_url);
         return result;
       } catch (error) {
         console.warn(`Upload attempt ${attempt} failed for ${folder}:`, {
@@ -241,8 +241,8 @@ export const updateGuideProfile = async (req, res) => {
       serviceLocations = [],
     } = req.body;
 
-    (`Starting profile update for user: ${userId}`);
-    ("Request body:", JSON.stringify(req.body, null, 2));
+    console.log(`Starting profile update for user: ${userId}`);
+    console.log("Request body:", JSON.stringify(req.body, null, 2));
 
     // Validate user exists
     const existingUser = await User.findById(userId).session(session);
@@ -275,9 +275,9 @@ export const updateGuideProfile = async (req, res) => {
 
     if (req.files?.["profilePic"]?.[0]) {
       const file = req.files["profilePic"][0];
-      (`Processing profile picture (${file.originalname}, ${(file.size / 1024 / 1024).toFixed(2)}MB)`);
+      console.log(`Processing profile picture (${file.originalname}, ${(file.size / 1024 / 1024).toFixed(2)}MB)`);
       profilePicData = await uploadWithRetry(file.buffer, "guide_profiles");
-      ("Profile picture uploaded:", profilePicData.secure_url);
+      console.log("Profile picture uploaded:", profilePicData.secure_url);
     }
 
     // Validate references
@@ -389,7 +389,7 @@ export const updateGuideProfile = async (req, res) => {
     );
 
     await session.commitTransaction();
-    (`Successfully updated profile for user: ${userId}`);
+    console.log(`Successfully updated profile for user: ${userId}`);
 
     res.status(200).json({
       message: "Guide profile updated successfully.",
@@ -449,9 +449,9 @@ export const createProfile = async (req, res) => {
     let profilePicData = null;
 
     if (req.files?.["profilePic"]?.[0]) {
-      (`Profile picture received for ${userId}: ${req.files["profilePic"][0].originalname}`);
+      console.log(`Profile picture received for ${userId}: ${req.files["profilePic"][0].originalname}`);
       profilePicData = await uploadWithRetry(req.files["profilePic"][0].buffer, "guide_profiles");
-      (`Profile picture uploaded for ${userId}: ${profilePicData.secure_url}`);
+      console.log(`Profile picture uploaded for ${userId}: ${profilePicData.secure_url}`);
     }
 
     const [languageDocs, activityDocs, cityDocs] = await Promise.all([

@@ -10,11 +10,11 @@ import User from "../models/User.js"; // Import User model
 import Guide from '../models/Guide.js';
 export const createBooking = async (req, res) => {
   try {
-    const { 
-      userId, 
-      guideId, 
-      startDate, 
-      endDate, 
+    const {
+      userId,
+      guideId,
+      startDate,
+      endDate,
       budget,
       pickupLocation,
       dropoffLocation,
@@ -22,15 +22,15 @@ export const createBooking = async (req, res) => {
       specialRequests = ''
     } = req.body;
 
-    (activities, "activities in booking controller");
+    console.log(activities, "activities in booking controller");
 
     // Validate required fields
     const requiredFields = { userId, guideId, startDate, endDate, budget };
     for (const [field, value] of Object.entries(requiredFields)) {
       if (!value) {
-        return res.status(400).json({ 
+        return res.status(400).json({
           success: false,
-          message: `Missing required field: ${field}` 
+          message: `Missing required field: ${field}`
         });
       }
     }
@@ -119,9 +119,9 @@ export const createBooking = async (req, res) => {
     }
 
     // Create booking
-    const newBooking = new Booking({ 
-      userId, 
-      guideId, 
+    const newBooking = new Booking({
+      userId,
+      guideId,
       startDate: start,
       endDate: end,
       budget: Number(budget),
@@ -323,13 +323,13 @@ export const getUserBookings = async (req, res) => {
       return res.status(400).json({ message: "Invalid user ID format" });
     }
 
-    ("Fetching bookings for User ID:", userId);
+    console.log("Fetching bookings for User ID:", userId);
 
     // Fetch all bookings for the given userId with lean() for better performance
     const bookings = await Booking.find({ userId }).lean();
-     ("Bookings found:", bookings.length);
+    console.log("Bookings found:", bookings.length);
     if (!bookings.length) {
-      (`No bookings found for user ${userId}`);
+      console.log(`No bookings found for user ${userId}`);
       return res.status(200).json([]);
     }
 
@@ -394,7 +394,7 @@ export const getUserBookings = async (req, res) => {
     res.json(enrichedBookings);
   } catch (error) {
     console.error("Error fetching user bookings:", error);
-    
+
     let errorMessage = "Error fetching user bookings";
     if (error.name === 'CastError') {
       errorMessage = "Invalid data format in database";
@@ -402,7 +402,7 @@ export const getUserBookings = async (req, res) => {
       errorMessage = "Database connection error";
     }
 
-    res.status(500).json({ 
+    res.status(500).json({
       message: errorMessage,
       error: process.env.NODE_ENV === 'development' ? error.message : undefined
     });
@@ -415,10 +415,10 @@ export const getUserBookings = async (req, res) => {
 export const getAllBookings = async (req, res) => {
   try {
     const { status, dateFrom, dateTo, page = 1, limit = 10 } = req.query;
-    
+
     // Build filter object (initially empty to get all bookings)
     const filter = {};
-    
+
     // Add optional filters
     if (status) filter.status = status;
     if (dateFrom || dateTo) {
@@ -426,10 +426,10 @@ export const getAllBookings = async (req, res) => {
       if (dateFrom) filter.startDate.$gte = new Date(dateFrom);
       if (dateTo) filter.startDate.$lte = new Date(dateTo);
     }
-    
+
     // Get total count of matching bookings
     const total = await Booking.countDocuments(filter);
-    
+
     // If no bookings found, return early with empty array
     if (total === 0) {
       return res.json({
@@ -440,11 +440,11 @@ export const getAllBookings = async (req, res) => {
         bookings: []
       });
     }
-    
+
     // Calculate pagination
     const skip = (page - 1) * limit;
     const totalPages = Math.ceil(total / limit);
-    
+
     // Get bookings with pagination and population
     const bookings = await Booking.find(filter)
       .skip(skip)
@@ -461,15 +461,15 @@ export const getAllBookings = async (req, res) => {
         model: 'User'
       })
       .lean();
-    
+
     // Format the response
     const formattedBookings = bookings.map(booking => {
       // Calculate duration in days
       const durationDays = Math.ceil(
-        (new Date(booking.endDate) - new Date(booking.startDate)) / 
+        (new Date(booking.endDate) - new Date(booking.startDate)) /
         (1000 * 60 * 60 * 24)
       );
-      
+
       return {
         ...booking,
         id: booking._id,
@@ -485,7 +485,7 @@ export const getAllBookings = async (req, res) => {
         __v: undefined
       };
     });
-    
+
     res.json({
       total,
       page: parseInt(page),
@@ -493,13 +493,13 @@ export const getAllBookings = async (req, res) => {
       limit: parseInt(limit),
       bookings: formattedBookings
     });
-    
+
   } catch (error) {
     console.error("Error fetching bookings:", error);
-    res.status(500).json({ 
+    res.status(500).json({
       success: false,
       message: "Failed to fetch bookings",
-      error: error.message 
+      error: error.message
     });
   }
 };
@@ -507,13 +507,13 @@ export const getAllBookings = async (req, res) => {
 export const deleteBooking = async (req, res) => {
   try {
     const { id } = req.params;
-    
+
     const deletedBooking = await Booking.findByIdAndDelete(id);
-    
+
     if (!deletedBooking) {
       return res.status(404).json({ message: "Booking not found" });
     }
-    
+
     res.json({
       message: "Booking deleted successfully",
       booking: {
@@ -522,7 +522,7 @@ export const deleteBooking = async (req, res) => {
         endDate: deletedBooking.endDate
       }
     });
-    
+
   } catch (error) {
     console.error("Error deleting booking:", error);
     res.status(500).json({ message: "Error deleting booking", error });
