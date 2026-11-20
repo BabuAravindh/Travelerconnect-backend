@@ -10,7 +10,7 @@ const pusher = new Pusher({
   useTLS: true,
 });
 
-const createNotification = async ({ recipientId, senderId, conversationId, type, message, senderRole }) => {
+const createNotification = async ({ recipientId, senderId, conversationId = undefined, type, message, senderRole }) => {
   try {
     if (type === "budget_message" && senderRole !== "guide") {
       return { success: false, error: "Only guides can send budget notifications" };
@@ -25,7 +25,7 @@ const createNotification = async ({ recipientId, senderId, conversationId, type,
     });
 
     await notification.save();
-    ("Notification created:", notification);
+    console.log("Notification created:", notification);
 
     const populatedNotification = await Notification.findById(notification._id)
       .populate("senderId", "name avatar _id")
@@ -42,7 +42,7 @@ const createNotification = async ({ recipientId, senderId, conversationId, type,
         isRead: notification.isRead,
         timestamp: notification.timestamp,
       });
-      (`Pusher triggered for ${recipientId} with notification data`, {
+      console.log(`Pusher triggered for ${recipientId} with notification data`, {
         _id: notification._id,
         message,
       });
@@ -78,7 +78,7 @@ export const getUnreadNotifications = async (req, res) => {
       .sort({ timestamp: -1 })
       .lean();
 
-    ("Fetched unread notifications for userId:", userId, notifications);
+    console.log("Fetched unread notifications for userId:", userId, notifications);
 
     res.status(200).json({
       success: true,
@@ -157,7 +157,7 @@ export const getAllNotifications = async (req, res) => {
       .sort({ timestamp: -1 })
       .lean();
 
-    ("Fetched all notifications for userId:", userId, notifications);
+    console.log("Fetched all notifications for userId:", userId, notifications);
 
     res.status(200).json({
       success: true,

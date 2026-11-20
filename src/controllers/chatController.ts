@@ -78,6 +78,7 @@ export const sendMessage = async (req, res) => {
       conversationId: conversation._id,
       type: messageType === "budget" ? "budget_message" : "new_message",
       message: messageType === "budget" ? "New budget message received" : message,
+      senderRole,
     });
 
     res.status(201).json({
@@ -120,7 +121,7 @@ export const getMessages = async (req, res) => {
     
 
     if (messages.length === 0) {
-      ("⚠️ No messages found for this conversation.");
+      console.log("⚠️ No messages found for this conversation.");
     }
 
     res.status(200).json(messages);
@@ -301,7 +302,7 @@ export const getOrCreateConversation = async (req, res) => {
 
     if (!conversation) {
       // Create a new conversation if none exists
-      (`No conversation found between ${userId} and ${guideId}. Creating a new one...`);
+      console.log(`No conversation found between ${userId} and ${guideId}. Creating a new one...`);
       conversation = new Conversation({ participants: [userId, guideId] });
       await conversation.save();
       

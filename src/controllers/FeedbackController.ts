@@ -63,7 +63,7 @@ export const deleteFeedback = async (req,res) => {
         if(!deleteFeedback){
             return res.status(404).json({message:"feedback not found"})
         }
-        res.status(200).json({message:"feedback deleted successfully",error:error.message})
+        res.status(200).json({message:"feedback deleted successfully"})
     } catch (error) {
         res.status(404).json({error:error.message})
     }
@@ -76,12 +76,12 @@ export const getAllFeedback = async (req, res) => {
     try {
         const { status, guideId, userId, sort, page = 1, limit = 10 } = req.query;
         
-        const query = {};
+        const query: any = {};
         if (status) query.status = status;
         if (guideId) query.guideId = guideId;
         if (userId) query.userId = userId;
 
-        const sortOptions = {};
+        const sortOptions: any = {};
         if (sort === 'newest') sortOptions.submittedAt = -1;
         if (sort === 'oldest') sortOptions.submittedAt = 1;
         if (sort === 'highest') sortOptions.rating = -1;

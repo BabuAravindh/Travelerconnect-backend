@@ -173,7 +173,7 @@ router.delete("/:userId", authenticateUser, async (req, res) => {
   }
 
   const result = await deleteUser(userId);
-   ('user deleted succssfully',result)
+   console.log('user deleted succssfully',result)
   if (result.success) {
     res.status(200).json(result);
   } else {

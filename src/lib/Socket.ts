@@ -15,19 +15,19 @@ const io = new Server(server, {
   },
 });
 
-const userSocketMap = {}; // { userId: socketId }
+const userSocketMap: Record<string, string> = {}; // { userId: socketId }
 
 // Helper function to get receiver's socket ID
 const getReceiverSocketId = (receiverId) => userSocketMap[receiverId] || null;
 
 export const chatSocket = () => {
   io.on("connection", (socket) => {
-    ("A user connected:", socket.id);
+    console.log("A user connected:", socket.id);
   
     const userId = socket.handshake.query.userId;
     if (userId && userId !== "undefined") {
-      userSocketMap[userId] = socket.id;
-      (`User ${userId} connected with socket ID ${socket.id}`);
+      userSocketMap[String(userId)] = socket.id;
+      console.log(`User ${userId} connected with socket ID ${socket.id}`);
     }
   
     // Listen for the 'send-message' event
@@ -46,7 +46,7 @@ export const chatSocket = () => {
     
       // Emit the new message to both participants in the conversation
       conversation.participants.forEach((participant) => {
-        const receiverSocketId = userSocketMap[participant];
+        const receiverSocketId = userSocketMap[participant.toString()];
         if (receiverSocketId) {
           io.to(receiverSocketId).emit("new-message", { conversationId, message });
         }
@@ -55,9 +55,9 @@ export const chatSocket = () => {
     
   
     socket.on("disconnect", () => {
-      ("User disconnected:", socket.id);
+      console.log("User disconnected:", socket.id);
       if (userId) {
-        delete userSocketMap[userId];
+        delete userSocketMap[String(userId)];
         io.emit("getOnlineUsers", Object.keys(userSocketMap));
       }
     });

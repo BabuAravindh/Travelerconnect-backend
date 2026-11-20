@@ -65,7 +65,7 @@ const PaymentSchema = new mongoose.Schema(
 PaymentSchema.post("save", async function (doc) {
   const userId = doc.recordedBy?.toString() || (await Booking.findById(doc.bookingId)).userId.toString();
   const guideId = (await Booking.findById(doc.bookingId)).guideId.toString();
-  const previousDoc = await this.constructor.findOne({ _id: doc._id });
+  const previousDoc = await (this.constructor as any).findOne({ _id: doc._id });
 
   // Populate sender and recipient details
   const sender = await User.findById(userId).select("name avatar _id").lean();
@@ -130,8 +130,8 @@ if (!mongoose.models.Payment) {
   });
 }
 
-const ModeOfPayment = mongoose.models.ModeOfPayment || mongoose.model("ModeOfPayment", ModeOfPaymentSchema);
-const Payment = mongoose.models.Payment || mongoose.model("Payment", PaymentSchema);
-const Refund = mongoose.models.Refund || mongoose.model("Refund", RefundSchema);
+const ModeOfPayment = (mongoose.models.ModeOfPayment || mongoose.model("ModeOfPayment", ModeOfPaymentSchema)) as any;
+const Payment = (mongoose.models.Payment || mongoose.model("Payment", PaymentSchema)) as any;
+const Refund = (mongoose.models.Refund || mongoose.model("Refund", RefundSchema)) as any;
 
 export { ModeOfPayment, Payment, Refund };

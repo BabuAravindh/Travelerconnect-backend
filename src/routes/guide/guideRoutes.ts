@@ -78,8 +78,8 @@ router.get("/:guideId/stats", authenticateUser, async (req, res) => {
     });
 
     // Format conversations data
-    const recentConversations = conversations.map(conv => {
-      const otherParticipant = conv.participants.find(p => p._id.toString() !== guideId);
+    const recentConversations = conversations.map((conv: any) => {
+      const otherParticipant = conv.participants.find((p: any) => p._id.toString() !== guideId);
       const latestMessage = conv.messages[0] || null;
       
       return {

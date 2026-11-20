@@ -2,14 +2,14 @@
 const cache = new Map();
 const CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
 
-const setCache = (key, value) => {
-  cache.set(key, { data: value, timestamp: Date.now() });
+const setCache = (key, value, ttl = CACHE_TTL) => {
+  cache.set(key, { data: value, timestamp: Date.now(), ttl });
 };
 
 const getCache = (key) => {
   const entry = cache.get(key);
   if (!entry) return null;
-  if (Date.now() - entry.timestamp > CACHE_TTL) {
+  if (Date.now() - entry.timestamp > entry.ttl) {
     cache.delete(key);
     return null;
   }
@@ -18,7 +18,7 @@ const getCache = (key) => {
 
 const clearCache = () => {
   cache.clear();
-  ('Cache store cleared');
+  console.log('Cache store cleared');
 };
 
 export { setCache, getCache, clearCache };

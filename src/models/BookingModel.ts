@@ -38,7 +38,7 @@ const bookingSchema = new mongoose.Schema(
 bookingSchema.post("save", async function (doc) {
   const userId = doc.userId.toString();
   const guideId = doc.guideId.toString();
-  const previousDoc = await this.constructor.findOne({ _id: doc._id }); // Fetch previous state
+  const previousDoc = await (this.constructor as any).findOne({ _id: doc._id }); // Fetch previous state
 
   // New booking notification for the guide
   if (!previousDoc) {
@@ -83,5 +83,5 @@ bookingSchema.post("save", async function (doc) {
   }
 });
 
-const Booking = mongoose.models.Booking || mongoose.model("Booking", bookingSchema);
+const Booking = (mongoose.models.Booking || mongoose.model("Booking", bookingSchema)) as any;
 export default Booking;

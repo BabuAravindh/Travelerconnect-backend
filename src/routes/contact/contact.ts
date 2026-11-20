@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const sendEmail = async ({ to, subject, text, html }) => {
+const sendEmail = async ({ to, subject, text, html = undefined }) => {
   try {
     const mailOptions = {
       from: `"Support Team" <${process.env.EMAIL_USER}>`,
@@ -27,7 +27,7 @@ const sendEmail = async ({ to, subject, text, html }) => {
     };
     
     await transporter.sendMail(mailOptions);
-    ('Email sent successfully');
+    console.log('Email sent successfully');
   } catch (error) {
     console.error('Error sending email:', error);
     throw error;
@@ -63,7 +63,7 @@ router.post('/submit', async (req, res) => {
 router.get('/', async (req, res) => {
     try {
       const { status, search } = req.query;
-      let query = {};
+      let query: any = {};
       
       if (status && status !== 'all') {
         query.status = status;
@@ -137,7 +137,7 @@ router.put('/:id', async (req, res) => {
                 <p>Best regards,<br>The Support Team</p>
               `
             });
-            (`Email sent for ticket ${updatedTicket._id}`);
+            console.log(`Email sent for ticket ${updatedTicket._id}`);
           }
         } catch (emailError) {
           console.error('Failed to send email response:', emailError);

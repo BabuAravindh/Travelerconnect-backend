@@ -95,13 +95,13 @@ export const getUserFullDetails = async (req, res) => {
         name: user.name,
         role: user.role,
         isVerified: user.isVerified,
-        createdAt: user.createdAt,
-        updatedAt: user.updatedAt,
+        createdAt: (user as any).createdAt,
+        updatedAt: (user as any).updatedAt,
       },
       profile: userProfile
         ? {
-            bio: userProfile.bio,
-            phone: userProfile.phone,
+            bio: (userProfile as any).bio,
+            phone: userProfile.phoneNumber,
             profilePicture: userProfile.profilePicture,
             // add more fields if needed
           }
@@ -111,24 +111,25 @@ export const getUserFullDetails = async (req, res) => {
 
     // Add guide details if guide
     if (user.role === "guide" && guideDetails) {
+      const guideDetailsAny: any = guideDetails;
       response.guideDetails = {
-        bio: guideDetails.bio,
-        languages: guideDetails.languages || [],
-        activities: guideDetails.activities || [],
-        serviceLocations: guideDetails.serviceLocations || [],
-        status: guideDetails.status,
+        bio: guideDetailsAny.bio,
+        languages: guideDetailsAny.languages || [],
+        activities: guideDetailsAny.activities || [],
+        serviceLocations: guideDetailsAny.serviceLocations || [],
+        status: guideDetailsAny.status,
         verification: {
-          aadharCardPhoto: guideDetails.aadharCardPhoto,
-          bankAccountNumber: guideDetails.bankAccountNumber
-            ? `••••${guideDetails.bankAccountNumber.slice(-4)}`
+          aadharCardPhoto: guideDetailsAny.aadharCardPhoto,
+          bankAccountNumber: guideDetailsAny.bankAccountNumber
+            ? `••••${guideDetailsAny.bankAccountNumber.slice(-4)}`
             : null,
-          submittedAt: guideDetails.submittedAt,
-          reviewedAt: guideDetails.reviewedAt,
+          submittedAt: guideDetailsAny.submittedAt,
+          reviewedAt: guideDetailsAny.reviewedAt,
         },
         professionalDetails: {
-          experience: guideDetails.experience,
-          pricing: guideDetails.pricing,
-          availability: guideDetails.availability,
+          experience: guideDetailsAny.experience,
+          pricing: guideDetailsAny.pricing,
+          availability: guideDetailsAny.availability,
         },
       };
     }

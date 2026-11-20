@@ -7,7 +7,7 @@ import {
 } from "../../controllers/admin/UserController.js";
 import User from "../../models/User.js";
 import Booking from "../../models/BookingModel.js";
-import { Payment } from "../../models/Payment.js";
+import { Payment } from "../../models/payment.js";
 import { verifyAdmin } from "../../middleware/verifyAdmin.js";
 
 const router = express.Router();

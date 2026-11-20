@@ -134,7 +134,7 @@ questionSchema.pre("save", async function (next) {
     try {
       const questionCount = await mongoose.model("Question").countDocuments({ cityId: this.cityId, type: "specific" });
       if (questionCount >= 10) {
-        const error = new Error("Cannot add more than 10 specific questions for this city");
+        const error: any = new Error("Cannot add more than 10 specific questions for this city");
         error.status = 400;
         return next(error);
       }
@@ -142,7 +142,7 @@ questionSchema.pre("save", async function (next) {
       return next(error);
     }
   }
-  this.updatedAt = Date.now();
+  this.updatedAt = new Date();
   next();
 });
 

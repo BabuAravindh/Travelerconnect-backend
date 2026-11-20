@@ -35,8 +35,8 @@ const streamUploadWithRetry = async (fileBuffer, retries = MAX_RETRIES, timeoutM
   let attempt = 0;
   while (attempt < retries) {
     try {
-      (`🔁 Cloudinary upload attempt ${attempt + 1} starting...`);
-      return await new Promise((resolve, reject) => {
+      console.log(`🔁 Cloudinary upload attempt ${attempt + 1} starting...`);
+      return await new Promise<any>((resolve, reject) => {
         const timeout = setTimeout(() => {
           console.error(`Cloudinary upload attempt ${attempt + 1} timed out after ${timeoutMs}ms`);
           reject(new Error('Cloudinary upload timeout'));
@@ -49,7 +49,7 @@ const streamUploadWithRetry = async (fileBuffer, retries = MAX_RETRIES, timeoutM
           (error, result) => {
             clearTimeout(timeout);
             if (result) {
-              (`Cloudinary upload attempt ${attempt + 1} succeeded`);
+              console.log(`Cloudinary upload attempt ${attempt + 1} succeeded`);
               resolve(result);
             } else {
               console.error(`Cloudinary upload attempt ${attempt + 1} failed: ${error?.message || 'Unknown error'}`);
@@ -143,11 +143,11 @@ export const initiatePayment = async (req, res) => {
         amount: Math.round(sanitizedAmount * 100), // Convert to paise
         currency: 'INR',
         receipt: receiptId,
-        payment_capture: 1,
-        notes: [{
+        payment_capture: true,
+        notes: {
           bookingId: bookingId.toString(),
           type: paymentType
-        }]
+        }
       });
     } catch (razorpayError) {
       const errorDetails = getPaymentErrorMessage(razorpayError);
@@ -550,7 +550,7 @@ export const recordManualPayment = async (req, res) => {
     // Upload screenshot if exists, but proceed if it fails
     let screenshotUrl = null;
     if (req.file) {
-      ('🔁 Uploading manual payment screenshot...');
+      console.log('🔁 Uploading manual payment screenshot...');
       try {
         const uploadResult = await streamUploadWithRetry(req.file.buffer);
         screenshotUrl = uploadResult.secure_url;
@@ -745,10 +745,10 @@ export const updateManualPaymentStatus = async (req, res) => {
     }
 
     // Prepare update object
-    const update = {
+    const update: any = {
       paymentStatus,
       notes: notes || payment.notes,
-    
+
     };
 
     // Set timestamps based on status
@@ -1012,7 +1012,7 @@ export const getGuidePaymentHistory = async (req, res) => {
 
     const guideObjectId = new mongoose.Types.ObjectId(guideId);
 
-    const bookingQuery = { guideId: guideObjectId };
+    const bookingQuery: any = { guideId: guideObjectId };
 
     if (status) {
       const statuses = status.split(',');
@@ -1034,7 +1034,7 @@ export const getGuidePaymentHistory = async (req, res) => {
       if (endDate) bookingQuery.startDate.$lte = new Date(endDate);
     }
 
-    const paymentPipeline = [
+    const paymentPipeline: any[] = [
       {
         $lookup: {
           from: 'modeofpayments',
@@ -1046,7 +1046,7 @@ export const getGuidePaymentHistory = async (req, res) => {
       { $unwind: { path: '$paymentMethod', preserveNullAndEmptyArrays: true } }
     ];
 
-    const paymentMatch = {};
+    const paymentMatch: any = {};
     if (minAmount) paymentMatch.amount = { $gte: Number(minAmount) };
     if (maxAmount) paymentMatch.amount = { ...paymentMatch.amount, $lte: Number(maxAmount) };
     if (paymentMethod) {

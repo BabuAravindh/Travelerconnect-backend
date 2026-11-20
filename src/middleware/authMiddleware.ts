@@ -10,7 +10,7 @@ const authenticateUser = (req, res, next) => {
   try {
     const decoded = jwt.verify(token.replace("Bearer ", ""), process.env.JWT_SECRET);
 
-("Decoded JWT:", decoded);
+console.log("Decoded JWT:", decoded);
     // Ensure `_id` is assigned correctly
     req.user = { _id: decoded.id, name: decoded.name, role: decoded.role };
 

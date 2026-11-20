@@ -4,7 +4,7 @@ import UserModel from '../models/User.js'; // Adjust path, use alias to avoid co
 
 const CREDITS_PER_AI_REQUEST = 1; // Define cost per AI request
 
-export const deductCredits = async (userId, query, response = {}) => {
+export const deductCredits = async (userId, query, response: any = {}) => {
   const session = await mongoose.startSession();
   session.startTransaction();
   try {
