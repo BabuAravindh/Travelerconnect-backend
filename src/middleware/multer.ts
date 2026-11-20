@@ -7,7 +7,7 @@ const storage = new CloudinaryStorage({
   params: {
     folder: "TravelerConnect/attractions",
     allowed_formats: ["jpg", "jpeg", "png"],
-  },
+  } as any,
 });
 
 const upload = multer({ storage });

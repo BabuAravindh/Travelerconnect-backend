@@ -14,7 +14,7 @@ export const validateConversationParticipants = async (req, res, next) => {
   
       // Check if both participants are guides
       const isGuideToGuide = conversation.participants.every(
-        participant => participant.role === 'guide'
+        (participant: any) => participant.role === 'guide'
       );
   
       if (isGuideToGuide) {

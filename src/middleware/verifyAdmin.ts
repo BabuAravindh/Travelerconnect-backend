@@ -2,12 +2,14 @@ import jwt from 'jsonwebtoken';
 
 export const verifyAdmin = (req, res, next) => {
   try {
-    // Get token from cookies
-    const token = req.cookies.token;
-    
-    if (!token) {
+    // Get token from the Authorization header (matches authMiddleware's scheme)
+    const header = req.header("Authorization");
+
+    if (!header) {
       return res.status(401).json({ message: 'Authentication required' });
     }
+
+    const token = header.replace("Bearer ", "");
 
     // Verify token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);

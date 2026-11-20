@@ -1,10 +1,14 @@
 // controllers/requestController.js
 import Request from '../models/RequestModel.js';
-import axios from 'axios';
+import { findOrCreateConversation } from './chatController.js';
 // Create a new request
 export const createRequest = async (req, res) => {
   try {
     const { customerId, guideId, paymentStatus } = req.body;
+
+    if (customerId !== req.user?._id?.toString()) {
+      return res.status(403).json({ error: "You can only create requests for yourself" });
+    }
 
     // ✅ Check if a request already exists between the same customer and guide
     const existingRequest = await Request.findOne({ customerId, guideId, status: "pending" });
@@ -27,6 +31,11 @@ export const createRequest = async (req, res) => {
 export const getRequestsForGuide = async (req, res) => {
   try {
     const { guideId } = req.params;
+
+    if (guideId !== req.user?._id?.toString() && req.user?.role !== "admin") {
+      return res.status(403).json({ error: "You do not have access to these requests" });
+    }
+
     const requests = await Request.find({ guideId }).populate('customerId', 'name email');
     res.status(200).json(requests);
   } catch (error) {
@@ -42,17 +51,26 @@ export const updateRequestStatus = async (req, res) => {
     const { id } = req.params;
     const { status } = req.body;
 
+    const existingRequest = await Request.findById(id);
+    if (!existingRequest) return res.status(404).json({ message: "Request not found" });
+
+    if (
+      existingRequest.guideId?.toString() !== req.user?._id?.toString() &&
+      req.user?.role !== "admin"
+    ) {
+      return res.status(403).json({ message: "You do not have access to this request" });
+    }
+
     // Update the request status
     const updatedRequest = await Request.findByIdAndUpdate(id, { status }, { new: true });
-    if (!updatedRequest) return res.status(404).json({ message: "Request not found" });
 
     // If the request is accepted, start a chat conversation
     if (status === "accepted") {
       try {
-        await axios.post("http://localhost:5000/api/chats/startConversation", {
-          senderId: updatedRequest.customerId, 
-          receiverId: updatedRequest.guideId
-        });
+        await findOrCreateConversation(
+          updatedRequest.customerId.toString(),
+          updatedRequest.guideId.toString()
+        );
       } catch (chatError) {
         console.error("Error starting chat:", chatError.message);
       }

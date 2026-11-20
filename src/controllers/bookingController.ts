@@ -22,7 +22,7 @@ export const createBooking = async (req, res) => {
       specialRequests = ''
     } = req.body;
 
-    (activities, "activities in booking controller");
+    console.log(activities, "activities in booking controller");
 
     // Validate required fields
     const requiredFields = { userId, guideId, startDate, endDate, budget };
@@ -187,7 +187,16 @@ export const updateBookingDetails = async (req, res) => {
       return res.status(404).json({ message: "Booking not found" });
     }
 
-    const updateFields = {};
+    const requesterId = req.user?._id?.toString();
+    if (
+      booking.userId?.toString() !== requesterId &&
+      booking.guideId?.toString() !== requesterId &&
+      req.user?.role !== "admin"
+    ) {
+      return res.status(403).json({ message: "You do not have access to this booking" });
+    }
+
+    const updateFields: any = {};
 
     // ✅ Restrict marking status as 'completed' unless endDate has passed
     if (status) {
@@ -252,6 +261,10 @@ export const getGuideBookings = async (req, res) => {
       return res.status(400).json({ message: "Invalid guide ID format" });
     }
 
+    if (req.user?._id?.toString() !== guideId && req.user?.role !== "admin") {
+      return res.status(403).json({ message: "You do not have access to these bookings" });
+    }
+
     const bookings = await Booking.find({ guideId })
       .populate({
         path: 'userId',
@@ -275,7 +288,7 @@ export const getGuideBookings = async (req, res) => {
     const formattedBookings = bookings.map(booking => {
       const start = new Date(booking.startDate);
       const end = new Date(booking.endDate);
-      const durationDays = Math.ceil((end - start) / (1000 * 60 * 60 * 24));
+      const durationDays = Math.ceil((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
 
       const phone = profileMap.get(booking.userId?._id?.toString()) || "Not Available";
 
@@ -323,13 +336,17 @@ export const getUserBookings = async (req, res) => {
       return res.status(400).json({ message: "Invalid user ID format" });
     }
 
-    ("Fetching bookings for User ID:", userId);
+    if (req.user?._id?.toString() !== userId && req.user?.role !== "admin") {
+      return res.status(403).json({ message: "You do not have access to these bookings" });
+    }
+
+    console.log("Fetching bookings for User ID:", userId);
 
     // Fetch all bookings for the given userId with lean() for better performance
     const bookings = await Booking.find({ userId }).lean();
-     ("Bookings found:", bookings.length);
+     console.log("Bookings found:", bookings.length);
     if (!bookings.length) {
-      (`No bookings found for user ${userId}`);
+      console.log(`No bookings found for user ${userId}`);
       return res.status(200).json([]);
     }
 
@@ -369,8 +386,8 @@ export const getUserBookings = async (req, res) => {
         return {
           ...booking,
           guideProfile: {
-            languages: guide?.languages?.map(lang => lang.languageName) || [],
-            activities: guide?.activities?.map(act => act.activityName) || [],
+            languages: guide?.languages?.map((lang: any) => lang.languageName) || [],
+            activities: guide?.activities?.map((act: any) => act.activityName) || [],
             guideName: guideUser?.name || 'Unknown Guide',
             guideEmail: guideUser?.email || 'No email available',
             guidePhoneNumber: userProfile?.phoneNumber || 'Not provided',
@@ -417,7 +434,7 @@ export const getAllBookings = async (req, res) => {
     const { status, dateFrom, dateTo, page = 1, limit = 10 } = req.query;
     
     // Build filter object (initially empty to get all bookings)
-    const filter = {};
+    const filter: any = {};
     
     // Add optional filters
     if (status) filter.status = status;
@@ -466,7 +483,7 @@ export const getAllBookings = async (req, res) => {
     const formattedBookings = bookings.map(booking => {
       // Calculate duration in days
       const durationDays = Math.ceil(
-        (new Date(booking.endDate) - new Date(booking.startDate)) / 
+        (new Date(booking.endDate).getTime() - new Date(booking.startDate).getTime()) /
         (1000 * 60 * 60 * 24)
       );
       

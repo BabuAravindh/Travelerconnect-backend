@@ -115,7 +115,7 @@ export const handleForgotPassword = async (email: string) => {
   const user = await User.findOne({ email: email.toLowerCase() });
   if (!user) throw { status: 404, message: "User not found" };
 
-  const resetCode  = Math.floor(100000 + Math.random() * 900000).toString();
+  const resetCode  = crypto.randomInt(100000, 1000000).toString();
   const expiryTime = Date.now() + 10 * 60 * 1000;
 
   await ResetPassword.create({
@@ -128,9 +128,9 @@ export const handleForgotPassword = async (email: string) => {
 };
 
 // ─── VERIFY RESET CODE LOGIC ──────────────────────────
-export const verifyResetOtp = async (otp: string) => {
+export const verifyResetOtp = async (email: string, otp: string) => {
   const resetRequest = await ResetPassword
-    .findOne({ resetPasswordCode: otp })
+    .findOne({ email: email.toLowerCase(), resetPasswordCode: otp })
     .sort({ resetPasswordExpires: -1 });
 
   if (!resetRequest || resetRequest.resetPasswordExpires.getTime() < Date.now())

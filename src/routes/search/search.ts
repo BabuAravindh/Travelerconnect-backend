@@ -24,8 +24,8 @@ router.get("/", async (req, res) => {
     }
 
     // Filter guides by name (case-insensitive)
-    const filteredGuides = guides.filter((guide) =>
-      guide.name.toLowerCase().includes(name.toLowerCase())
+    const filteredGuides = guides.filter((guide: any) =>
+      guide.name.toLowerCase().includes(String(name).toLowerCase())
     );
 
     res.json(filteredGuides);
@@ -37,7 +37,7 @@ router.get("/", async (req, res) => {
 router.get("/guides", async (req, res) => {
   try {
     const { language, gender, activity, city } = req.query;
-    let filters = {};
+    let filters: any = {};
 
     // Filter by gender (From UserProfile)
     if (gender) {
@@ -56,7 +56,7 @@ router.get("/guides", async (req, res) => {
 
     // Filter by activity
     if (activity) {
-      let activityObj = await Activity.findOne({ activityName: activity.trim() }).select("_id");
+      let activityObj = await activityModel.findOne({ activityName: String(activity).trim() }).select("_id");
       if (activityObj) {
         filters.activities = activityObj._id;
       }
@@ -75,11 +75,11 @@ router.get("/guides", async (req, res) => {
       .populate("activities", "activityName")
       .populate("serviceLocations", "cityName");
 
-    const mappedGuides = guides.map(guide => ({
+    const mappedGuides = guides.map((guide: any) => ({
       ...guide.toObject(),
-      languages: guide.languages?.map(lang => lang.languageName) || [],
-      activities: guide.activities?.map(act => act.activityName) || [],
-      serviceLocations: guide.serviceLocations?.map(city => city.cityName) || [],
+      languages: guide.languages?.map((lang: any) => lang.languageName) || [],
+      activities: guide.activities?.map((act: any) => act.activityName) || [],
+      serviceLocations: guide.serviceLocations?.map((city: any) => city.cityName) || [],
     }));
 
     res.json({ success: true, data: mappedGuides });
@@ -121,13 +121,13 @@ router.get("/guides/city", async (req, res) => {
       .populate("serviceLocations", "cityName");
 
     // Format the output
-    const mappedGuides = guides.map((guide) => ({
+    const mappedGuides = guides.map((guide: any) => ({
       ...guide.toObject(),
       name: guide.userId?.name || "",
-      languages: guide.languages?.map((lang) => lang.languageName) || [],
-      activities: guide.activities?.map((act) => act.activityName) || [],
+      languages: guide.languages?.map((lang: any) => lang.languageName) || [],
+      activities: guide.activities?.map((act: any) => act.activityName) || [],
       serviceLocations:
-        guide.serviceLocations?.map((city) => city.cityName) || [],
+        guide.serviceLocations?.map((city: any) => city.cityName) || [],
     }));
 
     res.json({ success: true, data: mappedGuides });

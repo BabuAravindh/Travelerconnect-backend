@@ -48,7 +48,7 @@ const uploadImageToCloudinary = async (file, retries = 3, backoff = 1000) => {
   const cacheKey = `image:${file.fieldname}:${file.originalname}`;
   const cachedUrl = getCache(cacheKey);
   if (cachedUrl) {
-    (`Retrieved cached image URL for ${file.originalname}`);
+    console.log(`Retrieved cached image URL for ${file.originalname}`);
     return cachedUrl;
   }
 
@@ -62,7 +62,7 @@ const uploadImageToCloudinary = async (file, retries = 3, backoff = 1000) => {
   try {
     for (let attempt = 1; attempt <= retries; attempt++) {
       try {
-        const result = await new Promise((resolve, reject) => {
+        const result: any = await new Promise((resolve, reject) => {
           const stream = cloudinary.v2.uploader.upload_stream(
             { folder: 'travel_items', resource_type: 'image' },
             (error, result) => (error ? reject(error) : resolve(result))
@@ -71,7 +71,7 @@ const uploadImageToCloudinary = async (file, retries = 3, backoff = 1000) => {
         });
         const imageUrl = result.secure_url;
         setCache(cacheKey, imageUrl, IMAGE_CACHE_TTL);
-        (`Successfully uploaded image ${file.originalname} to Cloudinary`);
+        console.log(`Successfully uploaded image ${file.originalname} to Cloudinary`);
         return imageUrl;
       } catch (error) {
         if (attempt === retries) throw error;
@@ -201,7 +201,7 @@ const validateImageUrls = async (urls = []) => {
   for (const url of urls) {
     try {
       const res = await axios.head(url, { timeout: 10000 });
-      if (res.status === 200 && res.headers['content-type']?.startsWith('image/')) valid.push(url);
+      if (res.status === 200 && String(res.headers['content-type'] ?? '').startsWith('image/')) valid.push(url);
     } catch {}
   }
   return valid;
@@ -220,24 +220,25 @@ export const createCityItems = [
 
     let city = await City.findOne({ cityName });
     let cityDetailsDoc = null;
-    let cityDetails = {};
+    let cityDetails: any = {};
 
     // Fetch coordinates first to ensure valid data
-    const coords = await fetchCityCoordinates(cityName);
+    const coordsResult = await fetchCityCoordinates(cityName);
+    const coords = coordsResult.coords;
     
 
     const { prompt, maxTokens = 1000 } = buildPrompt(cityName, types); // Increased maxTokens to prevent truncation
     let aiResult = null;
 
     try {
-      aiResult = await generateAIContent(prompt, { maxTokens, parseJson: true });
+      aiResult = await generateAIContent(prompt, `city:${cityName}:aicontent`, { maxTokens, parseJson: true });
     } catch (err) {
       console.error(`AI content generation failed for "${cityName}":`, err.message, err.stack);
       return res.status(500).json({ error: 'Failed to generate AI city data', details: err.message });
     }
 
     if (!aiResult?.content || !aiResult.content.cityDetails) {
-      console.error('AI content is null or malformed for "${cityName}":', JSON.stringify(aiResult, null, 2));
+      console.error(`AI content is null or malformed for "${cityName}":`, JSON.stringify(aiResult, null, 2));
       return res.status(500).json({ error: 'Failed to generate valid AI city data' });
     }
 
@@ -583,7 +584,7 @@ export const getAllCityItems = [
         return res.status(400).json({ error: 'City name is required' });
       }
 
-      const city = await City.findOne({ cityName }).populate('cityDetails');
+      const city: any = await City.findOne({ cityName }).populate('cityDetails');
       if (!city) return res.status(404).json({ error: 'City not found' });
 
       // Build cityDetails object

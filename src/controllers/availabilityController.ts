@@ -5,6 +5,11 @@ import GuideAvailability from '../models/guideAvailability.js';
 export const addAvailability = async (req, res) => {
   try {
     const { guideId, availableDay } = req.body;
+
+    if (guideId !== req.user?._id?.toString() && req.user?.role !== "admin") {
+      return res.status(403).json({ error: "You can only set your own availability" });
+    }
+
     const newAvailability = await GuideAvailability.create({ guideId, availableDay });
     res.status(201).json(newAvailability);
   } catch (error) {

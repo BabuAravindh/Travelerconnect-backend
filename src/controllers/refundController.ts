@@ -24,23 +24,20 @@ cloudinary.v2.config({
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.EMAIL_USER, 
-    pass: process.env.EMAIL_PASS 
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
   },
-  tls: {
-    rejectUnauthorized: false 
-  }
 });
 
 
 const uploadImageToCloudinary = async (imagePath, retries = 5, initialDelay = 2000) => {
   try {
-    const upload = promisify(cloudinary.v2.uploader.upload);
+    const upload = promisify(cloudinary.v2.uploader.upload) as (path: string, options: any) => Promise<any>;
     const result = await upload(imagePath, {
       folder: "refunds",
       timeout: 60000, // Set a 60-second timeout for the upload
     });
-    ("Cloudinary upload success:", result.secure_url);
+    console.log("Cloudinary upload success:", result.secure_url);
     return result.secure_url;
   } catch (error) {
     console.error("Cloudinary upload error:", {
@@ -50,7 +47,7 @@ const uploadImageToCloudinary = async (imagePath, retries = 5, initialDelay = 20
     });
     if (retries > 0) {
       const delay = initialDelay * (6 - retries); // Exponential backoff: 2s, 4s, 6s, 8s, 10s
-      (`Retrying Cloudinary upload... Attempts left: ${retries}, Delay: ${delay}ms`);
+      console.log(`Retrying Cloudinary upload... Attempts left: ${retries}, Delay: ${delay}ms`);
       await new Promise((resolve) => setTimeout(resolve, delay));
       return uploadImageToCloudinary(imagePath, retries - 1, initialDelay);
     }
@@ -85,6 +82,14 @@ export const createRefundRequest = async (req, res) => {
       return res.status(400).json({ success: false, error: "Invalid booking ID" });
     }
 
+    const booking = await Booking.findById(bookingId);
+    if (!booking) {
+      return res.status(404).json({ success: false, error: "Booking not found" });
+    }
+    if (booking.userId?.toString() !== req.user?._id?.toString()) {
+      return res.status(403).json({ success: false, error: "You do not own this booking" });
+    }
+
     const existingRefund = await Refund.findOne({ bookingId });
     if (existingRefund) {
       return res.status(400).json({
@@ -107,7 +112,7 @@ export const createRefundRequest = async (req, res) => {
 
 export const updateRefundProof = async (req, res) => {
   try {
-    ("Update refund proof request:", {
+    console.log("Update refund proof request:", {
       params: req.params,
       body: req.body,
       file: req.file,
@@ -117,7 +122,7 @@ export const updateRefundProof = async (req, res) => {
     let { adminComment } = req.body;
 
     if (!req.file) {
-      ("No proof file provided");
+      console.log("No proof file provided");
       return res.status(400).json({ success: false, error: "Proof image is required" });
     }
 
@@ -158,7 +163,7 @@ export const updateRefundProof = async (req, res) => {
 
     const refund = await Refund.findById(id);
     if (!refund) {
-      ("Refund not found for ID:", id);
+      console.log("Refund not found for ID:", id);
       return res.status(404).json({ success: false, error: "Refund request not found" });
     }
 
@@ -167,11 +172,11 @@ export const updateRefundProof = async (req, res) => {
     refund.status = "refunded";
     refund.updatedAt = Date.now();
     await refund.save();
-    ("Refund updated:", refund);
+    console.log("Refund updated:", refund);
 
     const booking = await Booking.findById(refund.bookingId).populate("userId");
     if (!booking || !booking.userId) {
-      ("Booking or user not found for refund:", refund.bookingId);
+      console.log("Booking or user not found for refund:", refund.bookingId);
       return res.status(404).json({ success: false, error: "Booking or User not found" });
     }
 
@@ -269,7 +274,7 @@ export const updateRefundProof = async (req, res) => {
 
     try {
       await transporter.sendMail(mailOptions);
-      ("Email sent to:", user.email);
+      console.log("Email sent to:", user.email);
     } catch (emailError) {
       console.error("Email sending failed:", emailError);
     }

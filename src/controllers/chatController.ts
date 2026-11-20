@@ -63,7 +63,7 @@ export const sendMessage = async (req, res) => {
     await conversation.save();
 
     // Trigger Pusher for chat
-    pusher.trigger(`chat-${conversation._id}`, "new-message", {
+    pusher.trigger(`private-chat-${conversation._id}`, "new-message", {
       senderId,
       message,
       messageType,
@@ -78,6 +78,7 @@ export const sendMessage = async (req, res) => {
       conversationId: conversation._id,
       type: messageType === "budget" ? "budget_message" : "new_message",
       message: messageType === "budget" ? "New budget message received" : message,
+      senderRole,
     });
 
     res.status(201).json({
@@ -92,33 +93,35 @@ export const sendMessage = async (req, res) => {
 };
 
 
-
-
-  
-
-
 // Function to get messages for a specific conversation
 export const getMessages = async (req, res) => {
   try {
     const { id } = req.params;
 
     if (!mongoose.Types.ObjectId.isValid(id)) {
-      ("❌ Invalid conversation ID format:", id);
+   
       return res.status(400).json({ error: "Invalid conversation ID format" });
     }
 
     const conversationId = new mongoose.Types.ObjectId(id); // ✅ Convert to ObjectId
 
-    ("📢 Fetching messages for conversationId:", conversationId);
+    const conversation = await Conversation.findById(conversationId);
+    if (!conversation) {
+      return res.status(404).json({ error: "Conversation not found" });
+    }
+    const requesterId = req.user?._id?.toString();
+    if (!conversation.participants.some((p) => p.toString() === requesterId)) {
+      return res.status(403).json({ error: "You are not part of this conversation" });
+    }
 
     const messages = await Message.find({ conversationId })
       .populate("senderId receiverId", "name avatar") // ✅ Ensure proper population
       .lean(); // ✅ Convert Mongoose objects to plain JSON
 
-    ("📢 Retrieved Messages:", messages);
+    
 
     if (messages.length === 0) {
-      ("⚠️ No messages found for this conversation.");
+      console.log("⚠️ No messages found for this conversation.");
     }
 
     res.status(200).json(messages);
@@ -132,9 +135,11 @@ export const getMessages = async (req, res) => {
 export const getUserConversations = async (req, res) => {
   try {
     const { userId } = req.params;
-    const token = req.headers['authorization'];
-    if (!userId || !token) {
-      return res.status(400).json({ message: 'User ID or Token missing' });
+    if (!userId) {
+      return res.status(400).json({ message: 'User ID missing' });
+    }
+    if (req.user?._id?.toString() !== userId && req.user?.role !== "admin") {
+      return res.status(403).json({ message: "You do not have access to these conversations" });
     }
     // Fetch all conversations where the user is a participant
     const conversations = await Conversation.find({
@@ -144,7 +149,7 @@ export const getUserConversations = async (req, res) => {
 
     res.status(200).json(conversations); // Respond with the conversations
   } catch (error) {
-    ("Error in getUserConversations controller: ", error.message);
+    
     res.status(500).json({ error: "Internal server error" });
   }
 };
@@ -171,7 +176,7 @@ export const getUsersForSidebar = async (req, res) => {
     });
 
     // Convert Set back to an array of objects
-    const users = Array.from(userSet).map((user) => JSON.parse(user));
+    const users = Array.from(userSet).map((user:any) => JSON.parse(user));
 
     res.status(200).json(users);
   } catch (error) {
@@ -180,10 +185,26 @@ export const getUsersForSidebar = async (req, res) => {
   }
 };
 
+// Core logic, reusable for internal server-side callers (no HTTP/auth hop needed).
+export const findOrCreateConversation = async (senderId, receiverId) => {
+  const existingConversation = await Conversation.findOne({
+    participants: { $all: [senderId, receiverId] },
+  }).populate("participants");
+
+  if (existingConversation) {
+    return { created: false, conversation: existingConversation };
+  }
+
+  const newConversation = new Conversation({
+    participants: [senderId, receiverId],
+  });
+  await newConversation.save();
+
+  return { created: true, conversation: newConversation };
+};
+
 export const startConversation = async (req, res) => {
   try {
-    ("Request received at /api/chats/startConversion:", req.body);
-    
     const { senderId, receiverId } = req.body; // Destructure both from req.body
 
     // Validate that both senderId and receiverId are provided
@@ -191,42 +212,28 @@ export const startConversation = async (req, res) => {
       return res.status(400).json({ error: "Both senderId and receiverId are required" });
     }
 
+    if (senderId !== req.user?._id?.toString() && req.user?.role !== "admin") {
+      return res.status(403).json({ error: "You can only start a conversation as yourself" });
+    }
+
     // Prevent starting a conversation with oneself (optional, depending on your requirements)
     if (senderId === receiverId) {
       return res.status(400).json({ error: "Cannot start a conversation with yourself" });
     }
 
-    (`Checking existing conversation between ${senderId} and ${receiverId}`);
-    
-    // Check if a conversation already exists between the two participants
-    const existingConversation = await Conversation.findOne({
-      participants: { $all: [senderId, receiverId] },
-    }).populate("participants");
+    const { created, conversation } = await findOrCreateConversation(senderId, receiverId);
 
-    if (existingConversation) {
-      // If a conversation already exists, return it without creating a new one
-      ("Conversation already exists:", existingConversation);
-      return res.status(200).json({ 
+    if (!created) {
+      return res.status(200).json({
         message: "Conversation already exists",
-        conversation: existingConversation 
+        conversation,
       });
     }
 
-    // If no conversation exists, create a new one
-    ("No existing conversation. Creating a new one...");
-    const newConversation = new Conversation({
-      participants: [senderId, receiverId],
-    });
-
-    await newConversation.save();
-    ("New conversation created:", newConversation);
-
-    // Return the newly created conversation
-    res.status(201).json({ 
+    res.status(201).json({
       message: "Conversation started successfully",
-      conversation: newConversation 
+      conversation,
     });
-
   } catch (error) {
     console.error("Error starting conversation:", error);
     res.status(500).json({ error: "Internal Server Error" });
@@ -277,10 +284,15 @@ export const getOrCreateConversation = async (req, res) => {
 
     // Optional: Prevent conversation with the same ID (e.g., userId === guideId)
     if (userId === guideId) {
-      return res.status(400).json({ 
-        success: false, 
-        message: "Cannot start a conversation with the same user" 
+      return res.status(400).json({
+        success: false,
+        message: "Cannot start a conversation with the same user"
       });
+    }
+
+    const requesterId = req.user?._id?.toString();
+    if (requesterId !== userId && requesterId !== guideId && req.user?.role !== "admin") {
+      return res.status(403).json({ success: false, message: "You are not part of this conversation" });
     }
 
     // Check if a conversation already exists between userId and guideId
@@ -290,10 +302,10 @@ export const getOrCreateConversation = async (req, res) => {
 
     if (!conversation) {
       // Create a new conversation if none exists
-      (`No conversation found between ${userId} and ${guideId}. Creating a new one...`);
+      console.log(`No conversation found between ${userId} and ${guideId}. Creating a new one...`);
       conversation = new Conversation({ participants: [userId, guideId] });
       await conversation.save();
-      ("New conversation created:", conversation._id);
+      
       
       return res.status(201).json({ 
         success: true, 
@@ -303,7 +315,7 @@ export const getOrCreateConversation = async (req, res) => {
     }
 
     // Return the existing conversation
-    (`Conversation already exists between ${userId} and ${guideId}:`, conversation._id);
+   
     return res.status(200).json({ 
       success: true, 
       message: "Conversation already exists",
@@ -339,6 +351,9 @@ const onlineUsers = new Set(); // In-memory storage for online users
 export const setUserOnline = async (req, res) => {
   try {
     const { userId } = req.body;
+    if (userId !== req.user?._id?.toString()) {
+      return res.status(403).json({ error: "You can only update your own presence" });
+    }
     onlineUsers.add(userId);
 
     pusher.trigger("presence-online-users", "user-online", { userId });
@@ -354,6 +369,9 @@ export const setUserOnline = async (req, res) => {
 export const setUserOffline = async (req, res) => {
   try {
     const { userId } = req.body;
+    if (userId !== req.user?._id?.toString()) {
+      return res.status(403).json({ error: "You can only update your own presence" });
+    }
     onlineUsers.delete(userId);
 
     pusher.trigger("presence-online-users", "user-offline", { userId });
@@ -367,8 +385,12 @@ export const setUserOffline = async (req, res) => {
 export const typingIndicator = async (req, res) => {
   try {
     const { conversationId, senderId, isTyping } = req.body;
-  
-    pusher.trigger(`chat-${conversationId}`, "typing-indicator", {
+
+    if (senderId !== req.user?._id?.toString()) {
+      return res.status(403).json({ error: "You can only send typing status as yourself" });
+    }
+
+    pusher.trigger(`private-chat-${conversationId}`, "typing-indicator", {
       senderId,
       isTyping,
     });
@@ -507,7 +529,7 @@ export const updateMessage = async (req, res) => {
     }
 
     // Optionally trigger Pusher to notify users in the conversation
-    pusher.trigger(`chat-${updatedMessage.conversationId}`, "message-updated", {
+    pusher.trigger(`private-chat-${updatedMessage.conversationId}`, "message-updated", {
       ...updatedMessage,
     });
 

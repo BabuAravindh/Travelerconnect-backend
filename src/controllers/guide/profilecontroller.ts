@@ -23,7 +23,7 @@ cloudinary.v2.config({
 // Network stability check
 const checkNetwork = async () => {
   try {
-    const response = await fetch("https://www.google.com", { method: "HEAD", timeout: 2000 });
+    const response = await fetch("https://www.google.com", { method: "HEAD", signal: AbortSignal.timeout(2000) });
     return response.ok;
   } catch (err) {
     throw new Error(`Network check failed: ${err.message}`);
@@ -34,7 +34,7 @@ const checkNetwork = async () => {
 const checkCloudinaryStatus = async () => {
   try {
     const response = await fetch("https://status.cloudinary.com/api/v2/status.json");
-    const { status } = await response.json();
+    const { status }: any = await response.json();
     if (status.indicator !== "none") {
       throw new Error(`Cloudinary service issue: ${status.description}`);
     }
@@ -46,8 +46,8 @@ const checkCloudinaryStatus = async () => {
 
 // Utility function to upload to Cloudinary with detailed diagnostics
 const uploadToCloudinaryWithDebug = (fileBuffer, folder) => {
-  return new Promise((resolve, reject) => {
-    (`Initiating upload to ${folder}, Buffer size: ${(fileBuffer.length / 1024).toFixed(2)} KB`);
+  return new Promise<any>((resolve, reject) => {
+    console.log(`Initiating upload to ${folder}, Buffer size: ${(fileBuffer.length / 1024).toFixed(2)} KB`);
     const startTime = Date.now();
 
     const timeoutId = setTimeout(() => {
@@ -72,7 +72,7 @@ const uploadToCloudinaryWithDebug = (fileBuffer, folder) => {
             console.error(`Invalid Cloudinary response:`, result);
             reject(new Error("Invalid Cloudinary response: missing secure_url or public_id"));
           } else {
-            (`Upload succeeded after ${elapsedTime}s:`, result.secure_url);
+            console.log(`Upload succeeded after ${elapsedTime}s:`, result.secure_url);
             resolve(result);
           }
         }
@@ -107,10 +107,10 @@ const uploadWithRetry = async (fileBuffer, folder, retries = 5) => {
     await checkCloudinaryStatus();
     await checkNetwork();
     for (let attempt = 1; attempt <= retries; attempt++) {
-      (`Attempt ${attempt} of ${retries}`);
+      console.log(`Attempt ${attempt} of ${retries}`);
       try {
         const result = await uploadToCloudinaryWithDebug(fileBuffer, folder);
-        ("Upload completed successfully:", result.secure_url);
+        console.log("Upload completed successfully:", result.secure_url);
         return result;
       } catch (error) {
         console.warn(`Upload attempt ${attempt} failed for ${folder}:`, {
@@ -136,7 +136,7 @@ export const getGuideProfile = async (req, res) => {
       return res.status(400).json({ message: "Invalid or missing userId." });
     }
 
-    const [user, userProfile, guideProfile] = await Promise.all([
+    const [user, userProfile, guideProfile]: [any, any, any] = await Promise.all([
       User.findById(userId).lean(),
       UserProfile.findOne({ userId })
         .populate("address.stateId", "stateName")
@@ -158,7 +158,7 @@ export const getGuideProfile = async (req, res) => {
     }
 
     const defaultProfilePic = "https://picsum.photos/300/300?grayscale";
-    let response = {
+    let response: any = {
       firstName: userProfile.firstName || "",
       lastName: userProfile.lastName || "",
       email: user.email || "",
@@ -166,8 +166,8 @@ export const getGuideProfile = async (req, res) => {
       profilePicture:
         userProfile.profilePicture && userProfile.profilePicture !== ""
           ? userProfile.profilePicture
-          : user.profilePicture && user.profilePicture !== ""
-          ? user.profilePicture
+          : user.profilePic && user.profilePic !== ""
+          ? user.profilePic
           : defaultProfilePic,
       isVerified: user.isVerified ?? false,
       phoneNumber: userProfile.phoneNumber || "",
@@ -182,12 +182,17 @@ export const getGuideProfile = async (req, res) => {
         return res.status(404).json({ message: "Guide profile not found." });
       }
 
+      const isOwnerOrAdmin =
+        req.user?._id?.toString() === userId || req.user?.role === "admin";
+
       response = {
         ...response,
         bio: guideProfile.bio || "",
-        bankAccountNumber: guideProfile.bankAccountNumber || "",
-        ifscCode: guideProfile.ifscCode || "",
-        bankName: guideProfile.bankName || "",
+        ...(isOwnerOrAdmin && {
+          bankAccountNumber: guideProfile.bankAccountNumber || "",
+          ifscCode: guideProfile.ifscCode || "",
+          bankName: guideProfile.bankName || "",
+        }),
         profilePicture:
           guideProfile.profilePic?.secure_url && guideProfile.profilePic.secure_url !== ""
             ? guideProfile.profilePic.secure_url
@@ -221,7 +226,13 @@ export const updateGuideProfile = async (req, res) => {
   session.startTransaction();
 
   try {
-    const { userId } = req.params;
+    let { userId } = req.params;
+
+    if (req.user?._id?.toString() !== userId && req.user?.role !== "admin") {
+      await session.abortTransaction();
+      return res.status(403).json({ message: "You can only update your own profile." });
+    }
+
     const {
       newUserId,
       firstName,
@@ -241,8 +252,8 @@ export const updateGuideProfile = async (req, res) => {
       serviceLocations = [],
     } = req.body;
 
-    (`Starting profile update for user: ${userId}`);
-    ("Request body:", JSON.stringify(req.body, null, 2));
+    console.log(`Starting profile update for user: ${userId}`);
+    console.log("Request body:", JSON.stringify(req.body, null, 2));
 
     // Validate user exists
     const existingUser = await User.findById(userId).session(session);
@@ -253,6 +264,10 @@ export const updateGuideProfile = async (req, res) => {
 
     // If newUserId is provided and different from current userId
     if (newUserId && newUserId !== userId) {
+      if (req.user?.role !== "admin") {
+        await session.abortTransaction();
+        return res.status(403).json({ message: "Only an admin can change a user ID." });
+      }
       const userWithNewId = await User.findById(newUserId).session(session);
       if (userWithNewId) {
         await session.abortTransaction();
@@ -275,9 +290,9 @@ export const updateGuideProfile = async (req, res) => {
 
     if (req.files?.["profilePic"]?.[0]) {
       const file = req.files["profilePic"][0];
-      (`Processing profile picture (${file.originalname}, ${(file.size / 1024 / 1024).toFixed(2)}MB)`);
+      console.log(`Processing profile picture (${file.originalname}, ${(file.size / 1024 / 1024).toFixed(2)}MB)`);
       profilePicData = await uploadWithRetry(file.buffer, "guide_profiles");
-      ("Profile picture uploaded:", profilePicData.secure_url);
+      console.log("Profile picture uploaded:", profilePicData.secure_url);
     }
 
     // Validate references
@@ -389,7 +404,7 @@ export const updateGuideProfile = async (req, res) => {
     );
 
     await session.commitTransaction();
-    (`Successfully updated profile for user: ${userId}`);
+    console.log(`Successfully updated profile for user: ${userId}`);
 
     res.status(200).json({
       message: "Guide profile updated successfully.",
@@ -431,6 +446,10 @@ export const createProfile = async (req, res) => {
   try {
     const { userId, activities, bankAccountNumber, ifscCode, bankName, bio, languages, serviceLocations } = req.body;
 
+    if (req.user?._id?.toString() !== userId && req.user?.role !== "admin") {
+      return res.status(403).json({ message: "You can only create your own guide profile." });
+    }
+
     const user = await User.findById(userId);
     if (!user) {
       return res.status(404).json({ message: "User not found." });
@@ -449,9 +468,9 @@ export const createProfile = async (req, res) => {
     let profilePicData = null;
 
     if (req.files?.["profilePic"]?.[0]) {
-      (`Profile picture received for ${userId}: ${req.files["profilePic"][0].originalname}`);
+      console.log(`Profile picture received for ${userId}: ${req.files["profilePic"][0].originalname}`);
       profilePicData = await uploadWithRetry(req.files["profilePic"][0].buffer, "guide_profiles");
-      (`Profile picture uploaded for ${userId}: ${profilePicData.secure_url}`);
+      console.log(`Profile picture uploaded for ${userId}: ${profilePicData.secure_url}`);
     }
 
     const [languageDocs, activityDocs, cityDocs] = await Promise.all([
@@ -519,7 +538,7 @@ export const getAllGuides = async (req, res) => {
 
     const guides = await Promise.all(
       users.map(async (user) => {
-        const [userProfile, guideDetails] = await Promise.all([
+        const [userProfile, guideDetails]: [any, any] = await Promise.all([
           UserProfile.findOne({ userId: user._id })
             .populate("address.stateId", "stateName")
             .lean(),
@@ -548,10 +567,12 @@ export const getAllGuides = async (req, res) => {
           return null; // Skip incomplete profiles
         }
 
+        const { bankAccountNumber, ifscCode, bankName, ...publicGuideDetails } = guideDetails;
+
         return {
           ...user,
           ...userProfile,
-          ...guideDetails,
+          ...publicGuideDetails,
           profilePicture:
             guideDetails.profilePic?.secure_url && guideDetails.profilePic.secure_url !== ""
               ? guideDetails.profilePic.secure_url

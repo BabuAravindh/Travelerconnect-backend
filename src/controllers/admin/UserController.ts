@@ -28,10 +28,18 @@ export const getUser = async (req, res) => {
 };
 
 // Update user
+const ALLOWED_UPDATE_FIELDS = ["name", "email", "role"];
+
 export const updateUser = async (req, res) => {
   try {
-    const user = await User.findByIdAndUpdate(req.params.id, req.body, {
+    const updates = {};
+    for (const field of ALLOWED_UPDATE_FIELDS) {
+      if (req.body[field] !== undefined) updates[field] = req.body[field];
+    }
+
+    const user = await User.findByIdAndUpdate(req.params.id, updates, {
       new: true,
+      runValidators: true,
       select: "name email role",
     });
     if (!user) return res.status(404).json({ error: "User not found" });
@@ -87,13 +95,13 @@ export const getUserFullDetails = async (req, res) => {
         name: user.name,
         role: user.role,
         isVerified: user.isVerified,
-        createdAt: user.createdAt,
-        updatedAt: user.updatedAt,
+        createdAt: (user as any).createdAt,
+        updatedAt: (user as any).updatedAt,
       },
       profile: userProfile
         ? {
-            bio: userProfile.bio,
-            phone: userProfile.phone,
+            bio: (userProfile as any).bio,
+            phone: userProfile.phoneNumber,
             profilePicture: userProfile.profilePicture,
             // add more fields if needed
           }
@@ -103,24 +111,25 @@ export const getUserFullDetails = async (req, res) => {
 
     // Add guide details if guide
     if (user.role === "guide" && guideDetails) {
+      const guideDetailsAny: any = guideDetails;
       response.guideDetails = {
-        bio: guideDetails.bio,
-        languages: guideDetails.languages || [],
-        activities: guideDetails.activities || [],
-        serviceLocations: guideDetails.serviceLocations || [],
-        status: guideDetails.status,
+        bio: guideDetailsAny.bio,
+        languages: guideDetailsAny.languages || [],
+        activities: guideDetailsAny.activities || [],
+        serviceLocations: guideDetailsAny.serviceLocations || [],
+        status: guideDetailsAny.status,
         verification: {
-          aadharCardPhoto: guideDetails.aadharCardPhoto,
-          bankAccountNumber: guideDetails.bankAccountNumber
-            ? `••••${guideDetails.bankAccountNumber.slice(-4)}`
+          aadharCardPhoto: guideDetailsAny.aadharCardPhoto,
+          bankAccountNumber: guideDetailsAny.bankAccountNumber
+            ? `••••${guideDetailsAny.bankAccountNumber.slice(-4)}`
             : null,
-          submittedAt: guideDetails.submittedAt,
-          reviewedAt: guideDetails.reviewedAt,
+          submittedAt: guideDetailsAny.submittedAt,
+          reviewedAt: guideDetailsAny.reviewedAt,
         },
         professionalDetails: {
-          experience: guideDetails.experience,
-          pricing: guideDetails.pricing,
-          availability: guideDetails.availability,
+          experience: guideDetailsAny.experience,
+          pricing: guideDetailsAny.pricing,
+          availability: guideDetailsAny.availability,
         },
       };
     }

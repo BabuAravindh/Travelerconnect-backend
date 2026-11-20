@@ -30,7 +30,7 @@ const generatePlanId = () => {
 
 // Static itinerary generator - Modified to handle optional preferences
 const generateStaticItinerary = async (cityName, questions, answers) => {
-  ('Generating itinerary for:', { cityName, questions, answers });
+  console.log('Generating itinerary for:', { cityName, questions, answers });
 
   // Validate required fields
   if (!cityName || typeof cityName !== 'string') {
@@ -67,7 +67,7 @@ Include:
 
 Format as plain text without markdown. Structure by days with clear sections.`;
 
-  ('Itinerary Prompt:\n', itineraryPrompt);
+  console.log('Itinerary Prompt:\n', itineraryPrompt);
 
   // Generate itinerary using AI service
   const itineraryResult = await generateAIContent(itineraryPrompt, null, {
@@ -168,13 +168,13 @@ export const getQuestionsByCity = [
         });
       }
 
-      let questions = await Question.find({ 
-        cityId, 
-        status: 'active' 
+      let questions: any = await Question.find({
+        cityId,
+        status: 'active'
       })
         .select('questionText type options order cityId status createdAt updatedAt __v')
         .sort({ order: 1 });
-      ('City-specific questions:', questions);
+      console.log('City-specific questions:', questions);
 
       if (questions.length === 0) {
         questions = await Question.find({ 
@@ -183,15 +183,15 @@ export const getQuestionsByCity = [
         })
           .select('questionText type options order cityId status createdAt updatedAt __v')
           .sort({ order: 1 });
-        ('Falling back to common questions:', questions);
+        console.log('Falling back to common questions:', questions);
       }
 
       questions = questions.map(q => {
-        const question = q.toObject();
+        const question: any = q.toObject();
         if (question.options && question.options.length > 0 && question.type === 'common') {
           question.type = 'options';
         }
-        if (question._id === '682d2d8b307ec471546ae030') {
+        if (question._id.toString() === '682d2d8b307ec471546ae030') {
           question.options = question.options.map(opt => 
             opt === 'evtns' ? 'events' : 
             opt === 'activites' ? 'activities' : 
@@ -230,7 +230,7 @@ export const getCommonQuestions = [
         .sort({ order: 1 });
 
       const correctedQuestions = questions.map(q => {
-        const question = q.toObject();
+        const question: any = q.toObject();
         if (question.options && question.options.length > 0 && question.type === 'common') {
           question.type = 'options';
         }
@@ -263,7 +263,7 @@ export const getCities = [
       }));
 
       const cities = await City.find().sort({ order: 1 });
-      ('Cities retrieved:', cities);
+      console.log('Cities retrieved:', cities);
       res.status(200).json({
         success: true,
         data: cities,

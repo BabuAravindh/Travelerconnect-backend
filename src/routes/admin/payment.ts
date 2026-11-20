@@ -2,8 +2,10 @@ import { Payment, Refund } from "../../models/payment.js";
 import Booking from "../../models/BookingModel.js";
 import express from "express";
 import mongoose from "mongoose";
+import { verifyAdmin } from "../../middleware/verifyAdmin.js";
 
 const router = express.Router();
+router.use(verifyAdmin);
 
 // Admin route to get all payments with formatted response
 router.get("/", async (req, res) => {

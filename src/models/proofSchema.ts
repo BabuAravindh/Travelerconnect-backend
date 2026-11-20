@@ -52,4 +52,4 @@ const ProofSchema = new mongoose.Schema({
   },
 });
 
-export default mongoose.models.Proof || mongoose.model('Proof', ProofSchema);
+export default (mongoose.models.Proof || mongoose.model('Proof', ProofSchema)) as any;

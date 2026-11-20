@@ -19,7 +19,7 @@ cloudinary.config({
 const upload = multer({ storage: multer.memoryStorage() });
 const checkNetwork = async () => {
   try {
-    const response = await fetch('https://www.google.com', { method: 'HEAD', timeout: 2000 });
+    const response = await fetch('https://www.google.com', { method: 'HEAD', signal: AbortSignal.timeout(2000) });
     return response.ok;
   } catch {
     throw new Error('Network unstable or offline');
@@ -30,7 +30,7 @@ const checkNetwork = async () => {
 const checkCloudinaryStatus = async () => {
   try {
     const response = await fetch('https://status.cloudinary.com/api/v2/status.json');
-    const { status } = await response.json();
+    const { status }: any = await response.json();
     if (status.indicator !== 'none') {
       throw new Error(`Cloudinary service issue: ${status.description}`);
     }
@@ -49,14 +49,14 @@ const uploadToCloudinaryWithDebug = async (fileBuffer, folder) => {
 
   // Test API connectivity
   try {
-    await cloudinary.api.resource_type('upload');
-    ('Cloudinary API connectivity confirmed');
+    await cloudinary.api.ping();
+    console.log('Cloudinary API connectivity confirmed');
   } catch (err) {
     throw new Error(`Cloudinary API check failed: ${err.message}`);
   }
 
-  return new Promise((resolve, reject) => {
-    (`Initiating upload to ${folder}, Buffer size: ${(fileBuffer.length / 1024).toFixed(2)} KB`);
+  return new Promise<any>((resolve, reject) => {
+    console.log(`Initiating upload to ${folder}, Buffer size: ${(fileBuffer.length / 1024).toFixed(2)} KB`);
     const startTime = Date.now();
 
     const uploadStream = cloudinary.uploader.upload_stream(
@@ -73,7 +73,7 @@ const uploadToCloudinaryWithDebug = async (fileBuffer, folder) => {
           });
           reject(error);
         } else {
-          (`Upload succeeded after ${elapsedTime}s:`, result.secure_url);
+          console.log(`Upload succeeded after ${elapsedTime}s:`, result.secure_url);
           resolve(result);
         }
       }
@@ -108,18 +108,18 @@ const uploadWithRetry = async (fileBuffer, folder, retries = 5) => {
 export const becomeGuide = async (req, res) => {
   try {
     // Log Cloudinary config and test connectivity (unchanged)
-    ("Cloudinary Config:", {
+    console.log("Cloudinary Config:", {
       cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
       api_key: process.env.CLOUDINARY_API_KEY,
       api_secret: process.env.CLOUDINARY_API_SECRET ? "Set" : "Not Set",
       timeout: 180000,
     });
 
-    ("Testing Cloudinary connectivity...");
+    console.log("Testing Cloudinary connectivity...");
     const pingStart = Date.now();
     try {
       const resources = await cloudinary.api.resources({ max_results: 1 });
-      (`Cloudinary API ping succeeded after ${(Date.now() - pingStart) / 1000}s:`, resources);
+      console.log(`Cloudinary API ping succeeded after ${(Date.now() - pingStart) / 1000}s:`, resources);
     } catch (pingError) {
       console.error(`Cloudinary API ping failed after ${(Date.now() - pingStart) / 1000}s:`, pingError.message);
     }
@@ -127,14 +127,18 @@ export const becomeGuide = async (req, res) => {
     // Handle file upload
     let aadharPhotoUrl = "";
     if (req.file) {
-      (`Aadhar Card Photo received for user ${req.body.userId}: ${req.file.originalname}, Size: ${(req.file.buffer.length / 1024 / 1024).toFixed(2)} MB`);
+      console.log(`Aadhar Card Photo received for user ${req.body.userId}: ${req.file.originalname}, Size: ${(req.file.buffer.length / 1024 / 1024).toFixed(2)} MB`);
       const result = await uploadWithRetry(req.file.buffer, "aadhar_cards");
       aadharPhotoUrl = result.secure_url;
-      (`Aadhar Card Photo uploaded for user ${req.body.userId}: ${aadharPhotoUrl}`);
+      console.log(`Aadhar Card Photo uploaded for user ${req.body.userId}: ${aadharPhotoUrl}`);
     }
 
     // Extract form data
     const { userId, languages, activities, serviceLocations, cities, bankAccountNumber, bio } = req.body;
+
+    if (userId !== req.user?._id?.toString()) {
+      return res.status(403).json({ message: "You can only apply to become a guide for yourself" });
+    }
 
     // Check if the user exists
     const existingUser = await User.findById(userId);
@@ -212,8 +216,8 @@ export const uploadMiddleware = upload.single("aadharCardPhoto");
 export const getGuideRequests = async (req, res) => {
   try {
     const { status } = req.query;
-    const query = {};
-    if (status && ["pending", "approved", "rejected"].includes(status)) {
+    const query: any = {};
+    if (status && ["pending", "approved", "rejected"].includes(status as string)) {
       query.status = status;
     }
 
