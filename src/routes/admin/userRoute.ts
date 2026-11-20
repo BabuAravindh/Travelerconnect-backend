@@ -8,8 +8,10 @@ import {
 import User from "../../models/User.js";
 import Booking from "../../models/BookingModel.js";
 import { Payment } from "../../models/Payment.js";
+import { verifyAdmin } from "../../middleware/verifyAdmin.js";
 
 const router = express.Router();
+router.use(verifyAdmin);
 
 // =======================
 // Admin Stats Route

@@ -18,8 +18,10 @@ import {
   updateMessage,
 } from "../../controllers/chatController.js";
 import authenticateUser from "../../middleware/authMiddleware.js";
+import { verifyAdmin } from "../../middleware/verifyAdmin.js";
 import User from "../../models/User.js";
 import Guide from "../../models/Guide.js";
+import Conversation from "../../models/Conversation.js";
 import dotenv from "dotenv";
 import Pusher from "pusher";
 
@@ -40,17 +42,17 @@ router.get("/", authenticateUser, getUsersForSidebar);
 router.get("/:id", authenticateUser, getMessages);
 router.post("/send/:id", authenticateUser, sendMessage);
 router.get("/user/:userId", authenticateUser, getUserConversations);
-router.post("/startConversation", startConversation);
+router.post("/startConversation", authenticateUser, startConversation);
 
 // Get the budget from the last message
 router.get("/conversations/:id/lastBudget", authenticateUser, getLastBudgetMessage);
-router.get("/conversation/:userId/:guideId", getOrCreateConversation);
+router.get("/conversation/:userId/:guideId", authenticateUser, getOrCreateConversation);
 
-router.post("/online", setUserOnline);
-router.post("/offline", setUserOffline);
-router.post("/typing", typingIndicator);
+router.post("/online", authenticateUser, setUserOnline);
+router.post("/offline", authenticateUser, setUserOffline);
+router.post("/typing", authenticateUser, typingIndicator);
 
-router.get("/profile/:userId", async (req, res) => {
+router.get("/profile/:userId", authenticateUser, async (req, res) => {
   try {
     const { userId } = req.params;
 
@@ -76,10 +78,8 @@ router.get("/profile/:userId", async (req, res) => {
   }
 });
 
-router.post("/auth", (req, res) => {
+router.post("/auth", async (req, res) => {
   const { socket_id, channel_name } = req.body;
-  ("Socket ID:", socket_id);
-  ("Channel Name:", channel_name);
 
   const authHeader = req.headers.authorization;
   if (!authHeader) {
@@ -93,11 +93,20 @@ router.post("/auth", (req, res) => {
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    ("Decoded JWT:", decoded);
     const userId = decoded.id;
 
-    const expectedChannel = `private-notifications-${userId}`;
-    if (channel_name !== expectedChannel) {
+    const notificationsChannel = `private-notifications-${userId}`;
+    const chatChannelMatch = channel_name.match(/^private-chat-([a-fA-F0-9]{24})$/);
+
+    let authorized = channel_name === notificationsChannel;
+
+    if (!authorized && chatChannelMatch) {
+      const conversationId = chatChannelMatch[1];
+      const conversation = await Conversation.findById(conversationId);
+      authorized = !!conversation?.participants?.some((p) => p.toString() === userId);
+    }
+
+    if (!authorized) {
       return res.status(403).json({ error: "Unauthorized channel access" });
     }
 
@@ -110,9 +119,9 @@ router.post("/auth", (req, res) => {
 });
 
 // Admin-only routes
-router.get("/admin/conversations", getAllConversations);
-router.get("/admin/conversations/:conversationId", getConversationMessages);
-router.delete("/admin/conversations/:conversationId", deleteConversation);
-router.delete("/admin/messages/:messageId", deleteMessage);
+router.get("/admin/conversations", verifyAdmin, getAllConversations);
+router.get("/admin/conversations/:conversationId", verifyAdmin, getConversationMessages);
+router.delete("/admin/conversations/:conversationId", verifyAdmin, deleteConversation);
+router.delete("/admin/messages/:messageId", verifyAdmin, deleteMessage);
 
 export default router;

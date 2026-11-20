@@ -3,14 +3,16 @@ import {becomeGuide, getGuideRequests, reviewGuideRequest, uploadMiddleware } fr
 import Guide from "../../models/Guide.js";
 import {City }from "../../models/predefineSchemas.js"
 const router = express.Router();
-import Booking from "../../models/bookingModel.js";
+import Booking from "../../models/BookingModel.js";
 import Feedback from "../../models/feedbackModel.js";
 import Message from "../../models/Message.js";
 import Conversation from "../../models/Conversation.js";
+import authenticateUser from "../../middleware/authMiddleware.js";
+import { verifyAdmin } from "../../middleware/verifyAdmin.js";
 // Define the POST route for becoming a guide
-router.post("/become-guide",uploadMiddleware, becomeGuide);
-router.get("/requests", getGuideRequests);
-router.put("/requests/:requestId/review",reviewGuideRequest);
+router.post("/become-guide", authenticateUser, uploadMiddleware, becomeGuide);
+router.get("/requests", verifyAdmin, getGuideRequests);
+router.put("/requests/:requestId/review", verifyAdmin, reviewGuideRequest);
 
 router.get("/cities_with_guides", async (req, res) => {
     try {
@@ -38,9 +40,13 @@ router.get("/cities_with_guides", async (req, res) => {
   });
   
 // Updated GET /api/guide/:guideId/stats endpoint
-router.get("/:guideId/stats", async (req, res) => {
+router.get("/:guideId/stats", authenticateUser, async (req, res) => {
   try {
     const { guideId } = req.params;
+
+    if (req.user?._id?.toString() !== guideId && req.user?.role !== "admin") {
+      return res.status(403).json({ message: "You do not have access to these stats" });
+    }
 
     // Fetch all bookings related to the guide
     const bookings = await Booking.find({ guideId });

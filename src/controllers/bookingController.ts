@@ -187,6 +187,15 @@ export const updateBookingDetails = async (req, res) => {
       return res.status(404).json({ message: "Booking not found" });
     }
 
+    const requesterId = req.user?._id?.toString();
+    if (
+      booking.userId?.toString() !== requesterId &&
+      booking.guideId?.toString() !== requesterId &&
+      req.user?.role !== "admin"
+    ) {
+      return res.status(403).json({ message: "You do not have access to this booking" });
+    }
+
     const updateFields = {};
 
     // ✅ Restrict marking status as 'completed' unless endDate has passed
@@ -250,6 +259,10 @@ export const getGuideBookings = async (req, res) => {
 
     if (!mongoose.Types.ObjectId.isValid(guideId)) {
       return res.status(400).json({ message: "Invalid guide ID format" });
+    }
+
+    if (req.user?._id?.toString() !== guideId && req.user?.role !== "admin") {
+      return res.status(403).json({ message: "You do not have access to these bookings" });
     }
 
     const bookings = await Booking.find({ guideId })
@@ -321,6 +334,10 @@ export const getUserBookings = async (req, res) => {
     // Validate userId
     if (!mongoose.Types.ObjectId.isValid(userId)) {
       return res.status(400).json({ message: "Invalid user ID format" });
+    }
+
+    if (req.user?._id?.toString() !== userId && req.user?.role !== "admin") {
+      return res.status(403).json({ message: "You do not have access to these bookings" });
     }
 
     ("Fetching bookings for User ID:", userId);

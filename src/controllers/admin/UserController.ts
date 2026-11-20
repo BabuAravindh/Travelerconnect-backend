@@ -28,10 +28,18 @@ export const getUser = async (req, res) => {
 };
 
 // Update user
+const ALLOWED_UPDATE_FIELDS = ["name", "email", "role"];
+
 export const updateUser = async (req, res) => {
   try {
-    const user = await User.findByIdAndUpdate(req.params.id, req.body, {
+    const updates = {};
+    for (const field of ALLOWED_UPDATE_FIELDS) {
+      if (req.body[field] !== undefined) updates[field] = req.body[field];
+    }
+
+    const user = await User.findByIdAndUpdate(req.params.id, updates, {
       new: true,
+      runValidators: true,
       select: "name email role",
     });
     if (!user) return res.status(404).json({ error: "User not found" });

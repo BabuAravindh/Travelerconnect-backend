@@ -1,4 +1,4 @@
-import Booking from '../models/bookingModel.js';
+import Booking from '../models/BookingModel.js';
 import Razorpay from 'razorpay';
 import mongoose from 'mongoose';
 import { v2 as cloudinary } from 'cloudinary';

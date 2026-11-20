@@ -11,11 +11,13 @@ import deleteUser from "../../utils/deleteUser.js"; // Import the function
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
 import Guide from "../../models/Guide.js";
-import Booking from "../../models/bookingModel.js";
+import Booking from "../../models/BookingModel.js";
+import authenticateUser from "../../middleware/authMiddleware.js";
+import { verifyAdmin } from "../../middleware/verifyAdmin.js";
 
 const router = express.Router();
 
-router.get("/users", async (req, res) => {
+router.get("/users", verifyAdmin, async (req, res) => {
   try {
     const users = await User.aggregate([
       {
@@ -51,7 +53,7 @@ router.get("/users", async (req, res) => {
 });
 
 
-router.get("/guides", async (req, res) => {
+router.get("/guides", verifyAdmin, async (req, res) => {
   try {
     const guides = await User.aggregate([
       {
@@ -120,7 +122,7 @@ router.get("/guides", async (req, res) => {
   }
 });
 
-router.put("/guides/:userId/toggleStatus", async (req, res) => {
+router.put("/guides/:userId/toggleStatus", verifyAdmin, async (req, res) => {
   try {
     // Find the guide by userId
     const guide = await Guide.findOne({ userId: req.params.userId });
@@ -163,8 +165,13 @@ router.put("/guides/:userId/toggleStatus", async (req, res) => {
 
 
 
-router.delete("/:userId", async (req, res) => {
+router.delete("/:userId", authenticateUser, async (req, res) => {
   const { userId } = req.params;
+
+  if (req.user?._id?.toString() !== userId && req.user?.role !== "admin") {
+    return res.status(403).json({ success: false, message: "You can only delete your own account" });
+  }
+
   const result = await deleteUser(userId);
    ('user deleted succssfully',result)
   if (result.success) {
@@ -175,12 +182,24 @@ router.delete("/:userId", async (req, res) => {
 });
 
 // ✅ Fetch user profile (no file upload needed)
-router.get("/:userId", getProfile);
+router.get("/:userId", authenticateUser, (req, res, next) => {
+  if (req.user?._id?.toString() !== req.params.userId && req.user?.role !== "admin") {
+    return res.status(403).json({ message: "You can only view your own profile" });
+  }
+  next();
+}, getProfile);
 
 // ✅ Create a user profile (with file upload)
 router.post(
   "/",
+  authenticateUser,
   upload.single("profilePic"), // This handles single file upload with field name "profilePic"
+  (req, res, next) => {
+    if (req.user?._id?.toString() !== req.body.userId && req.user?.role !== "admin") {
+      return res.status(403).json({ message: "You can only create your own profile" });
+    }
+    next();
+  },
   createProfile
 );
 
@@ -188,7 +207,14 @@ router.post(
 // ✅ Update a user profile (with file upload)
 router.put(
   "/:userId",
+  authenticateUser,
   upload.single("profilePic"),
+  (req, res, next) => {
+    if (req.user?._id?.toString() !== req.params.userId && req.user?.role !== "admin") {
+      return res.status(403).json({ message: "You can only update your own profile" });
+    }
+    next();
+  },
   updateProfile
 );
 

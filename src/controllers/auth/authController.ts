@@ -1,9 +1,10 @@
 // controllers/authController.ts
+import jwt from "jsonwebtoken";
 import * as AuthService from "../../services/auth/auth.service";
 import { validateSignupFields } from "../../validations/authValidation.js";
 import { sendEmail } from "../../services/Email/emailService";
 
-const verifiedResetSessions = new Map<string, number>();
+const RESET_TOKEN_PURPOSE = "password-reset";
 
 // ─── SIGNUP ───────────────────────────────────────────
 const handleSignup = (role: "user" | "guide") => async (req: any, res: any) => {
@@ -126,13 +127,15 @@ export const forgotPassword = async (req: any, res: any) => {
 // ─── VERIFY RESET CODE ────────────────────────────────
 export const verifyResetCode = async (req: any, res: any) => {
   try {
-    const { otp } = req.body;
-    if (!otp) return res.status(400).json({ message: "Reset code is required" });
+    const { email, otp } = req.body;
+    if (!email || !otp) return res.status(400).json({ message: "Email and reset code are required" });
 
-    const userId = await AuthService.verifyResetOtp(otp);
-    verifiedResetSessions.set(userId, Date.now() + 10 * 60 * 1000);
+    const userId = await AuthService.verifyResetOtp(email, otp);
+    const resetToken = jwt.sign({ userId, purpose: RESET_TOKEN_PURPOSE }, process.env.JWT_SECRET!, {
+      expiresIn: "10m",
+    });
 
-    return res.status(200).json({ message: "Code verified successfully" });
+    return res.status(200).json({ message: "Code verified successfully", resetToken });
 
   } catch (err: any) {
     if (err.status) return res.status(err.status).json({ message: err.message });
@@ -143,15 +146,21 @@ export const verifyResetCode = async (req: any, res: any) => {
 // ─── RESET PASSWORD ───────────────────────────────────
 export const resetPassword = async (req: any, res: any) => {
   try {
-    const { newPassword } = req.body;
-    const validUserId = [...verifiedResetSessions.keys()]
-      .find(id => verifiedResetSessions.get(id)! > Date.now());
+    const { resetToken, newPassword } = req.body;
+    if (!resetToken || !newPassword)
+      return res.status(400).json({ message: "Reset token and new password are required" });
 
-    if (!validUserId)
+    let decoded: any;
+    try {
+      decoded = jwt.verify(resetToken, process.env.JWT_SECRET!);
+    } catch {
+      return res.status(400).json({ message: "Reset session expired or invalid" });
+    }
+
+    if (decoded.purpose !== RESET_TOKEN_PURPOSE)
       return res.status(400).json({ message: "Reset session expired or invalid" });
 
-    verifiedResetSessions.delete(validUserId);
-    await AuthService.resetUserPassword(validUserId, newPassword);
+    await AuthService.resetUserPassword(decoded.userId, newPassword);
 
     return res.status(200).json({ message: "Password reset successfully" });
 

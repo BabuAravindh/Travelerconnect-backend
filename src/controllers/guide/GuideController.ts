@@ -136,6 +136,10 @@ export const becomeGuide = async (req, res) => {
     // Extract form data
     const { userId, languages, activities, serviceLocations, cities, bankAccountNumber, bio } = req.body;
 
+    if (userId !== req.user?._id?.toString()) {
+      return res.status(403).json({ message: "You can only apply to become a guide for yourself" });
+    }
+
     // Check if the user exists
     const existingUser = await User.findById(userId);
     if (!existingUser) {

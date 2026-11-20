@@ -24,12 +24,9 @@ cloudinary.v2.config({
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.EMAIL_USER, 
-    pass: process.env.EMAIL_PASS 
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
   },
-  tls: {
-    rejectUnauthorized: false 
-  }
 });
 
 
@@ -83,6 +80,14 @@ export const createRefundRequest = async (req, res) => {
   try {
     if (!mongoose.isValidObjectId(bookingId)) {
       return res.status(400).json({ success: false, error: "Invalid booking ID" });
+    }
+
+    const booking = await Booking.findById(bookingId);
+    if (!booking) {
+      return res.status(404).json({ success: false, error: "Booking not found" });
+    }
+    if (booking.userId?.toString() !== req.user?._id?.toString()) {
+      return res.status(403).json({ success: false, error: "You do not own this booking" });
     }
 
     const existingRefund = await Refund.findOne({ bookingId });

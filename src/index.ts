@@ -3,6 +3,7 @@ import "dotenv/config";
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
+import helmet from "helmet";
 import { Server } from "socket.io";
 import http from "http";
 
@@ -15,6 +16,7 @@ const app = express();
 const server = http.createServer(app);
 
 // Middleware
+app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
@@ -25,6 +27,11 @@ app.use(
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+
+// Health check (used by Render and uptime monitors)
+app.get("/health", (_req, res) => {
+  res.status(200).json({ status: "ok", mongo: mongoose.connection.readyState === 1 });
+});
 
 // Routes
 app.use(routes);

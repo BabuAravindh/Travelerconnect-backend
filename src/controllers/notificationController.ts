@@ -1,4 +1,4 @@
-import Notification from "../models/Notification.js";
+import Notification from "../models/notification.js";
 import Pusher from "pusher";
 import mongoose from "mongoose";
 
@@ -66,6 +66,10 @@ export const getUnreadNotifications = async (req, res) => {
       return res.status(400).json({ success: false, error: "Invalid or missing userId" });
     }
 
+    if (req.user?._id?.toString() !== userId && req.user?.role !== "admin") {
+      return res.status(403).json({ success: false, error: "You do not have access to these notifications" });
+    }
+
     const notifications = await Notification.find({
       recipientId: userId,
       isRead: false,
@@ -93,6 +97,10 @@ export const markNotificationsAsRead = async (req, res) => {
 
     if (!userId || !mongoose.Types.ObjectId.isValid(userId)) {
       return res.status(400).json({ success: false, error: "Invalid or missing userId" });
+    }
+
+    if (req.user?._id?.toString() !== userId && req.user?.role !== "admin") {
+      return res.status(403).json({ success: false, error: "You do not have access to these notifications" });
     }
 
     if (!notificationIds || !Array.isArray(notificationIds)) {
@@ -138,6 +146,10 @@ export const getAllNotifications = async (req, res) => {
       return res.status(400).json({ success: false, error: "Invalid or missing userId" });
     }
 
+    if (req.user?._id?.toString() !== userId && req.user?.role !== "admin") {
+      return res.status(403).json({ success: false, error: "You do not have access to these notifications" });
+    }
+
     const notifications = await Notification.find({
       recipientId: userId,
     })
@@ -163,6 +175,10 @@ export const clearAllNotifications = async (req, res) => {
 
     if (!userId || !mongoose.Types.ObjectId.isValid(userId)) {
       return res.status(400).json({ success: false, error: "Invalid or missing userId" });
+    }
+
+    if (req.user?._id?.toString() !== userId && req.user?.role !== "admin") {
+      return res.status(403).json({ success: false, error: "You do not have access to these notifications" });
     }
 
     await Notification.deleteMany({ recipientId: userId });

@@ -6,7 +6,7 @@ import {
 } from "../models/aiModel.js"; 
 
 // import Attraction from "../models/Attractions.js";
-import Booking from "../models/bookingModel.js";
+import Booking from "../models/BookingModel.js";
 import Conversation from "../models/Conversation.js";
 import Feedback from "../models/feedbackModel.js";
 import Guide from "../models/Guide.js";

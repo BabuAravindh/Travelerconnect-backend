@@ -1,5 +1,6 @@
 import express from 'express';
 import multer from 'multer';
+import authenticateUser from '../../middleware/authMiddleware.js';
 import {
   createCityItems,
   confirmCityItems,
@@ -25,10 +26,10 @@ const upload = multer({
   },
 });
 
-router.post('/create-items', upload.array('images', 30), createCityItems);
-router.post('/confirm-items', confirmCityItems);
+router.post('/create-items', authenticateUser, upload.array('images', 30), createCityItems);
+router.post('/confirm-items', authenticateUser, confirmCityItems);
 router.get('/', getAllCityItems);
 router.get('/:id', getAttractionById);
-router.post('/upload-image', upload.single('image'), uploadImage); // New endpoint
+router.post('/upload-image', authenticateUser, upload.single('image'), uploadImage); // New endpoint
 
 export default router;

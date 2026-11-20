@@ -182,12 +182,17 @@ export const getGuideProfile = async (req, res) => {
         return res.status(404).json({ message: "Guide profile not found." });
       }
 
+      const isOwnerOrAdmin =
+        req.user?._id?.toString() === userId || req.user?.role === "admin";
+
       response = {
         ...response,
         bio: guideProfile.bio || "",
-        bankAccountNumber: guideProfile.bankAccountNumber || "",
-        ifscCode: guideProfile.ifscCode || "",
-        bankName: guideProfile.bankName || "",
+        ...(isOwnerOrAdmin && {
+          bankAccountNumber: guideProfile.bankAccountNumber || "",
+          ifscCode: guideProfile.ifscCode || "",
+          bankName: guideProfile.bankName || "",
+        }),
         profilePicture:
           guideProfile.profilePic?.secure_url && guideProfile.profilePic.secure_url !== ""
             ? guideProfile.profilePic.secure_url
@@ -221,7 +226,13 @@ export const updateGuideProfile = async (req, res) => {
   session.startTransaction();
 
   try {
-    const { userId } = req.params;
+    let { userId } = req.params;
+
+    if (req.user?._id?.toString() !== userId && req.user?.role !== "admin") {
+      await session.abortTransaction();
+      return res.status(403).json({ message: "You can only update your own profile." });
+    }
+
     const {
       newUserId,
       firstName,
@@ -253,6 +264,10 @@ export const updateGuideProfile = async (req, res) => {
 
     // If newUserId is provided and different from current userId
     if (newUserId && newUserId !== userId) {
+      if (req.user?.role !== "admin") {
+        await session.abortTransaction();
+        return res.status(403).json({ message: "Only an admin can change a user ID." });
+      }
       const userWithNewId = await User.findById(newUserId).session(session);
       if (userWithNewId) {
         await session.abortTransaction();
@@ -431,6 +446,10 @@ export const createProfile = async (req, res) => {
   try {
     const { userId, activities, bankAccountNumber, ifscCode, bankName, bio, languages, serviceLocations } = req.body;
 
+    if (req.user?._id?.toString() !== userId && req.user?.role !== "admin") {
+      return res.status(403).json({ message: "You can only create your own guide profile." });
+    }
+
     const user = await User.findById(userId);
     if (!user) {
       return res.status(404).json({ message: "User not found." });
@@ -548,10 +567,12 @@ export const getAllGuides = async (req, res) => {
           return null; // Skip incomplete profiles
         }
 
+        const { bankAccountNumber, ifscCode, bankName, ...publicGuideDetails } = guideDetails;
+
         return {
           ...user,
           ...userProfile,
-          ...guideDetails,
+          ...publicGuideDetails,
           profilePicture:
             guideDetails.profilePic?.secure_url && guideDetails.profilePic.secure_url !== ""
               ? guideDetails.profilePic.secure_url

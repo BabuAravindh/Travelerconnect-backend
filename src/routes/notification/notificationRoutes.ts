@@ -10,6 +10,11 @@ import authenticateUser from "../../middleware/authMiddleware.js";
 const router = express.Router();
 router.post("/create", authenticateUser, async (req, res) => {
   const { recipientId, senderId, conversationId, type, message, senderRole } = req.body;
+
+  if (senderId !== req.user?._id?.toString()) {
+    return res.status(403).json({ success: false, error: "You can only create notifications as yourself" });
+  }
+
   const result = await createNotification({ recipientId, senderId, conversationId, type, message, senderRole });
   res.status(result.success ? 201 : 400).json(result);
 });

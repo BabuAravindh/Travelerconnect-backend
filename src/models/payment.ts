@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import AutoIncrementFactory from "mongoose-sequence";
-import Notification from "../models/Notification.js";
+import Notification from "../models/notification.js";
 import createNotification from "../controllers/notificationController.js";
 import User from "../models/User.js"; // Adjust the import path
 import Booking from "./BookingModel.js";
